@@ -103,10 +103,9 @@ def format_paste(pasteid, paste):
             except KeyError:
                 pass
 
-        mon_formatted = line
+        mon_formatted = line + '\n'
 
         for line in mon_lines:
-            mon_formatted += '\n'
             if line[0] == '-' and line[1:].strip() in move_data:
                 move_type = move_data[line[1:].strip()]['type']
                 mon_formatted += '<span class="type-{}">'.format(move_type)
@@ -121,6 +120,9 @@ def format_paste(pasteid, paste):
                 mon_formatted += line[index:]
             else:
                 mon_formatted += line
+            mon_formatted += '\n'
+
+        mon_formatted += '\n'
 
         html_mons += html_data['paste-mon'].format(pokemonid=pokemonid,
                                                    itemid=itemid,
