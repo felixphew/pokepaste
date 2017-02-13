@@ -40,6 +40,19 @@ div.set pre {
 	}
 }
 
+@media (max-width: 750px) {
+	aside { display: none }
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	margin: 10pt;
+	font: 10pt 'Fira Sans Condensed', sans-serif;
+	text-align: right;
+}
+
 .type-normal { color: #B2AC8C }
 .type-fighting { color: #934538 }
 .type-fire { color: #F45C19 }
