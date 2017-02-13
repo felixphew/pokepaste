@@ -18,17 +18,28 @@ pokemon_data = json.load(open('data/pokemon.json'))
 item_data = json.load(open('data/items.json'))
 move_data = json.load(open('data/moves.json'))
 
-html_data = {}
-for html_file in ('404', 'create', 'paste', 'paste-mon'):
+from string import Template
+html_template = {}
+for html_file in ('paste', 'paste-mon'):
     fd = open('html/{}.html'.format(html_file))
-    html_data[html_file] = fd.read()
+    html_template[html_file] = Template(fd.read())
     fd.close()
 
-css_data = {}
-for css_file in ('paste',):
-    fd = open('css/{}.css'.format(css_file))
-    css_data[css_file] = fd.read()
+html_static = {}
+for html_file in ('404', 'create'):
+    fd = open('html/{}.html'.format(html_file))
+    html_static[html_file] = fd.read()
     fd.close()
+
+imgcss = ''
+for _, pokemon in pokemon_data.items(): imgcss += '''.pokemon-{id}-{no} {{
+        background-image: url('../img/pokemon/{id}-{no}.png');
+}}'''.format(id=pokemon['id'], no=pokemon['no'])
+for _, item in item_data.items(): imgcss += '''.item-{id} {{
+        background-image: url('../img/items/{id}.png');
+}}'''.format(id=item['id'])
+html_template['paste'] = Template(
+        html_template['paste'].safe_substitute(imgcss=imgcss))
 
 def format_paste(pasteid, paste):
 
@@ -124,14 +135,14 @@ def format_paste(pasteid, paste):
 
         mon_formatted += '\n'
 
-        html_mons += html_data['paste-mon'].format(pokemonid=pokemonid,
-                                                   itemid=itemid,
-                                                   paste=mon_formatted)
+        html_mons += html_template['paste-mon'].substitute(pokemonid=pokemonid,
+                                                           itemid=itemid,
+                                                           paste=mon_formatted)
 
-    return html_data['paste'].format(pasteid=pasteid, mons=html_mons)
+    return html_template['paste'].substitute(pasteid=pasteid, mons=html_mons)
 
 def generic_404(start_response):
-    response = html_data['404'].encode('utf-8')
+    response = html_static['404'].encode('utf-8')
     status = '404 Not Found'
     headers = [
         ('Content-Type', 'text/html; charset=utf-8'),
@@ -148,11 +159,11 @@ def application(environ, start_response):
 
         if not path:
             # Requesting /, return the (static) submit page
-            response = html_data['create'].encode('utf-8')
+            response = html_static['create'].encode('utf-8')
             status = '200 OK'
             headers = [
                 ('Content-Type', 'text/html; charset=utf-8'),
-                ('Content-Length', str(len(html_data['create'])))
+                ('Content-Length', str(len(html_static['create'])))
             ]
             start_response(status, headers)
             return [response]
@@ -173,17 +184,6 @@ def application(environ, start_response):
                 return [response]
             else:
                 return generic_404(start_response)
-
-        elif path in ['css/{}.css'.format(css_file) for css_file in css_data]:
-            # Requesting a static CSS file
-            response = css_data[path[4:-4]].encode('utf-8')
-            status = '200 OK'
-            headers = [
-                ('Content-Type', 'text/css; charset=utf-8'),
-                ('Content-Length', str(len(css_data[path[4:-4]])))
-            ]
-            start_response(status, headers)
-            return [response]
 
         elif img_re.fullmatch(path):
             # Requesting an image

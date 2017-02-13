@@ -1,10 +1,86 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<title>PokePaste #{pasteid}</title>
-		<link href="css/paste.css" rel="stylesheet">
+		<title>PokePaste #${pasteid}</title>
+		<style>
+		@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
+		
+		body {
+			background: black;
+			color: #dfdfdf;
+			margin: 0;
+		}
+		
+		div.img-pokemon {
+			margin: 10pt;
+			position: relative;
+			width: 150px;
+			height: 150px;
+			background-size: 150px;
+			background-position: -75px -75px;
+		}
+		div.img-item {
+			position: absolute;
+			bottom: 0px;
+			right: 0px;
+			width: 40px;
+			height: 40px;
+			background-size: 40px;
+		}
+		
+		div.set pre {
+			margin: 10pt;
+			font: 10pt 'Fira Mono', sans-serif;
+		}
+		
+		.heading { font-style: italic }
+		
+		@media (min-width: 450px) {
+			div.img-pokemon {
+				float: left;
+				clear: left;
+			}
+			div.set pre {
+				float: left
+			}
+		}
+		
+		@media (max-width: 750px) {
+			aside { display: none }
+		}
+		
+		aside {
+			position: fixed;
+			top: 0;
+			right: 0;
+			margin: 10pt;
+			font: 10pt 'Fira Sans Condensed', sans-serif;
+			text-align: right;
+		}
+		
+		.type-normal { color: #B2AC8C }
+		.type-fighting { color: #934538 }
+		.type-fire { color: #F45C19 }
+		.type-ice { color: #4CACC2 }
+		.type-electric { color: #EAA317 }
+		.type-flying { color: #7E9ECF }
+		.type-grass { color: #04A641 }
+		.type-ground { color: #967344 }
+		.type-poison { color: #8F5B98 }
+		.type-bug { color: #989001 }
+		.type-dark { color: #7A0049 }
+		.type-water { color: #4392D5 }
+		.type-psychic { color: #D7738D }
+		.type-dragon { color: #625EB3 }
+		.type-rock { color: #878052 }
+		.type-ghost { color: #5563A4 }
+		.type-steel { color: #999999 }
+		.type-fairy { color: #FFBBFF }
+		
+		${imgcss}
+		</style>
 	</head>
 	<body>
-		<main>{mons}</main>
+		<main>${mons}</main>
 	</body>
 </html>
