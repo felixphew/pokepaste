@@ -1,0 +1,1194 @@
+{
+	"Ability Capsule": {
+		"id": 645
+	},
+	"Absolite": {
+		"id": 677
+	},
+	"Absorb Bulb": {
+		"id": 545
+	},
+	"Adamant Orb": {
+		"id": 135
+	},
+	"Adrenaline Orb": {
+		"id": 846
+	},
+	"Aerodactylite": {
+		"id": 672
+	},
+	"Aguav Berry": {
+		"id": 162
+	},
+	"Air Balloon": {
+		"id": 541
+	},
+	"Alakazite": {
+		"id": 679
+	},
+	"Aloraichium Z": {
+		"id": 803,
+		"type": "electric"
+	},
+	"Amulet Coin": {
+		"id": 223
+	},
+	"Antidote": {
+		"id": 18
+	},
+	"Apicot Berry": {
+		"id": 205
+	},
+	"Armor Fossil": {
+		"id": 104
+	},
+	"Aspear Berry": {
+		"id": 153
+	},
+	"Assault Vest": {
+		"id": 640
+	},
+	"Awakening": {
+		"id": 21
+	},
+	"Babiri Berry": {
+		"id": 199
+	},
+	"Balm Mushroom": {
+		"id": 580
+	},
+	"Beast Ball": {
+		"id": 851
+	},
+	"Berry Juice": {
+		"id": 43
+	},
+	"Big Malasada": {
+		"id": 852
+	},
+	"Big Mushroom": {
+		"id": 87
+	},
+	"Big Nugget": {
+		"id": 581
+	},
+	"Big Pearl": {
+		"id": 89
+	},
+	"Big Root": {
+		"id": 296
+	},
+	"Binding Band": {
+		"id": 544
+	},
+	"Black Belt": {
+		"id": 241
+	},
+	"Black Glasses": {
+		"id": 240
+	},
+	"Black Sludge": {
+		"id": 281
+	},
+	"Blastoisinite": {
+		"id": 661
+	},
+	"Blue Orb": {
+		"id": 535
+	},
+	"Blue Shard": {
+		"id": 73
+	},
+	"Bluk Berry": {
+		"id": 165
+	},
+	"Bottle Cap": {
+		"id": 795
+	},
+	"Bright Powder": {
+		"id": 213
+	},
+	"Bug Memory": {
+		"id": 909
+	},
+	"Buginium Z": {
+		"id": 787,
+		"type": "bug"
+	},
+	"Burn Drive": {
+		"id": 118
+	},
+	"Burn Heal": {
+		"id": 19
+	},
+	"Calcium": {
+		"id": 49
+	},
+	"Carbos": {
+		"id": 48
+	},
+	"Casteliacone": {
+		"id": 591
+	},
+	"Cell Battery": {
+		"id": 546
+	},
+	"Charcoal": {
+		"id": 249
+	},
+	"Charizardite X": {
+		"id": 660
+	},
+	"Charizardite Y": {
+		"id": 678
+	},
+	"Charti Berry": {
+		"id": 195
+	},
+	"Cheri Berry": {
+		"id": 149
+	},
+	"Chesto Berry": {
+		"id": 150
+	},
+	"Chilan Berry": {
+		"id": 200
+	},
+	"Chill Drive": {
+		"id": 119
+	},
+	"Choice Band": {
+		"id": 220
+	},
+	"Choice Scarf": {
+		"id": 287
+	},
+	"Choice Specs": {
+		"id": 297
+	},
+	"Chople Berry": {
+		"id": 189
+	},
+	"Cleanse Tag": {
+		"id": 224
+	},
+	"Clever Wing": {
+		"id": 569
+	},
+	"Coba Berry": {
+		"id": 192
+	},
+	"Colbur Berry": {
+		"id": 198
+	},
+	"Comet Shard": {
+		"id": 583
+	},
+	"Cover Fossil": {
+		"id": 572
+	},
+	"Damp Rock": {
+		"id": 285,
+		"type": "water"
+	},
+	"Dark Memory": {
+		"id": 919
+	},
+	"Darkinium Z": {
+		"id": 791,
+		"type": "dark"
+	},
+	"Dawn Stone": {
+		"id": 109
+	},
+	"Decidium Z": {
+		"id": 798,
+		"type": "grass"
+	},
+	"Deep Sea Scale": {
+		"id": 227
+	},
+	"Deep Sea Tooth": {
+		"id": 226
+	},
+	"Destiny Knot": {
+		"id": 280
+	},
+	"Dire Hit": {
+		"id": 56
+	},
+	"Dive Ball": {
+		"id": 7
+	},
+	"Douse Drive": {
+		"id": 116
+	},
+	"Draco Plate": {
+		"id": 311
+	},
+	"Dragon Fang": {
+		"id": 250
+	},
+	"Dragon Memory": {
+		"id": 918
+	},
+	"Dragon Scale": {
+		"id": 235
+	},
+	"Dragonium Z": {
+		"id": 790,
+		"type": "dragon"
+	},
+	"Dread Plate": {
+		"id": 312
+	},
+	"Dubious Disc": {
+		"id": 324
+	},
+	"Dusk Ball": {
+		"id": 13
+	},
+	"Dusk Stone": {
+		"id": 108
+	},
+	"Earth Plate": {
+		"id": 305
+	},
+	"Eevium Z": {
+		"id": 805,
+		"type": "normal"
+	},
+	"Eject Button": {
+		"id": 547
+	},
+	"Electirizer": {
+		"id": 322
+	},
+	"Electric Memory": {
+		"id": 915
+	},
+	"Electric Seed": {
+		"id": 881
+	},
+	"Electrium Z": {
+		"id": 779,
+		"type": "electric"
+	},
+	"Elixir": {
+		"id": 40
+	},
+	"Energy Powder": {
+		"id": 34
+	},
+	"Energy Root": {
+		"id": 35
+	},
+	"Escape Rope": {
+		"id": 78
+	},
+	"Ether": {
+		"id": 38
+	},
+	"Everstone": {
+		"id": 229
+	},
+	"Eviolite": {
+		"id": 538
+	},
+	"Expert Belt": {
+		"id": 268
+	},
+	"Fairium Z": {
+		"id": 793,
+		"type": "fairy"
+	},
+	"Fairy Memory": {
+		"id": 920
+	},
+	"Fast Ball": {
+		"id": 492
+	},
+	"Festival Ticket": {
+		"id": 844
+	},
+	"Fighting Memory": {
+		"id": 904
+	},
+	"Fightinium Z": {
+		"id": 782,
+		"type": "fighting"
+	},
+	"Figy Berry": {
+		"id": 159
+	},
+	"Fire Memory": {
+		"id": 912
+	},
+	"Fire Stone": {
+		"id": 82
+	},
+	"Firium Z": {
+		"id": 777,
+		"type": "fire"
+	},
+	"Fist Plate": {
+		"id": 303
+	},
+	"Flame Orb": {
+		"id": 273
+	},
+	"Flame Plate": {
+		"id": 298
+	},
+	"Float Stone": {
+		"id": 539
+	},
+	"Flying Memory": {
+		"id": 905
+	},
+	"Flyinium Z": {
+		"id": 785,
+		"type": "flying"
+	},
+	"Focus Band": {
+		"id": 230
+	},
+	"Focus Sash": {
+		"id": 275
+	},
+	"Fresh Water": {
+		"id": 30
+	},
+	"Friend Ball": {
+		"id": 497
+	},
+	"Full Heal": {
+		"id": 27
+	},
+	"Full Incense": {
+		"id": 316
+	},
+	"Full Restore": {
+		"id": 23
+	},
+	"Ganlon Berry": {
+		"id": 202
+	},
+	"Garchompite": {
+		"id": 683
+	},
+	"Gengarite": {
+		"id": 656
+	},
+	"Genius Wing": {
+		"id": 568
+	},
+	"Ghost Memory": {
+		"id": 910
+	},
+	"Ghostium Z": {
+		"id": 789,
+		"type": "ghost"
+	},
+	"Glalitite": {
+		"id": 763
+	},
+	"Gold Bottle Cap": {
+		"id": 796
+	},
+	"Grass Memory": {
+		"id": 914
+	},
+	"Grassium Z": {
+		"id": 780,
+		"type": "grass"
+	},
+	"Grassy Seed": {
+		"id": 884
+	},
+	"Great Ball": {
+		"id": 3
+	},
+	"Green Shard": {
+		"id": 75
+	},
+	"Grepa Berry": {
+		"id": 173
+	},
+	"Grip Claw": {
+		"id": 286
+	},
+	"Griseous Orb": {
+		"id": 112
+	},
+	"Ground Memory": {
+		"id": 907
+	},
+	"Groundium Z": {
+		"id": 784,
+		"type": "ground"
+	},
+	"Guard Spec.": {
+		"id": 55
+	},
+	"Gyaradosite": {
+		"id": 676
+	},
+	"Haban Berry": {
+		"id": 197
+	},
+	"Hard Stone": {
+		"id": 238
+	},
+	"Heal Ball": {
+		"id": 14
+	},
+	"Heal Powder": {
+		"id": 36
+	},
+	"Health Wing": {
+		"id": 565
+	},
+	"Heart Scale": {
+		"id": 93
+	},
+	"Heat Rock": {
+		"id": 284,
+		"type": "fire"
+	},
+	"Heavy Ball": {
+		"id": 495
+	},
+	"Hondew Berry": {
+		"id": 172
+	},
+	"Honey": {
+		"id": 94
+	},
+	"HP Up": {
+		"id": 45
+	},
+	"Hyper Potion": {
+		"id": 25
+	},
+	"Iapapa Berry": {
+		"id": 163
+	},
+	"Ice Heal": {
+		"id": 20
+	},
+	"Ice Memory": {
+		"id": 917
+	},
+	"Ice Stone": {
+		"id": 849
+	},
+	"Icicle Plate": {
+		"id": 302
+	},
+	"Icium Z": {
+		"id": 781,
+		"type": "ice"
+	},
+	"Icy Rock": {
+		"id": 282,
+		"type": "ice"
+	},
+	"Incinium Z": {
+		"id": 799,
+		"type": "fire"
+	},
+	"Insect Plate": {
+		"id": 308
+	},
+	"Iron": {
+		"id": 47
+	},
+	"Iron Ball": {
+		"id": 278
+	},
+	"Iron Plate": {
+		"id": 313
+	},
+	"Kangaskhanite": {
+		"id": 675
+	},
+	"Kasib Berry": {
+		"id": 196
+	},
+	"Kebia Berry": {
+		"id": 190
+	},
+	"Kee Berry": {
+		"id": 687
+	},
+	"Kelpsy Berry": {
+		"id": 170
+	},
+	"King's Rock": {
+		"id": 221
+	},
+	"Lagging Tail": {
+		"id": 279
+	},
+	"Lansat Berry": {
+		"id": 206
+	},
+	"Lava Cookie": {
+		"id": 42
+	},
+	"Lax Incense": {
+		"id": 255
+	},
+	"Leaf Stone": {
+		"id": 85
+	},
+	"Leftovers": {
+		"id": 234
+	},
+	"Lemonade": {
+		"id": 32
+	},
+	"Leppa Berry": {
+		"id": 154
+	},
+	"Level Ball": {
+		"id": 493
+	},
+	"Liechi Berry": {
+		"id": 201
+	},
+	"Life Orb": {
+		"id": 270
+	},
+	"Light Ball": {
+		"id": 236
+	},
+	"Light Clay": {
+		"id": 269
+	},
+	"Love Ball": {
+		"id": 496
+	},
+	"Lucarionite": {
+		"id": 673
+	},
+	"Luck Incense": {
+		"id": 319
+	},
+	"Lucky Egg": {
+		"id": 231
+	},
+	"Lucky Punch": {
+		"id": 256
+	},
+	"Lum Berry": {
+		"id": 157
+	},
+	"Luminous Moss": {
+		"id": 648
+	},
+	"Lumiose Galette": {
+		"id": 708
+	},
+	"Lure Ball": {
+		"id": 494
+	},
+	"Lustrous Orb": {
+		"id": 136
+	},
+	"Luxury Ball": {
+		"id": 11
+	},
+	"Magmarizer": {
+		"id": 323
+	},
+	"Magnet": {
+		"id": 242
+	},
+	"Mago Berry": {
+		"id": 161
+	},
+	"Maranga Berry": {
+		"id": 688
+	},
+	"Master Ball": {
+		"id": 1
+	},
+	"Max Elixir": {
+		"id": 41
+	},
+	"Max Ether": {
+		"id": 39
+	},
+	"Max Potion": {
+		"id": 24
+	},
+	"Max Repel": {
+		"id": 77
+	},
+	"Max Revive": {
+		"id": 29
+	},
+	"Meadow Plate": {
+		"id": 301
+	},
+	"Mental Herb": {
+		"id": 219
+	},
+	"Metagrossite": {
+		"id": 758
+	},
+	"Metal Coat": {
+		"id": 233
+	},
+	"Metal Powder": {
+		"id": 257
+	},
+	"Metronome": {
+		"id": 277
+	},
+	"Mewnium Z": {
+		"id": 806,
+		"type": "psychic"
+	},
+	"Mind Plate": {
+		"id": 307
+	},
+	"Miracle Seed": {
+		"id": 239
+	},
+	"Misty Seed": {
+		"id": 883
+	},
+	"Moomoo Milk": {
+		"id": 33
+	},
+	"Moon Ball": {
+		"id": 498
+	},
+	"Moon Stone": {
+		"id": 81
+	},
+	"Muscle Band": {
+		"id": 266
+	},
+	"Muscle Wing": {
+		"id": 566
+	},
+	"Mystic Water": {
+		"id": 243
+	},
+	"Nest Ball": {
+		"id": 8
+	},
+	"Net Ball": {
+		"id": 6
+	},
+	"Never-Melt Ice": {
+		"id": 246
+	},
+	"Normal Gem": {
+		"id": 564
+	},
+	"Normalium Z": {
+		"id": 776,
+		"type": "normal"
+	},
+	"Nugget": {
+		"id": 92
+	},
+	"Occa Berry": {
+		"id": 184
+	},
+	"Odd Incense": {
+		"id": 314
+	},
+	"Old Gateau": {
+		"id": 54
+	},
+	"Oran Berry": {
+		"id": 155
+	},
+	"Oval Stone": {
+		"id": 110
+	},
+	"Paralyze Heal": {
+		"id": 22
+	},
+	"Passho Berry": {
+		"id": 185
+	},
+	"Payapa Berry": {
+		"id": 193
+	},
+	"Pearl": {
+		"id": 88
+	},
+	"Pearl String": {
+		"id": 582
+	},
+	"Pecha Berry": {
+		"id": 151
+	},
+	"Persim Berry": {
+		"id": 156
+	},
+	"Petaya Berry": {
+		"id": 204
+	},
+	"Pikanium Z": {
+		"id": 794,
+		"type": "electric"
+	},
+	"Pinap Berry": {
+		"id": 168
+	},
+	"Pink Nectar": {
+		"id": 855
+	},
+	"Pinsirite": {
+		"id": 671
+	},
+	"Pixie Plate": {
+		"id": 644
+	},
+	"Plume Fossil": {
+		"id": 573
+	},
+	"Poison Barb": {
+		"id": 245
+	},
+	"Poison Memory": {
+		"id": 906
+	},
+	"Poisonium Z": {
+		"id": 783,
+		"type": "poison"
+	},
+	"Poké Ball": {
+		"id": 4
+	},
+	"Poké Doll": {
+		"id": 63
+	},
+	"Poké Toy": {
+		"id": 577
+	},
+	"Pomeg Berry": {
+		"id": 169
+	},
+	"Potion": {
+		"id": 17
+	},
+	"Power Anklet": {
+		"id": 293
+	},
+	"Power Band": {
+		"id": 292
+	},
+	"Power Belt": {
+		"id": 290
+	},
+	"Power Bracer": {
+		"id": 289
+	},
+	"Power Herb": {
+		"id": 271
+	},
+	"Power Lens": {
+		"id": 291
+	},
+	"Power Weight": {
+		"id": 294
+	},
+	"PP Max": {
+		"id": 53
+	},
+	"PP Up": {
+		"id": 51
+	},
+	"Premier Ball": {
+		"id": 12
+	},
+	"Pretty Wing": {
+		"id": 571
+	},
+	"Primarium Z": {
+		"id": 800,
+		"type": "water"
+	},
+	"Prism Scale": {
+		"id": 537
+	},
+	"Protective Pads": {
+		"id": 880
+	},
+	"Protector": {
+		"id": 321
+	},
+	"Protein": {
+		"id": 46
+	},
+	"Psychic Memory": {
+		"id": 916
+	},
+	"Psychic Seed": {
+		"id": 882
+	},
+	"Psychium Z": {
+		"id": 786,
+		"type": "psychic"
+	},
+	"Pure Incense": {
+		"id": 320
+	},
+	"Purple Nectar": {
+		"id": 856
+	},
+	"Qualot Berry": {
+		"id": 171
+	},
+	"Quick Ball": {
+		"id": 15
+	},
+	"Quick Claw": {
+		"id": 217
+	},
+	"Quick Powder": {
+		"id": 274
+	},
+	"Rage Candy Bar": {
+		"id": 504
+	},
+	"Rare Bone": {
+		"id": 106
+	},
+	"Rare Candy": {
+		"id": 50
+	},
+	"Rawst Berry": {
+		"id": 152
+	},
+	"Razor Claw": {
+		"id": 326
+	},
+	"Razor Fang": {
+		"id": 327
+	},
+	"Reaper Cloth": {
+		"id": 325
+	},
+	"Red Card": {
+		"id": 542
+	},
+	"Red Nectar": {
+		"id": 853
+	},
+	"Red Orb": {
+		"id": 534
+	},
+	"Red Shard": {
+		"id": 72
+	},
+	"Repeat Ball": {
+		"id": 9
+	},
+	"Repel": {
+		"id": 79
+	},
+	"Resist Wing": {
+		"id": 567
+	},
+	"Revival Herb": {
+		"id": 37
+	},
+	"Revive": {
+		"id": 28
+	},
+	"Rindo Berry": {
+		"id": 187
+	},
+	"Ring Target": {
+		"id": 543
+	},
+	"Rock Incense": {
+		"id": 315
+	},
+	"Rock Memory": {
+		"id": 908
+	},
+	"Rockium Z": {
+		"id": 788,
+		"type": "rock"
+	},
+	"Rocky Helmet": {
+		"id": 540
+	},
+	"Rose Incense": {
+		"id": 318
+	},
+	"Roseli Berry": {
+		"id": 686
+	},
+	"Sablenite": {
+		"id": 754
+	},
+	"Sachet": {
+		"id": 647
+	},
+	"Sacred Ash": {
+		"id": 44
+	},
+	"Safety Goggles": {
+		"id": 650
+	},
+	"Salac Berry": {
+		"id": 203
+	},
+	"Salamencite": {
+		"id": 769
+	},
+	"Scizorite": {
+		"id": 670
+	},
+	"Scope Lens": {
+		"id": 232
+	},
+	"Sea Incense": {
+		"id": 254
+	},
+	"Shalour Sable": {
+		"id": 709
+	},
+	"Sharp Beak": {
+		"id": 244
+	},
+	"Sharpedonite": {
+		"id": 759
+	},
+	"Shed Shell": {
+		"id": 295
+	},
+	"Shell Bell": {
+		"id": 253
+	},
+	"Shiny Stone": {
+		"id": 107
+	},
+	"Shock Drive": {
+		"id": 117
+	},
+	"Shuca Berry": {
+		"id": 191
+	},
+	"Silk Scarf": {
+		"id": 251
+	},
+	"Silver Powder": {
+		"id": 222
+	},
+	"Sitrus Berry": {
+		"id": 158
+	},
+	"Skull Fossil": {
+		"id": 105
+	},
+	"Sky Plate": {
+		"id": 306
+	},
+	"Slowbronite": {
+		"id": 760
+	},
+	"Smoke Ball": {
+		"id": 228
+	},
+	"Smooth Rock": {
+		"id": 283,
+		"type": "rock"
+	},
+	"Snorlium Z": {
+		"id": 804,
+		"type": "normal"
+	},
+	"Snowball": {
+		"id": 649
+	},
+	"Soda Pop": {
+		"id": 31
+	},
+	"Soft Sand": {
+		"id": 237
+	},
+	"Soothe Bell": {
+		"id": 218
+	},
+	"Soul Dew": {
+		"id": 225
+	},
+	"Spell Tag": {
+		"id": 247
+	},
+	"Splash Plate": {
+		"id": 299
+	},
+	"Spooky Plate": {
+		"id": 310
+	},
+	"Star Piece": {
+		"id": 91
+	},
+	"Stardust": {
+		"id": 90
+	},
+	"Starf Berry": {
+		"id": 207
+	},
+	"Steel Memory": {
+		"id": 911
+	},
+	"Steelium Z": {
+		"id": 792,
+		"type": "steel"
+	},
+	"Stick": {
+		"id": 259
+	},
+	"Sticky Barb": {
+		"id": 288
+	},
+	"Stone Plate": {
+		"id": 309
+	},
+	"Strange Souvenir": {
+		"id": 704
+	},
+	"Sun Stone": {
+		"id": 80
+	},
+	"Super Potion": {
+		"id": 26
+	},
+	"Super Repel": {
+		"id": 76
+	},
+	"Sweet Heart": {
+		"id": 134
+	},
+	"Swift Wing": {
+		"id": 570
+	},
+	"Tamato Berry": {
+		"id": 174
+	},
+	"Tanga Berry": {
+		"id": 194
+	},
+	"Tapunium Z": {
+		"id": 801,
+		"type": "fairy"
+	},
+	"Terrain Extender": {
+		"id": 879
+	},
+	"Thick Club": {
+		"id": 258
+	},
+	"Thunder Stone": {
+		"id": 83
+	},
+	"Timer Ball": {
+		"id": 10
+	},
+	"Tiny Mushroom": {
+		"id": 86
+	},
+	"Toxic Orb": {
+		"id": 272
+	},
+	"Toxic Plate": {
+		"id": 304
+	},
+	"Twisted Spoon": {
+		"id": 248
+	},
+	"Ultra Ball": {
+		"id": 2
+	},
+	"Up-Grade": {
+		"id": 252
+	},
+	"Venusaurite": {
+		"id": 659
+	},
+	"Wacan Berry": {
+		"id": 186
+	},
+	"Water Memory": {
+		"id": 913
+	},
+	"Water Stone": {
+		"id": 84
+	},
+	"Waterium Z": {
+		"id": 778,
+		"type": "water"
+	},
+	"Wave Incense": {
+		"id": 317
+	},
+	"Weakness Policy": {
+		"id": 639
+	},
+	"Whipped Dream": {
+		"id": 646
+	},
+	"White Herb": {
+		"id": 214
+	},
+	"Wide Lens": {
+		"id": 265
+	},
+	"Wiki Berry": {
+		"id": 160
+	},
+	"Wise Glasses": {
+		"id": 267
+	},
+	"X Accuracy": {
+		"id": 60
+	},
+	"X Attack": {
+		"id": 57
+	},
+	"X Defense": {
+		"id": 58
+	},
+	"X Sp. Atk": {
+		"id": 61
+	},
+	"X Sp. Def": {
+		"id": 62
+	},
+	"X Speed": {
+		"id": 59
+	},
+	"Yache Berry": {
+		"id": 188
+	},
+	"Yellow Nectar": {
+		"id": 854
+	},
+	"Yellow Shard": {
+		"id": 74
+	},
+	"Zap Plate": {
+		"id": 300
+	},
+	"Zinc": {
+		"id": 52
+	},
+	"Zoom Lens": {
+		"id": 276
+	}
+}

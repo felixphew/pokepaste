@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PokePaste</title>
+		<style>
+		@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
+		body {
+			margin: 0;
+		}
+		textarea[name=paste] {
+			margin: 0;
+			border-width: 0;
+			padding: 12pt;
+			position: fixed;
+			height: 100%;
+			width: 100%;
+			background-color: black;
+			color: #dfdfdf;
+			font-family: 'Fira Mono', monospace;
+			font-size: 10pt;
+			resize: none;
+		}
+		input[type=submit] {
+			position: fixed;
+			right: 12pt;
+			bottom: 12pt;
+			margin: 0;
+			padding: 0;
+			border-width: 0;
+			background-color: transparent;
+			color: #dfdfdf;
+			font-family: 'Fira Sans Condensed', monospace;
+			font-size: 18pt;
+		}
+		input[type=submit]:hover {
+			color: #5f5fdf;
+		}
+		</style>
+	</head>
+	<body>
+		<form action="/create" method="post">
+			<textarea name="paste" placeholder="Paste something here!"></textarea>
+			<input type="submit">
+		</form>
+	</body>
+</html>

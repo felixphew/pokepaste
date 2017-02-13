@@ -1,0 +1,3517 @@
+{
+	"Acupressure": {
+		"id": 367,
+		"type": "normal",
+		"classification": 0
+	},
+	"After You": {
+		"id": 495,
+		"type": "normal",
+		"classification": 0
+	},
+	"Assist": {
+		"id": 274,
+		"type": "normal",
+		"classification": 0
+	},
+	"Attract": {
+		"id": 213,
+		"type": "normal",
+		"classification": 0
+	},
+	"Barrage": {
+		"id": 140,
+		"type": "normal",
+		"classification": 1
+	},
+	"Baton Pass": {
+		"id": 226,
+		"type": "normal",
+		"classification": 0
+	},
+	"Belly Drum": {
+		"id": 187,
+		"type": "normal",
+		"classification": 0
+	},
+	"Bestow": {
+		"id": 516,
+		"type": "normal",
+		"classification": 0
+	},
+	"Bide": {
+		"id": 117,
+		"type": "normal",
+		"classification": 1
+	},
+	"Bind": {
+		"id": 20,
+		"type": "normal",
+		"classification": 1
+	},
+	"Block": {
+		"id": 335,
+		"type": "normal",
+		"classification": 0
+	},
+	"Body Slam": {
+		"id": 34,
+		"type": "normal",
+		"classification": 1
+	},
+	"Boomburst": {
+		"id": 586,
+		"type": "normal",
+		"classification": 2
+	},
+	"Camouflage": {
+		"id": 293,
+		"type": "normal",
+		"classification": 0
+	},
+	"Captivate": {
+		"id": 445,
+		"type": "normal",
+		"classification": 0
+	},
+	"Celebrate": {
+		"id": 606,
+		"type": "normal",
+		"classification": 0
+	},
+	"Chip Away": {
+		"id": 498,
+		"type": "normal",
+		"classification": 1
+	},
+	"Comet Punch": {
+		"id": 4,
+		"type": "normal",
+		"classification": 1
+	},
+	"Confide": {
+		"id": 590,
+		"type": "normal",
+		"classification": 0
+	},
+	"Constrict": {
+		"id": 132,
+		"type": "normal",
+		"classification": 1
+	},
+	"Conversion": {
+		"id": 160,
+		"type": "normal",
+		"classification": 0
+	},
+	"Conversion 2": {
+		"id": 176,
+		"type": "normal",
+		"classification": 0
+	},
+	"Copycat": {
+		"id": 383,
+		"type": "normal",
+		"classification": 0
+	},
+	"Covet": {
+		"id": 343,
+		"type": "normal",
+		"classification": 1
+	},
+	"Crush Claw": {
+		"id": 306,
+		"type": "normal",
+		"classification": 1
+	},
+	"Crush Grip": {
+		"id": 462,
+		"type": "normal",
+		"classification": 1
+	},
+	"Cut": {
+		"id": 15,
+		"type": "normal",
+		"classification": 1
+	},
+	"Defense Curl": {
+		"id": 111,
+		"type": "normal",
+		"classification": 0
+	},
+	"Disable": {
+		"id": 50,
+		"type": "normal",
+		"classification": 0
+	},
+	"Dizzy Punch": {
+		"id": 146,
+		"type": "normal",
+		"classification": 1
+	},
+	"Double Hit": {
+		"id": 458,
+		"type": "normal",
+		"classification": 1
+	},
+	"Double Slap": {
+		"id": 3,
+		"type": "normal",
+		"classification": 1
+	},
+	"Double Team": {
+		"id": 104,
+		"type": "normal",
+		"classification": 0
+	},
+	"Double-Edge": {
+		"id": 38,
+		"type": "normal",
+		"classification": 1
+	},
+	"Echoed Voice": {
+		"id": 497,
+		"type": "normal",
+		"classification": 2
+	},
+	"Egg Bomb": {
+		"id": 121,
+		"type": "normal",
+		"classification": 1
+	},
+	"Encore": {
+		"id": 227,
+		"type": "normal",
+		"classification": 0
+	},
+	"Endeavor": {
+		"id": 283,
+		"type": "normal",
+		"classification": 1
+	},
+	"Endure": {
+		"id": 203,
+		"type": "normal",
+		"classification": 0
+	},
+	"Entrainment": {
+		"id": 494,
+		"type": "normal",
+		"classification": 0
+	},
+	"Explosion": {
+		"id": 153,
+		"type": "normal",
+		"classification": 1
+	},
+	"Extreme Speed": {
+		"id": 245,
+		"type": "normal",
+		"classification": 1
+	},
+	"Facade": {
+		"id": 263,
+		"type": "normal",
+		"classification": 1
+	},
+	"Fake Out": {
+		"id": 252,
+		"type": "normal",
+		"classification": 1
+	},
+	"False Swipe": {
+		"id": 206,
+		"type": "normal",
+		"classification": 1
+	},
+	"Feint": {
+		"id": 364,
+		"type": "normal",
+		"classification": 1
+	},
+	"Flail": {
+		"id": 175,
+		"type": "normal",
+		"classification": 1
+	},
+	"Flash": {
+		"id": 148,
+		"type": "normal",
+		"classification": 0
+	},
+	"Focus Energy": {
+		"id": 116,
+		"type": "normal",
+		"classification": 0
+	},
+	"Follow Me": {
+		"id": 266,
+		"type": "normal",
+		"classification": 0
+	},
+	"Foresight": {
+		"id": 193,
+		"type": "normal",
+		"classification": 0
+	},
+	"Frustration": {
+		"id": 218,
+		"type": "normal",
+		"classification": 1
+	},
+	"Fury Attack": {
+		"id": 31,
+		"type": "normal",
+		"classification": 1
+	},
+	"Fury Swipes": {
+		"id": 154,
+		"type": "normal",
+		"classification": 1
+	},
+	"Giga Impact": {
+		"id": 416,
+		"type": "normal",
+		"classification": 1
+	},
+	"Glare": {
+		"id": 137,
+		"type": "normal",
+		"classification": 0
+	},
+	"Growl": {
+		"id": 45,
+		"type": "normal",
+		"classification": 0
+	},
+	"Growth": {
+		"id": 74,
+		"type": "normal",
+		"classification": 0
+	},
+	"Guillotine": {
+		"id": 12,
+		"type": "normal",
+		"classification": 1
+	},
+	"Happy Hour": {
+		"id": 603,
+		"type": "normal",
+		"classification": 0
+	},
+	"Harden": {
+		"id": 106,
+		"type": "normal",
+		"classification": 0
+	},
+	"Head Charge": {
+		"id": 543,
+		"type": "normal",
+		"classification": 1
+	},
+	"Headbutt": {
+		"id": 29,
+		"type": "normal",
+		"classification": 1
+	},
+	"Heal Bell": {
+		"id": 215,
+		"type": "normal",
+		"classification": 0
+	},
+	"Helping Hand": {
+		"id": 270,
+		"type": "normal",
+		"classification": 0
+	},
+	"Hidden Power": {
+		"id": 237,
+		"type": "normal",
+		"classification": 2
+	},
+	"Hidden Power [Fighting]": {
+		"id": 237,
+		"type": "fighting",
+		"classification": 2
+	},
+	"Hidden Power [Flying]": {
+		"id": 237,
+		"type": "flying",
+		"classification": 2
+	},
+	"Hidden Power [Poison]": {
+		"id": 237,
+		"type": "poison",
+		"classification": 2
+	},
+	"Hidden Power [Ground]": {
+		"id": 237,
+		"type": "ground",
+		"classification": 2
+	},
+	"Hidden Power [Rock]": {
+		"id": 237,
+		"type": "rock",
+		"classification": 2
+	},
+	"Hidden Power [Bug]": {
+		"id": 237,
+		"type": "bug",
+		"classification": 2
+	},
+	"Hidden Power [Ghost]": {
+		"id": 237,
+		"type": "ghost",
+		"classification": 2
+	},
+	"Hidden Power [Steel]": {
+		"id": 237,
+		"type": "steel",
+		"classification": 2
+	},
+	"Hidden Power [Fire]": {
+		"id": 237,
+		"type": "fire",
+		"classification": 2
+	},
+	"Hidden Power [Water]": {
+		"id": 237,
+		"type": "water",
+		"classification": 2
+	},
+	"Hidden Power [Grass]": {
+		"id": 237,
+		"type": "grass",
+		"classification": 2
+	},
+	"Hidden Power [Electric]": {
+		"id": 237,
+		"type": "electric",
+		"classification": 2
+	},
+	"Hidden Power [Psychic]": {
+		"id": 237,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Hidden Power [Ice]": {
+		"id": 237,
+		"type": "ice",
+		"classification": 2
+	},
+	"Hidden Power [Dragon]": {
+		"id": 237,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Hidden Power [Dark]": {
+		"id": 237,
+		"type": "dark",
+		"classification": 2
+	},
+	"Hidden Power [Fairy]": {
+		"id": 237,
+		"type": "normal",
+		"classification": 2
+	},
+	"Hidden Power Fighting": {
+		"id": 237,
+		"type": "fighting",
+		"classification": 2
+	},
+	"Hidden Power Flying": {
+		"id": 237,
+		"type": "flying",
+		"classification": 2
+	},
+	"Hidden Power Poison": {
+		"id": 237,
+		"type": "poison",
+		"classification": 2
+	},
+	"Hidden Power Ground": {
+		"id": 237,
+		"type": "ground",
+		"classification": 2
+	},
+	"Hidden Power Rock": {
+		"id": 237,
+		"type": "rock",
+		"classification": 2
+	},
+	"Hidden Power Bug": {
+		"id": 237,
+		"type": "bug",
+		"classification": 2
+	},
+	"Hidden Power Ghost": {
+		"id": 237,
+		"type": "ghost",
+		"classification": 2
+	},
+	"Hidden Power Steel": {
+		"id": 237,
+		"type": "steel",
+		"classification": 2
+	},
+	"Hidden Power Fire": {
+		"id": 237,
+		"type": "fire",
+		"classification": 2
+	},
+	"Hidden Power Water": {
+		"id": 237,
+		"type": "water",
+		"classification": 2
+	},
+	"Hidden Power Grass": {
+		"id": 237,
+		"type": "grass",
+		"classification": 2
+	},
+	"Hidden Power Electric": {
+		"id": 237,
+		"type": "electric",
+		"classification": 2
+	},
+	"Hidden Power Psychic": {
+		"id": 237,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Hidden Power Ice": {
+		"id": 237,
+		"type": "ice",
+		"classification": 2
+	},
+	"Hidden Power Dragon": {
+		"id": 237,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Hidden Power Dark": {
+		"id": 237,
+		"type": "dark",
+		"classification": 2
+	},
+	"Hidden Power Fairy": {
+		"id": 237,
+		"type": "normal",
+		"classification": 2
+	},
+	"Hold Back": {
+		"id": 610,
+		"type": "normal",
+		"classification": 1
+	},
+	"Hold Hands": {
+		"id": 607,
+		"type": "normal",
+		"classification": 0
+	},
+	"Horn Attack": {
+		"id": 30,
+		"type": "normal",
+		"classification": 1
+	},
+	"Horn Drill": {
+		"id": 32,
+		"type": "normal",
+		"classification": 1
+	},
+	"Howl": {
+		"id": 336,
+		"type": "normal",
+		"classification": 0
+	},
+	"Hyper Beam": {
+		"id": 63,
+		"type": "normal",
+		"classification": 2
+	},
+	"Hyper Fang": {
+		"id": 158,
+		"type": "normal",
+		"classification": 1
+	},
+	"Hyper Voice": {
+		"id": 304,
+		"type": "normal",
+		"classification": 2
+	},
+	"Judgment": {
+		"id": 449,
+		"type": "normal",
+		"classification": 2
+	},
+	"Laser Focus": {
+		"id": 673,
+		"type": "normal",
+		"classification": 0
+	},
+	"Last Resort": {
+		"id": 387,
+		"type": "normal",
+		"classification": 1
+	},
+	"Leer": {
+		"id": 43,
+		"type": "normal",
+		"classification": 0
+	},
+	"Lock-On": {
+		"id": 199,
+		"type": "normal",
+		"classification": 0
+	},
+	"Lovely Kiss": {
+		"id": 142,
+		"type": "normal",
+		"classification": 0
+	},
+	"Lucky Chant": {
+		"id": 381,
+		"type": "normal",
+		"classification": 0
+	},
+	"Me First": {
+		"id": 382,
+		"type": "normal",
+		"classification": 0
+	},
+	"Mean Look": {
+		"id": 212,
+		"type": "normal",
+		"classification": 0
+	},
+	"Mega Kick": {
+		"id": 25,
+		"type": "normal",
+		"classification": 1
+	},
+	"Mega Punch": {
+		"id": 5,
+		"type": "normal",
+		"classification": 1
+	},
+	"Metronome": {
+		"id": 118,
+		"type": "normal",
+		"classification": 0
+	},
+	"Milk Drink": {
+		"id": 208,
+		"type": "normal",
+		"classification": 0
+	},
+	"Mimic": {
+		"id": 102,
+		"type": "normal",
+		"classification": 0
+	},
+	"Mind Reader": {
+		"id": 170,
+		"type": "normal",
+		"classification": 0
+	},
+	"Minimize": {
+		"id": 107,
+		"type": "normal",
+		"classification": 0
+	},
+	"Morning Sun": {
+		"id": 234,
+		"type": "normal",
+		"classification": 0
+	},
+	"Multi-Attack": {
+		"id": 718,
+		"type": "normal",
+		"classification": 1
+	},
+	"Natural Gift": {
+		"id": 363,
+		"type": "normal",
+		"classification": 1
+	},
+	"Nature Power": {
+		"id": 267,
+		"type": "normal",
+		"classification": 0
+	},
+	"Noble Roar": {
+		"id": 568,
+		"type": "normal",
+		"classification": 0
+	},
+	"Odor Sleuth": {
+		"id": 316,
+		"type": "normal",
+		"classification": 0
+	},
+	"Pain Split": {
+		"id": 220,
+		"type": "normal",
+		"classification": 0
+	},
+	"Pay Day": {
+		"id": 6,
+		"type": "normal",
+		"classification": 1
+	},
+	"Perish Song": {
+		"id": 195,
+		"type": "normal",
+		"classification": 0
+	},
+	"Play Nice": {
+		"id": 589,
+		"type": "normal",
+		"classification": 0
+	},
+	"Pound": {
+		"id": 1,
+		"type": "normal",
+		"classification": 1
+	},
+	"Present": {
+		"id": 217,
+		"type": "normal",
+		"classification": 1
+	},
+	"Protect": {
+		"id": 182,
+		"type": "normal",
+		"classification": 0
+	},
+	"Psych Up": {
+		"id": 244,
+		"type": "normal",
+		"classification": 0
+	},
+	"Quick Attack": {
+		"id": 98,
+		"type": "normal",
+		"classification": 1
+	},
+	"Rage": {
+		"id": 99,
+		"type": "normal",
+		"classification": 1
+	},
+	"Rapid Spin": {
+		"id": 229,
+		"type": "normal",
+		"classification": 1
+	},
+	"Razor Wind": {
+		"id": 13,
+		"type": "normal",
+		"classification": 2
+	},
+	"Recover": {
+		"id": 105,
+		"type": "normal",
+		"classification": 0
+	},
+	"Recycle": {
+		"id": 278,
+		"type": "normal",
+		"classification": 0
+	},
+	"Reflect Type": {
+		"id": 513,
+		"type": "normal",
+		"classification": 0
+	},
+	"Refresh": {
+		"id": 287,
+		"type": "normal",
+		"classification": 0
+	},
+	"Relic Song": {
+		"id": 547,
+		"type": "normal",
+		"classification": 2
+	},
+	"Retaliate": {
+		"id": 514,
+		"type": "normal",
+		"classification": 1
+	},
+	"Return": {
+		"id": 216,
+		"type": "normal",
+		"classification": 1
+	},
+	"Revelation Dance": {
+		"id": 686,
+		"type": "normal",
+		"classification": 2
+	},
+	"Roar": {
+		"id": 46,
+		"type": "normal",
+		"classification": 0
+	},
+	"Rock Climb": {
+		"id": 431,
+		"type": "normal",
+		"classification": 1
+	},
+	"Round": {
+		"id": 496,
+		"type": "normal",
+		"classification": 2
+	},
+	"Safeguard": {
+		"id": 219,
+		"type": "normal",
+		"classification": 0
+	},
+	"Scary Face": {
+		"id": 184,
+		"type": "normal",
+		"classification": 0
+	},
+	"Scratch": {
+		"id": 10,
+		"type": "normal",
+		"classification": 1
+	},
+	"Screech": {
+		"id": 103,
+		"type": "normal",
+		"classification": 0
+	},
+	"Secret Power": {
+		"id": 290,
+		"type": "normal",
+		"classification": 1
+	},
+	"Self-Destruct": {
+		"id": 120,
+		"type": "normal",
+		"classification": 1
+	},
+	"Sharpen": {
+		"id": 159,
+		"type": "normal",
+		"classification": 0
+	},
+	"Shell Smash": {
+		"id": 504,
+		"type": "normal",
+		"classification": 0
+	},
+	"Simple Beam": {
+		"id": 493,
+		"type": "normal",
+		"classification": 0
+	},
+	"Sing": {
+		"id": 47,
+		"type": "normal",
+		"classification": 0
+	},
+	"Sketch": {
+		"id": 166,
+		"type": "normal",
+		"classification": 0
+	},
+	"Skull Bash": {
+		"id": 130,
+		"type": "normal",
+		"classification": 1
+	},
+	"Slack Off": {
+		"id": 303,
+		"type": "normal",
+		"classification": 0
+	},
+	"Slam": {
+		"id": 21,
+		"type": "normal",
+		"classification": 1
+	},
+	"Slash": {
+		"id": 163,
+		"type": "normal",
+		"classification": 1
+	},
+	"Sleep Talk": {
+		"id": 214,
+		"type": "normal",
+		"classification": 0
+	},
+	"Smelling Salts": {
+		"id": 265,
+		"type": "normal",
+		"classification": 1
+	},
+	"Smokescreen": {
+		"id": 108,
+		"type": "normal",
+		"classification": 0
+	},
+	"Snore": {
+		"id": 173,
+		"type": "normal",
+		"classification": 2
+	},
+	"Soft-Boiled": {
+		"id": 135,
+		"type": "normal",
+		"classification": 0
+	},
+	"Sonic Boom": {
+		"id": 49,
+		"type": "normal",
+		"classification": 2
+	},
+	"Spike Cannon": {
+		"id": 131,
+		"type": "normal",
+		"classification": 1
+	},
+	"Spit Up": {
+		"id": 255,
+		"type": "normal",
+		"classification": 2
+	},
+	"Splash": {
+		"id": 150,
+		"type": "normal",
+		"classification": 0
+	},
+	"Spotlight": {
+		"id": 671,
+		"type": "normal",
+		"classification": 0
+	},
+	"Stockpile": {
+		"id": 254,
+		"type": "normal",
+		"classification": 0
+	},
+	"Stomp": {
+		"id": 23,
+		"type": "normal",
+		"classification": 1
+	},
+	"Strength": {
+		"id": 70,
+		"type": "normal",
+		"classification": 1
+	},
+	"Substitute": {
+		"id": 164,
+		"type": "normal",
+		"classification": 0
+	},
+	"Super Fang": {
+		"id": 162,
+		"type": "normal",
+		"classification": 1
+	},
+	"Supersonic": {
+		"id": 48,
+		"type": "normal",
+		"classification": 0
+	},
+	"Swagger": {
+		"id": 207,
+		"type": "normal",
+		"classification": 0
+	},
+	"Swallow": {
+		"id": 256,
+		"type": "normal",
+		"classification": 0
+	},
+	"Sweet Scent": {
+		"id": 230,
+		"type": "normal",
+		"classification": 0
+	},
+	"Swift": {
+		"id": 129,
+		"type": "normal",
+		"classification": 2
+	},
+	"Swords Dance": {
+		"id": 14,
+		"type": "normal",
+		"classification": 0
+	},
+	"Tackle": {
+		"id": 33,
+		"type": "normal",
+		"classification": 1
+	},
+	"Tail Slap": {
+		"id": 541,
+		"type": "normal",
+		"classification": 1
+	},
+	"Tail Whip": {
+		"id": 39,
+		"type": "normal",
+		"classification": 0
+	},
+	"Take Down": {
+		"id": 36,
+		"type": "normal",
+		"classification": 1
+	},
+	"Tearful Look": {
+		"id": 715,
+		"type": "normal",
+		"classification": 0
+	},
+	"Techno Blast": {
+		"id": 546,
+		"type": "normal",
+		"classification": 2
+	},
+	"Teeter Dance": {
+		"id": 298,
+		"type": "normal",
+		"classification": 0
+	},
+	"Thrash": {
+		"id": 37,
+		"type": "normal",
+		"classification": 1
+	},
+	"Tickle": {
+		"id": 321,
+		"type": "normal",
+		"classification": 0
+	},
+	"Transform": {
+		"id": 144,
+		"type": "normal",
+		"classification": 0
+	},
+	"Tri Attack": {
+		"id": 161,
+		"type": "normal",
+		"classification": 2
+	},
+	"Trump Card": {
+		"id": 376,
+		"type": "normal",
+		"classification": 2
+	},
+	"Uproar": {
+		"id": 253,
+		"type": "normal",
+		"classification": 2
+	},
+	"Vice Grip": {
+		"id": 11,
+		"type": "normal",
+		"classification": 1
+	},
+	"Weather Ball": {
+		"id": 311,
+		"type": "normal",
+		"classification": 2
+	},
+	"Whirlwind": {
+		"id": 18,
+		"type": "normal",
+		"classification": 0
+	},
+	"Wish": {
+		"id": 273,
+		"type": "normal",
+		"classification": 0
+	},
+	"Work Up": {
+		"id": 526,
+		"type": "normal",
+		"classification": 0
+	},
+	"Wrap": {
+		"id": 35,
+		"type": "normal",
+		"classification": 1
+	},
+	"Wring Out": {
+		"id": 378,
+		"type": "normal",
+		"classification": 2
+	},
+	"Yawn": {
+		"id": 281,
+		"type": "normal",
+		"classification": 0
+	},
+	"Arm Thrust": {
+		"id": 292,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Aura Sphere": {
+		"id": 396,
+		"type": "fighting",
+		"classification": 2
+	},
+	"Brick Break": {
+		"id": 280,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Bulk Up": {
+		"id": 339,
+		"type": "fighting",
+		"classification": 0
+	},
+	"Circle Throw": {
+		"id": 509,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Close Combat": {
+		"id": 370,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Counter": {
+		"id": 68,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Cross Chop": {
+		"id": 238,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Detect": {
+		"id": 197,
+		"type": "fighting",
+		"classification": 0
+	},
+	"Double Kick": {
+		"id": 24,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Drain Punch": {
+		"id": 409,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Dynamic Punch": {
+		"id": 223,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Final Gambit": {
+		"id": 515,
+		"type": "fighting",
+		"classification": 2
+	},
+	"Flying Press": {
+		"id": 560,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Focus Blast": {
+		"id": 411,
+		"type": "fighting",
+		"classification": 2
+	},
+	"Focus Punch": {
+		"id": 264,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Force Palm": {
+		"id": 395,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Hammer Arm": {
+		"id": 359,
+		"type": "fighting",
+		"classification": 1
+	},
+	"High Jump Kick": {
+		"id": 136,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Jump Kick": {
+		"id": 26,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Karate Chop": {
+		"id": 2,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Low Kick": {
+		"id": 67,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Low Sweep": {
+		"id": 490,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Mach Punch": {
+		"id": 183,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Mat Block": {
+		"id": 561,
+		"type": "fighting",
+		"classification": 0
+	},
+	"Power-Up Punch": {
+		"id": 612,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Quick Guard": {
+		"id": 501,
+		"type": "fighting",
+		"classification": 0
+	},
+	"Revenge": {
+		"id": 279,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Reversal": {
+		"id": 179,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Rock Smash": {
+		"id": 249,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Rolling Kick": {
+		"id": 27,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Sacred Sword": {
+		"id": 533,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Secret Sword": {
+		"id": 548,
+		"type": "fighting",
+		"classification": 2
+	},
+	"Seismic Toss": {
+		"id": 69,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Sky Uppercut": {
+		"id": 327,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Storm Throw": {
+		"id": 480,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Submission": {
+		"id": 66,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Superpower": {
+		"id": 276,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Triple Kick": {
+		"id": 167,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Vacuum Wave": {
+		"id": 410,
+		"type": "fighting",
+		"classification": 2
+	},
+	"Vital Throw": {
+		"id": 233,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Wake-Up Slap": {
+		"id": 358,
+		"type": "fighting",
+		"classification": 1
+	},
+	"Blast Burn": {
+		"id": 307,
+		"type": "fire",
+		"classification": 2
+	},
+	"Blaze Kick": {
+		"id": 299,
+		"type": "fire",
+		"classification": 1
+	},
+	"Blue Flare": {
+		"id": 551,
+		"type": "fire",
+		"classification": 2
+	},
+	"Burn Up": {
+		"id": 682,
+		"type": "fire",
+		"classification": 2
+	},
+	"Ember": {
+		"id": 52,
+		"type": "fire",
+		"classification": 2
+	},
+	"Eruption": {
+		"id": 284,
+		"type": "fire",
+		"classification": 2
+	},
+	"Fiery Dance": {
+		"id": 552,
+		"type": "fire",
+		"classification": 2
+	},
+	"Fire Blast": {
+		"id": 126,
+		"type": "fire",
+		"classification": 2
+	},
+	"Fire Fang": {
+		"id": 424,
+		"type": "fire",
+		"classification": 1
+	},
+	"Fire Lash": {
+		"id": 680,
+		"type": "fire",
+		"classification": 1
+	},
+	"Fire Pledge": {
+		"id": 519,
+		"type": "fire",
+		"classification": 2
+	},
+	"Fire Punch": {
+		"id": 7,
+		"type": "fire",
+		"classification": 1
+	},
+	"Fire Spin": {
+		"id": 83,
+		"type": "fire",
+		"classification": 2
+	},
+	"Flame Burst": {
+		"id": 481,
+		"type": "fire",
+		"classification": 2
+	},
+	"Flame Charge": {
+		"id": 488,
+		"type": "fire",
+		"classification": 1
+	},
+	"Flame Wheel": {
+		"id": 172,
+		"type": "fire",
+		"classification": 1
+	},
+	"Flamethrower": {
+		"id": 53,
+		"type": "fire",
+		"classification": 2
+	},
+	"Flare Blitz": {
+		"id": 394,
+		"type": "fire",
+		"classification": 1
+	},
+	"Fusion Flare": {
+		"id": 558,
+		"type": "fire",
+		"classification": 2
+	},
+	"Heat Crash": {
+		"id": 535,
+		"type": "fire",
+		"classification": 1
+	},
+	"Heat Wave": {
+		"id": 257,
+		"type": "fire",
+		"classification": 2
+	},
+	"Incinerate": {
+		"id": 510,
+		"type": "fire",
+		"classification": 2
+	},
+	"Inferno": {
+		"id": 517,
+		"type": "fire",
+		"classification": 2
+	},
+	"Lava Plume": {
+		"id": 436,
+		"type": "fire",
+		"classification": 2
+	},
+	"Magma Storm": {
+		"id": 463,
+		"type": "fire",
+		"classification": 2
+	},
+	"Mystical Fire": {
+		"id": 595,
+		"type": "fire",
+		"classification": 2
+	},
+	"Overheat": {
+		"id": 315,
+		"type": "fire",
+		"classification": 2
+	},
+	"Sacred Fire": {
+		"id": 221,
+		"type": "fire",
+		"classification": 1
+	},
+	"Searing Shot": {
+		"id": 545,
+		"type": "fire",
+		"classification": 2
+	},
+	"Shell Trap": {
+		"id": 704,
+		"type": "fire",
+		"classification": 2
+	},
+	"Sunny Day": {
+		"id": 241,
+		"type": "fire",
+		"classification": 0
+	},
+	"V-create": {
+		"id": 557,
+		"type": "fire",
+		"classification": 1
+	},
+	"Will-O-Wisp": {
+		"id": 261,
+		"type": "fire",
+		"classification": 0
+	},
+	"Aurora Beam": {
+		"id": 62,
+		"type": "ice",
+		"classification": 2
+	},
+	"Aurora Veil": {
+		"id": 694,
+		"type": "ice",
+		"classification": 0
+	},
+	"Avalanche": {
+		"id": 419,
+		"type": "ice",
+		"classification": 1
+	},
+	"Blizzard": {
+		"id": 59,
+		"type": "ice",
+		"classification": 2
+	},
+	"Freeze Shock": {
+		"id": 553,
+		"type": "ice",
+		"classification": 1
+	},
+	"Freeze-Dry": {
+		"id": 573,
+		"type": "ice",
+		"classification": 2
+	},
+	"Frost Breath": {
+		"id": 524,
+		"type": "ice",
+		"classification": 2
+	},
+	"Glaciate": {
+		"id": 549,
+		"type": "ice",
+		"classification": 2
+	},
+	"Hail": {
+		"id": 258,
+		"type": "ice",
+		"classification": 0
+	},
+	"Haze": {
+		"id": 114,
+		"type": "ice",
+		"classification": 0
+	},
+	"Ice Ball": {
+		"id": 301,
+		"type": "ice",
+		"classification": 1
+	},
+	"Ice Beam": {
+		"id": 58,
+		"type": "ice",
+		"classification": 2
+	},
+	"Ice Burn": {
+		"id": 554,
+		"type": "ice",
+		"classification": 2
+	},
+	"Ice Fang": {
+		"id": 423,
+		"type": "ice",
+		"classification": 1
+	},
+	"Ice Hammer": {
+		"id": 665,
+		"type": "ice",
+		"classification": 1
+	},
+	"Ice Punch": {
+		"id": 8,
+		"type": "ice",
+		"classification": 1
+	},
+	"Ice Shard": {
+		"id": 420,
+		"type": "ice",
+		"classification": 1
+	},
+	"Icicle Crash": {
+		"id": 556,
+		"type": "ice",
+		"classification": 1
+	},
+	"Icicle Spear": {
+		"id": 333,
+		"type": "ice",
+		"classification": 1
+	},
+	"Icy Wind": {
+		"id": 196,
+		"type": "ice",
+		"classification": 2
+	},
+	"Mist": {
+		"id": 54,
+		"type": "ice",
+		"classification": 0
+	},
+	"Powder Snow": {
+		"id": 181,
+		"type": "ice",
+		"classification": 2
+	},
+	"Sheer Cold": {
+		"id": 329,
+		"type": "ice",
+		"classification": 2
+	},
+	"Bolt Strike": {
+		"id": 550,
+		"type": "electric",
+		"classification": 1
+	},
+	"Charge": {
+		"id": 268,
+		"type": "electric",
+		"classification": 0
+	},
+	"Charge Beam": {
+		"id": 451,
+		"type": "electric",
+		"classification": 2
+	},
+	"Discharge": {
+		"id": 435,
+		"type": "electric",
+		"classification": 2
+	},
+	"Eerie Impulse": {
+		"id": 598,
+		"type": "electric",
+		"classification": 0
+	},
+	"Electric Terrain": {
+		"id": 604,
+		"type": "electric",
+		"classification": 0
+	},
+	"Electrify": {
+		"id": 582,
+		"type": "electric",
+		"classification": 0
+	},
+	"Electro Ball": {
+		"id": 486,
+		"type": "electric",
+		"classification": 2
+	},
+	"Electroweb": {
+		"id": 527,
+		"type": "electric",
+		"classification": 2
+	},
+	"Fusion Bolt": {
+		"id": 559,
+		"type": "electric",
+		"classification": 1
+	},
+	"Ion Deluge": {
+		"id": 569,
+		"type": "electric",
+		"classification": 0
+	},
+	"Magnet Rise": {
+		"id": 393,
+		"type": "electric",
+		"classification": 0
+	},
+	"Magnetic Flux": {
+		"id": 602,
+		"type": "electric",
+		"classification": 0
+	},
+	"Nuzzle": {
+		"id": 609,
+		"type": "electric",
+		"classification": 1
+	},
+	"Parabolic Charge": {
+		"id": 570,
+		"type": "electric",
+		"classification": 2
+	},
+	"Shock Wave": {
+		"id": 351,
+		"type": "electric",
+		"classification": 2
+	},
+	"Spark": {
+		"id": 209,
+		"type": "electric",
+		"classification": 1
+	},
+	"Thunder": {
+		"id": 87,
+		"type": "electric",
+		"classification": 2
+	},
+	"Thunder Fang": {
+		"id": 422,
+		"type": "electric",
+		"classification": 1
+	},
+	"Thunder Punch": {
+		"id": 9,
+		"type": "electric",
+		"classification": 1
+	},
+	"Thunder Shock": {
+		"id": 84,
+		"type": "electric",
+		"classification": 2
+	},
+	"Thunder Wave": {
+		"id": 86,
+		"type": "electric",
+		"classification": 0
+	},
+	"Thunderbolt": {
+		"id": 85,
+		"type": "electric",
+		"classification": 2
+	},
+	"Volt Switch": {
+		"id": 521,
+		"type": "electric",
+		"classification": 2
+	},
+	"Volt Tackle": {
+		"id": 344,
+		"type": "electric",
+		"classification": 1
+	},
+	"Wild Charge": {
+		"id": 528,
+		"type": "electric",
+		"classification": 1
+	},
+	"Zap Cannon": {
+		"id": 192,
+		"type": "electric",
+		"classification": 2
+	},
+	"Zing Zap": {
+		"id": 716,
+		"type": "electric",
+		"classification": 1
+	},
+	"Acrobatics": {
+		"id": 512,
+		"type": "flying",
+		"classification": 1
+	},
+	"Aerial Ace": {
+		"id": 332,
+		"type": "flying",
+		"classification": 1
+	},
+	"Aeroblast": {
+		"id": 177,
+		"type": "flying",
+		"classification": 2
+	},
+	"Air Cutter": {
+		"id": 314,
+		"type": "flying",
+		"classification": 2
+	},
+	"Air Slash": {
+		"id": 403,
+		"type": "flying",
+		"classification": 2
+	},
+	"Beak Blast": {
+		"id": 690,
+		"type": "flying",
+		"classification": 1
+	},
+	"Bounce": {
+		"id": 340,
+		"type": "flying",
+		"classification": 1
+	},
+	"Brave Bird": {
+		"id": 413,
+		"type": "flying",
+		"classification": 1
+	},
+	"Chatter": {
+		"id": 448,
+		"type": "flying",
+		"classification": 2
+	},
+	"Defog": {
+		"id": 432,
+		"type": "flying",
+		"classification": 3
+	},
+	"Dragon Ascent": {
+		"id": 620,
+		"type": "flying",
+		"classification": 1
+	},
+	"Drill Peck": {
+		"id": 65,
+		"type": "flying",
+		"classification": 1
+	},
+	"Feather Dance": {
+		"id": 297,
+		"type": "flying",
+		"classification": 0
+	},
+	"Fly": {
+		"id": 19,
+		"type": "flying",
+		"classification": 1
+	},
+	"Gust": {
+		"id": 16,
+		"type": "flying",
+		"classification": 2
+	},
+	"Hurricane": {
+		"id": 542,
+		"type": "flying",
+		"classification": 2
+	},
+	"Mirror Move": {
+		"id": 119,
+		"type": "flying",
+		"classification": 0
+	},
+	"Oblivion Wing": {
+		"id": 613,
+		"type": "flying",
+		"classification": 2
+	},
+	"Peck": {
+		"id": 64,
+		"type": "flying",
+		"classification": 1
+	},
+	"Pluck": {
+		"id": 365,
+		"type": "flying",
+		"classification": 1
+	},
+	"Roost": {
+		"id": 355,
+		"type": "flying",
+		"classification": 0
+	},
+	"Sky Attack": {
+		"id": 143,
+		"type": "flying",
+		"classification": 1
+	},
+	"Sky Drop": {
+		"id": 507,
+		"type": "flying",
+		"classification": 1
+	},
+	"Tailwind": {
+		"id": 366,
+		"type": "flying",
+		"classification": 0
+	},
+	"Wing Attack": {
+		"id": 17,
+		"type": "flying",
+		"classification": 1
+	},
+	"Absorb": {
+		"id": 71,
+		"type": "grass",
+		"classification": 2
+	},
+	"Aromatherapy": {
+		"id": 312,
+		"type": "grass",
+		"classification": 0
+	},
+	"Bullet Seed": {
+		"id": 331,
+		"type": "grass",
+		"classification": 1
+	},
+	"Cotton Guard": {
+		"id": 538,
+		"type": "grass",
+		"classification": 0
+	},
+	"Cotton Spore": {
+		"id": 178,
+		"type": "grass",
+		"classification": 0
+	},
+	"Energy Ball": {
+		"id": 412,
+		"type": "grass",
+		"classification": 2
+	},
+	"Forest's Curse": {
+		"id": 571,
+		"type": "grass",
+		"classification": 0
+	},
+	"Frenzy Plant": {
+		"id": 338,
+		"type": "grass",
+		"classification": 2
+	},
+	"Giga Drain": {
+		"id": 202,
+		"type": "grass",
+		"classification": 2
+	},
+	"Grass Knot": {
+		"id": 447,
+		"type": "grass",
+		"classification": 2
+	},
+	"Grass Pledge": {
+		"id": 520,
+		"type": "grass",
+		"classification": 2
+	},
+	"Grass Whistle": {
+		"id": 320,
+		"type": "grass",
+		"classification": 0
+	},
+	"Grassy Terrain": {
+		"id": 580,
+		"type": "grass",
+		"classification": 0
+	},
+	"Horn Leech": {
+		"id": 532,
+		"type": "grass",
+		"classification": 1
+	},
+	"Ingrain": {
+		"id": 275,
+		"type": "grass",
+		"classification": 0
+	},
+	"Leaf Blade": {
+		"id": 348,
+		"type": "grass",
+		"classification": 1
+	},
+	"Leaf Storm": {
+		"id": 437,
+		"type": "grass",
+		"classification": 2
+	},
+	"Leaf Tornado": {
+		"id": 536,
+		"type": "grass",
+		"classification": 2
+	},
+	"Leafage": {
+		"id": 670,
+		"type": "grass",
+		"classification": 1
+	},
+	"Leech Seed": {
+		"id": 73,
+		"type": "grass",
+		"classification": 0
+	},
+	"Magical Leaf": {
+		"id": 345,
+		"type": "grass",
+		"classification": 2
+	},
+	"Mega Drain": {
+		"id": 72,
+		"type": "grass",
+		"classification": 2
+	},
+	"Needle Arm": {
+		"id": 302,
+		"type": "grass",
+		"classification": 1
+	},
+	"Petal Blizzard": {
+		"id": 572,
+		"type": "grass",
+		"classification": 1
+	},
+	"Petal Dance": {
+		"id": 80,
+		"type": "grass",
+		"classification": 2
+	},
+	"Power Whip": {
+		"id": 438,
+		"type": "grass",
+		"classification": 1
+	},
+	"Razor Leaf": {
+		"id": 75,
+		"type": "grass",
+		"classification": 1
+	},
+	"Seed Bomb": {
+		"id": 402,
+		"type": "grass",
+		"classification": 1
+	},
+	"Seed Flare": {
+		"id": 465,
+		"type": "grass",
+		"classification": 2
+	},
+	"Sleep Powder": {
+		"id": 79,
+		"type": "grass",
+		"classification": 0
+	},
+	"Solar Beam": {
+		"id": 76,
+		"type": "grass",
+		"classification": 2
+	},
+	"Solar Blade": {
+		"id": 669,
+		"type": "grass",
+		"classification": 1
+	},
+	"Spiky Shield": {
+		"id": 596,
+		"type": "grass",
+		"classification": 0
+	},
+	"Spore": {
+		"id": 147,
+		"type": "grass",
+		"classification": 0
+	},
+	"Strength Sap": {
+		"id": 668,
+		"type": "grass",
+		"classification": 0
+	},
+	"Stun Spore": {
+		"id": 78,
+		"type": "grass",
+		"classification": 0
+	},
+	"Synthesis": {
+		"id": 235,
+		"type": "grass",
+		"classification": 0
+	},
+	"Trop Kick": {
+		"id": 688,
+		"type": "grass",
+		"classification": 1
+	},
+	"Vine Whip": {
+		"id": 22,
+		"type": "grass",
+		"classification": 1
+	},
+	"Wood Hammer": {
+		"id": 452,
+		"type": "grass",
+		"classification": 1
+	},
+	"Worry Seed": {
+		"id": 388,
+		"type": "grass",
+		"classification": 0
+	},
+	"Bone Club": {
+		"id": 125,
+		"type": "ground",
+		"classification": 1
+	},
+	"Bone Rush": {
+		"id": 198,
+		"type": "ground",
+		"classification": 1
+	},
+	"Bonemerang": {
+		"id": 155,
+		"type": "ground",
+		"classification": 1
+	},
+	"Bulldoze": {
+		"id": 523,
+		"type": "ground",
+		"classification": 1
+	},
+	"Dig": {
+		"id": 91,
+		"type": "ground",
+		"classification": 1
+	},
+	"Drill Run": {
+		"id": 529,
+		"type": "ground",
+		"classification": 1
+	},
+	"Earth Power": {
+		"id": 414,
+		"type": "ground",
+		"classification": 2
+	},
+	"Earthquake": {
+		"id": 89,
+		"type": "ground",
+		"classification": 1
+	},
+	"Fissure": {
+		"id": 90,
+		"type": "ground",
+		"classification": 1
+	},
+	"High Horsepower": {
+		"id": 667,
+		"type": "ground",
+		"classification": 1
+	},
+	"Land's Wrath": {
+		"id": 616,
+		"type": "ground",
+		"classification": 1
+	},
+	"Magnitude": {
+		"id": 222,
+		"type": "ground",
+		"classification": 1
+	},
+	"Mud Bomb": {
+		"id": 426,
+		"type": "ground",
+		"classification": 2
+	},
+	"Mud Shot": {
+		"id": 341,
+		"type": "ground",
+		"classification": 2
+	},
+	"Mud Sport": {
+		"id": 300,
+		"type": "ground",
+		"classification": 0
+	},
+	"Mud-Slap": {
+		"id": 189,
+		"type": "ground",
+		"classification": 2
+	},
+	"Precipice Blades": {
+		"id": 619,
+		"type": "ground",
+		"classification": 1
+	},
+	"Rototiller": {
+		"id": 563,
+		"type": "ground",
+		"classification": 0
+	},
+	"Sand Attack": {
+		"id": 28,
+		"type": "ground",
+		"classification": 0
+	},
+	"Sand Tomb": {
+		"id": 328,
+		"type": "ground",
+		"classification": 1
+	},
+	"Shore Up": {
+		"id": 659,
+		"type": "ground",
+		"classification": 0
+	},
+	"Spikes": {
+		"id": 191,
+		"type": "ground",
+		"classification": 0
+	},
+	"Stomping Tantrum": {
+		"id": 707,
+		"type": "ground",
+		"classification": 1
+	},
+	"Thousand Arrows": {
+		"id": 614,
+		"type": "ground",
+		"classification": 1
+	},
+	"Thousand Waves": {
+		"id": 615,
+		"type": "ground",
+		"classification": 1
+	},
+	"Acid": {
+		"id": 51,
+		"type": "poison",
+		"classification": 2
+	},
+	"Acid Armor": {
+		"id": 151,
+		"type": "poison",
+		"classification": 0
+	},
+	"Acid Spray": {
+		"id": 491,
+		"type": "poison",
+		"classification": 2
+	},
+	"Baneful Bunker": {
+		"id": 661,
+		"type": "poison",
+		"classification": 0
+	},
+	"Belch": {
+		"id": 562,
+		"type": "poison",
+		"classification": 2
+	},
+	"Clear Smog": {
+		"id": 499,
+		"type": "poison",
+		"classification": 2
+	},
+	"Coil": {
+		"id": 489,
+		"type": "poison",
+		"classification": 0
+	},
+	"Cross Poison": {
+		"id": 440,
+		"type": "poison",
+		"classification": 1
+	},
+	"Gastro Acid": {
+		"id": 380,
+		"type": "poison",
+		"classification": 0
+	},
+	"Gunk Shot": {
+		"id": 441,
+		"type": "poison",
+		"classification": 1
+	},
+	"Poison Fang": {
+		"id": 305,
+		"type": "poison",
+		"classification": 1
+	},
+	"Poison Gas": {
+		"id": 139,
+		"type": "poison",
+		"classification": 0
+	},
+	"Poison Jab": {
+		"id": 398,
+		"type": "poison",
+		"classification": 1
+	},
+	"Poison Powder": {
+		"id": 77,
+		"type": "poison",
+		"classification": 0
+	},
+	"Poison Sting": {
+		"id": 40,
+		"type": "poison",
+		"classification": 1
+	},
+	"Poison Tail": {
+		"id": 342,
+		"type": "poison",
+		"classification": 1
+	},
+	"Purify": {
+		"id": 685,
+		"type": "poison",
+		"classification": 0
+	},
+	"Sludge": {
+		"id": 124,
+		"type": "poison",
+		"classification": 2
+	},
+	"Sludge Bomb": {
+		"id": 188,
+		"type": "poison",
+		"classification": 2
+	},
+	"Sludge Wave": {
+		"id": 482,
+		"type": "poison",
+		"classification": 2
+	},
+	"Smog": {
+		"id": 123,
+		"type": "poison",
+		"classification": 2
+	},
+	"Toxic": {
+		"id": 92,
+		"type": "poison",
+		"classification": 0
+	},
+	"Toxic Spikes": {
+		"id": 390,
+		"type": "poison",
+		"classification": 0
+	},
+	"Toxic Thread": {
+		"id": 672,
+		"type": "poison",
+		"classification": 0
+	},
+	"Venom Drench": {
+		"id": 599,
+		"type": "poison",
+		"classification": 0
+	},
+	"Venoshock": {
+		"id": 474,
+		"type": "poison",
+		"classification": 2
+	},
+	"Attack Order": {
+		"id": 454,
+		"type": "bug",
+		"classification": 1
+	},
+	"Bug Bite": {
+		"id": 450,
+		"type": "bug",
+		"classification": 1
+	},
+	"Bug Buzz": {
+		"id": 405,
+		"type": "bug",
+		"classification": 2
+	},
+	"Defend Order": {
+		"id": 455,
+		"type": "bug",
+		"classification": 0
+	},
+	"Fell Stinger": {
+		"id": 565,
+		"type": "bug",
+		"classification": 1
+	},
+	"First Impression": {
+		"id": 660,
+		"type": "bug",
+		"classification": 1
+	},
+	"Fury Cutter": {
+		"id": 210,
+		"type": "bug",
+		"classification": 1
+	},
+	"Heal Order": {
+		"id": 456,
+		"type": "bug",
+		"classification": 0
+	},
+	"Infestation": {
+		"id": 611,
+		"type": "bug",
+		"classification": 2
+	},
+	"Leech Life": {
+		"id": 141,
+		"type": "bug",
+		"classification": 1
+	},
+	"Lunge": {
+		"id": 679,
+		"type": "bug",
+		"classification": 1
+	},
+	"Megahorn": {
+		"id": 224,
+		"type": "bug",
+		"classification": 1
+	},
+	"Pin Missile": {
+		"id": 42,
+		"type": "bug",
+		"classification": 1
+	},
+	"Pollen Puff": {
+		"id": 676,
+		"type": "bug",
+		"classification": 2
+	},
+	"Powder": {
+		"id": 600,
+		"type": "bug",
+		"classification": 0
+	},
+	"Quiver Dance": {
+		"id": 483,
+		"type": "bug",
+		"classification": 0
+	},
+	"Rage Powder": {
+		"id": 476,
+		"type": "bug",
+		"classification": 0
+	},
+	"Signal Beam": {
+		"id": 324,
+		"type": "bug",
+		"classification": 2
+	},
+	"Silver Wind": {
+		"id": 318,
+		"type": "bug",
+		"classification": 2
+	},
+	"Spider Web": {
+		"id": 169,
+		"type": "bug",
+		"classification": 0
+	},
+	"Steamroller": {
+		"id": 537,
+		"type": "bug",
+		"classification": 1
+	},
+	"Sticky Web": {
+		"id": 564,
+		"type": "bug",
+		"classification": 0
+	},
+	"String Shot": {
+		"id": 81,
+		"type": "bug",
+		"classification": 0
+	},
+	"Struggle Bug": {
+		"id": 522,
+		"type": "bug",
+		"classification": 2
+	},
+	"Tail Glow": {
+		"id": 294,
+		"type": "bug",
+		"classification": 0
+	},
+	"Twineedle": {
+		"id": 41,
+		"type": "bug",
+		"classification": 1
+	},
+	"U-turn": {
+		"id": 369,
+		"type": "bug",
+		"classification": 1
+	},
+	"X-Scissor": {
+		"id": 404,
+		"type": "bug",
+		"classification": 1
+	},
+	"Assurance": {
+		"id": 372,
+		"type": "dark",
+		"classification": 1
+	},
+	"Beat Up": {
+		"id": 251,
+		"type": "dark",
+		"classification": 1
+	},
+	"Bite": {
+		"id": 44,
+		"type": "dark",
+		"classification": 1
+	},
+	"Brutal Swing": {
+		"id": 693,
+		"type": "dark",
+		"classification": 1
+	},
+	"Crunch": {
+		"id": 242,
+		"type": "dark",
+		"classification": 1
+	},
+	"Dark Pulse": {
+		"id": 399,
+		"type": "dark",
+		"classification": 2
+	},
+	"Dark Void": {
+		"id": 464,
+		"type": "dark",
+		"classification": 0
+	},
+	"Darkest Lariat": {
+		"id": 663,
+		"type": "dark",
+		"classification": 1
+	},
+	"Embargo": {
+		"id": 373,
+		"type": "dark",
+		"classification": 0
+	},
+	"Fake Tears": {
+		"id": 313,
+		"type": "dark",
+		"classification": 0
+	},
+	"Feint Attack": {
+		"id": 185,
+		"type": "dark",
+		"classification": 1
+	},
+	"Flatter": {
+		"id": 260,
+		"type": "dark",
+		"classification": 0
+	},
+	"Fling": {
+		"id": 374,
+		"type": "dark",
+		"classification": 1
+	},
+	"Foul Play": {
+		"id": 492,
+		"type": "dark",
+		"classification": 1
+	},
+	"Hone Claws": {
+		"id": 468,
+		"type": "dark",
+		"classification": 0
+	},
+	"Hyperspace Fury": {
+		"id": 621,
+		"type": "dark",
+		"classification": 1
+	},
+	"Knock Off": {
+		"id": 282,
+		"type": "dark",
+		"classification": 1
+	},
+	"Memento": {
+		"id": 262,
+		"type": "dark",
+		"classification": 0
+	},
+	"Nasty Plot": {
+		"id": 417,
+		"type": "dark",
+		"classification": 0
+	},
+	"Night Daze": {
+		"id": 539,
+		"type": "dark",
+		"classification": 2
+	},
+	"Night Slash": {
+		"id": 400,
+		"type": "dark",
+		"classification": 1
+	},
+	"Parting Shot": {
+		"id": 575,
+		"type": "dark",
+		"classification": 0
+	},
+	"Payback": {
+		"id": 371,
+		"type": "dark",
+		"classification": 1
+	},
+	"Power Trip": {
+		"id": 681,
+		"type": "dark",
+		"classification": 1
+	},
+	"Punishment": {
+		"id": 386,
+		"type": "dark",
+		"classification": 1
+	},
+	"Pursuit": {
+		"id": 228,
+		"type": "dark",
+		"classification": 1
+	},
+	"Quash": {
+		"id": 511,
+		"type": "dark",
+		"classification": 0
+	},
+	"Snarl": {
+		"id": 555,
+		"type": "dark",
+		"classification": 2
+	},
+	"Snatch": {
+		"id": 289,
+		"type": "dark",
+		"classification": 0
+	},
+	"Sucker Punch": {
+		"id": 389,
+		"type": "dark",
+		"classification": 1
+	},
+	"Switcheroo": {
+		"id": 415,
+		"type": "dark",
+		"classification": 3
+	},
+	"Taunt": {
+		"id": 269,
+		"type": "dark",
+		"classification": 0
+	},
+	"Thief": {
+		"id": 168,
+		"type": "dark",
+		"classification": 1
+	},
+	"Throat Chop": {
+		"id": 675,
+		"type": "dark",
+		"classification": 1
+	},
+	"Topsy-Turvy": {
+		"id": 576,
+		"type": "dark",
+		"classification": 0
+	},
+	"Torment": {
+		"id": 259,
+		"type": "dark",
+		"classification": 0
+	},
+	"Aqua Jet": {
+		"id": 453,
+		"type": "water",
+		"classification": 1
+	},
+	"Aqua Ring": {
+		"id": 392,
+		"type": "water",
+		"classification": 0
+	},
+	"Aqua Tail": {
+		"id": 401,
+		"type": "water",
+		"classification": 1
+	},
+	"Brine": {
+		"id": 362,
+		"type": "water",
+		"classification": 2
+	},
+	"Bubble": {
+		"id": 145,
+		"type": "water",
+		"classification": 2
+	},
+	"Bubble Beam": {
+		"id": 61,
+		"type": "water",
+		"classification": 2
+	},
+	"Clamp": {
+		"id": 128,
+		"type": "water",
+		"classification": 1
+	},
+	"Crabhammer": {
+		"id": 152,
+		"type": "water",
+		"classification": 1
+	},
+	"Dive": {
+		"id": 291,
+		"type": "water",
+		"classification": 1
+	},
+	"Hydro Cannon": {
+		"id": 308,
+		"type": "water",
+		"classification": 2
+	},
+	"Hydro Pump": {
+		"id": 56,
+		"type": "water",
+		"classification": 2
+	},
+	"Liquidation": {
+		"id": 710,
+		"type": "water",
+		"classification": 1
+	},
+	"Muddy Water": {
+		"id": 330,
+		"type": "water",
+		"classification": 2
+	},
+	"Octazooka": {
+		"id": 190,
+		"type": "water",
+		"classification": 2
+	},
+	"Origin Pulse": {
+		"id": 618,
+		"type": "water",
+		"classification": 2
+	},
+	"Rain Dance": {
+		"id": 240,
+		"type": "water",
+		"classification": 0
+	},
+	"Razor Shell": {
+		"id": 534,
+		"type": "water",
+		"classification": 1
+	},
+	"Scald": {
+		"id": 503,
+		"type": "water",
+		"classification": 2
+	},
+	"Soak": {
+		"id": 487,
+		"type": "water",
+		"classification": 0
+	},
+	"Sparkling Aria": {
+		"id": 664,
+		"type": "water",
+		"classification": 2
+	},
+	"Steam Eruption": {
+		"id": 592,
+		"type": "water",
+		"classification": 2
+	},
+	"Surf": {
+		"id": 57,
+		"type": "water",
+		"classification": 2
+	},
+	"Water Gun": {
+		"id": 55,
+		"type": "water",
+		"classification": 2
+	},
+	"Water Pledge": {
+		"id": 518,
+		"type": "water",
+		"classification": 2
+	},
+	"Water Pulse": {
+		"id": 352,
+		"type": "water",
+		"classification": 2
+	},
+	"Water Shuriken": {
+		"id": 594,
+		"type": "water",
+		"classification": 2
+	},
+	"Water Sport": {
+		"id": 346,
+		"type": "water",
+		"classification": 0
+	},
+	"Water Spout": {
+		"id": 323,
+		"type": "water",
+		"classification": 2
+	},
+	"Waterfall": {
+		"id": 127,
+		"type": "water",
+		"classification": 1
+	},
+	"Whirlpool": {
+		"id": 250,
+		"type": "water",
+		"classification": 2
+	},
+	"Withdraw": {
+		"id": 110,
+		"type": "water",
+		"classification": 0
+	},
+	"Agility": {
+		"id": 97,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Ally Switch": {
+		"id": 502,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Amnesia": {
+		"id": 133,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Barrier": {
+		"id": 112,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Calm Mind": {
+		"id": 347,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Confusion": {
+		"id": 93,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Cosmic Power": {
+		"id": 322,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Dream Eater": {
+		"id": 138,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Extrasensory": {
+		"id": 326,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Future Sight": {
+		"id": 248,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Gravity": {
+		"id": 356,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Guard Split": {
+		"id": 470,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Guard Swap": {
+		"id": 385,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Heal Block": {
+		"id": 377,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Heal Pulse": {
+		"id": 505,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Healing Wish": {
+		"id": 361,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Heart Stamp": {
+		"id": 531,
+		"type": "psychic",
+		"classification": 1
+	},
+	"Heart Swap": {
+		"id": 391,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Hyperspace Hole": {
+		"id": 593,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Hypnosis": {
+		"id": 95,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Imprison": {
+		"id": 286,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Instruct": {
+		"id": 689,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Kinesis": {
+		"id": 134,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Light Screen": {
+		"id": 113,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Lunar Dance": {
+		"id": 461,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Luster Purge": {
+		"id": 295,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Magic Coat": {
+		"id": 277,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Magic Room": {
+		"id": 478,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Meditate": {
+		"id": 96,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Miracle Eye": {
+		"id": 357,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Mirror Coat": {
+		"id": 243,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Mist Ball": {
+		"id": 296,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Power Split": {
+		"id": 471,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Power Swap": {
+		"id": 384,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Power Trick": {
+		"id": 379,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Prismatic Laser": {
+		"id": 711,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Psybeam": {
+		"id": 60,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Psychic": {
+		"id": 94,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Psychic Fangs": {
+		"id": 706,
+		"type": "psychic",
+		"classification": 1
+	},
+	"Psychic Terrain": {
+		"id": 678,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Psycho Boost": {
+		"id": 354,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Psycho Cut": {
+		"id": 427,
+		"type": "psychic",
+		"classification": 1
+	},
+	"Psycho Shift": {
+		"id": 375,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Psyshock": {
+		"id": 473,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Psystrike": {
+		"id": 540,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Psywave": {
+		"id": 149,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Reflect": {
+		"id": 115,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Rest": {
+		"id": 156,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Role Play": {
+		"id": 272,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Skill Swap": {
+		"id": 285,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Speed Swap": {
+		"id": 683,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Stored Power": {
+		"id": 500,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Synchronoise": {
+		"id": 485,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Telekinesis": {
+		"id": 477,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Teleport": {
+		"id": 100,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Trick": {
+		"id": 271,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Trick Room": {
+		"id": 433,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Wonder Room": {
+		"id": 472,
+		"type": "psychic",
+		"classification": 0
+	},
+	"Zen Headbutt": {
+		"id": 428,
+		"type": "psychic",
+		"classification": 1
+	},
+	"Clanging Scales": {
+		"id": 691,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Core Enforcer": {
+		"id": 687,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Draco Meteor": {
+		"id": 434,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Dragon Breath": {
+		"id": 225,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Dragon Claw": {
+		"id": 337,
+		"type": "dragon",
+		"classification": 1
+	},
+	"Dragon Dance": {
+		"id": 349,
+		"type": "dragon",
+		"classification": 0
+	},
+	"Dragon Hammer": {
+		"id": 692,
+		"type": "dragon",
+		"classification": 1
+	},
+	"Dragon Pulse": {
+		"id": 406,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Dragon Rage": {
+		"id": 82,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Dragon Rush": {
+		"id": 407,
+		"type": "dragon",
+		"classification": 1
+	},
+	"Dragon Tail": {
+		"id": 525,
+		"type": "dragon",
+		"classification": 1
+	},
+	"Dual Chop": {
+		"id": 530,
+		"type": "dragon",
+		"classification": 1
+	},
+	"Outrage": {
+		"id": 200,
+		"type": "dragon",
+		"classification": 1
+	},
+	"Roar of Time": {
+		"id": 459,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Spacial Rend": {
+		"id": 460,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Twister": {
+		"id": 239,
+		"type": "dragon",
+		"classification": 2
+	},
+	"Accelerock": {
+		"id": 709,
+		"type": "rock",
+		"classification": 1
+	},
+	"Ancient Power": {
+		"id": 246,
+		"type": "rock",
+		"classification": 2
+	},
+	"Diamond Storm": {
+		"id": 591,
+		"type": "rock",
+		"classification": 1
+	},
+	"Head Smash": {
+		"id": 457,
+		"type": "rock",
+		"classification": 1
+	},
+	"Power Gem": {
+		"id": 408,
+		"type": "rock",
+		"classification": 2
+	},
+	"Rock Blast": {
+		"id": 350,
+		"type": "rock",
+		"classification": 1
+	},
+	"Rock Polish": {
+		"id": 397,
+		"type": "rock",
+		"classification": 0
+	},
+	"Rock Slide": {
+		"id": 157,
+		"type": "rock",
+		"classification": 1
+	},
+	"Rock Throw": {
+		"id": 88,
+		"type": "rock",
+		"classification": 1
+	},
+	"Rock Tomb": {
+		"id": 317,
+		"type": "rock",
+		"classification": 1
+	},
+	"Rock Wrecker": {
+		"id": 439,
+		"type": "rock",
+		"classification": 1
+	},
+	"Rollout": {
+		"id": 205,
+		"type": "rock",
+		"classification": 1
+	},
+	"Sandstorm": {
+		"id": 201,
+		"type": "rock",
+		"classification": 0
+	},
+	"Smack Down": {
+		"id": 479,
+		"type": "rock",
+		"classification": 1
+	},
+	"Stealth Rock": {
+		"id": 446,
+		"type": "rock",
+		"classification": 0
+	},
+	"Stone Edge": {
+		"id": 444,
+		"type": "rock",
+		"classification": 1
+	},
+	"Wide Guard": {
+		"id": 469,
+		"type": "rock",
+		"classification": 0
+	},
+	"Astonish": {
+		"id": 310,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Confuse Ray": {
+		"id": 109,
+		"type": "ghost",
+		"classification": 0
+	},
+	"Curse": {
+		"id": 174,
+		"type": "ghost",
+		"classification": 0
+	},
+	"Destiny Bond": {
+		"id": 194,
+		"type": "ghost",
+		"classification": 0
+	},
+	"Grudge": {
+		"id": 288,
+		"type": "ghost",
+		"classification": 0
+	},
+	"Hex": {
+		"id": 506,
+		"type": "ghost",
+		"classification": 2
+	},
+	"Lick": {
+		"id": 122,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Moongeist Beam": {
+		"id": 714,
+		"type": "ghost",
+		"classification": 2
+	},
+	"Night Shade": {
+		"id": 101,
+		"type": "ghost",
+		"classification": 2
+	},
+	"Nightmare": {
+		"id": 171,
+		"type": "ghost",
+		"classification": 0
+	},
+	"Ominous Wind": {
+		"id": 466,
+		"type": "ghost",
+		"classification": 2
+	},
+	"Phantom Force": {
+		"id": 566,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Shadow Ball": {
+		"id": 247,
+		"type": "ghost",
+		"classification": 2
+	},
+	"Shadow Bone": {
+		"id": 708,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Shadow Claw": {
+		"id": 421,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Shadow Force": {
+		"id": 467,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Shadow Punch": {
+		"id": 325,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Shadow Sneak": {
+		"id": 425,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Spirit Shackle": {
+		"id": 662,
+		"type": "ghost",
+		"classification": 1
+	},
+	"Spite": {
+		"id": 180,
+		"type": "ghost",
+		"classification": 0
+	},
+	"Trick-or-Treat": {
+		"id": 567,
+		"type": "ghost",
+		"classification": 0
+	},
+	"Anchor Shot": {
+		"id": 677,
+		"type": "steel",
+		"classification": 1
+	},
+	"Autotomize": {
+		"id": 475,
+		"type": "steel",
+		"classification": 0
+	},
+	"Bullet Punch": {
+		"id": 418,
+		"type": "steel",
+		"classification": 1
+	},
+	"Doom Desire": {
+		"id": 353,
+		"type": "steel",
+		"classification": 2
+	},
+	"Flash Cannon": {
+		"id": 430,
+		"type": "steel",
+		"classification": 2
+	},
+	"Gear Grind": {
+		"id": 544,
+		"type": "steel",
+		"classification": 1
+	},
+	"Gear Up": {
+		"id": 674,
+		"type": "steel",
+		"classification": 0
+	},
+	"Gyro Ball": {
+		"id": 360,
+		"type": "steel",
+		"classification": 1
+	},
+	"Heavy Slam": {
+		"id": 484,
+		"type": "steel",
+		"classification": 1
+	},
+	"Iron Defense": {
+		"id": 334,
+		"type": "steel",
+		"classification": 0
+	},
+	"Iron Head": {
+		"id": 442,
+		"type": "steel",
+		"classification": 1
+	},
+	"Iron Tail": {
+		"id": 231,
+		"type": "steel",
+		"classification": 1
+	},
+	"King's Shield": {
+		"id": 588,
+		"type": "steel",
+		"classification": 0
+	},
+	"Magnet Bomb": {
+		"id": 443,
+		"type": "steel",
+		"classification": 1
+	},
+	"Metal Burst": {
+		"id": 368,
+		"type": "steel",
+		"classification": 1
+	},
+	"Metal Claw": {
+		"id": 232,
+		"type": "steel",
+		"classification": 1
+	},
+	"Metal Sound": {
+		"id": 319,
+		"type": "steel",
+		"classification": 0
+	},
+	"Meteor Mash": {
+		"id": 309,
+		"type": "steel",
+		"classification": 1
+	},
+	"Mirror Shot": {
+		"id": 429,
+		"type": "steel",
+		"classification": 2
+	},
+	"Shift Gear": {
+		"id": 508,
+		"type": "steel",
+		"classification": 0
+	},
+	"Smart Strike": {
+		"id": 684,
+		"type": "steel",
+		"classification": 1
+	},
+	"Steel Wing": {
+		"id": 211,
+		"type": "steel",
+		"classification": 1
+	},
+	"Sunsteel Strike": {
+		"id": 713,
+		"type": "steel",
+		"classification": 1
+	},
+	"Aromatic Mist": {
+		"id": 597,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Baby-Doll Eyes": {
+		"id": 608,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Charm": {
+		"id": 204,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Crafty Shield": {
+		"id": 578,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Dazzling Gleam": {
+		"id": 605,
+		"type": "fairy",
+		"classification": 2
+	},
+	"Disarming Voice": {
+		"id": 574,
+		"type": "fairy",
+		"classification": 2
+	},
+	"Draining Kiss": {
+		"id": 577,
+		"type": "fairy",
+		"classification": 2
+	},
+	"Fairy Lock": {
+		"id": 587,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Fairy Wind": {
+		"id": 584,
+		"type": "fairy",
+		"classification": 2
+	},
+	"Fleur Cannon": {
+		"id": 705,
+		"type": "fairy",
+		"classification": 2
+	},
+	"Floral Healing": {
+		"id": 666,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Flower Shield": {
+		"id": 579,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Geomancy": {
+		"id": 601,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Misty Terrain": {
+		"id": 581,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Moonblast": {
+		"id": 585,
+		"type": "fairy",
+		"classification": 2
+	},
+	"Moonlight": {
+		"id": 236,
+		"type": "fairy",
+		"classification": 0
+	},
+	"Nature's Madness": {
+		"id": 717,
+		"type": "fairy",
+		"classification": 2
+	},
+	"Play Rough": {
+		"id": 583,
+		"type": "fairy",
+		"classification": 1
+	},
+	"Sweet Kiss": {
+		"id": 186,
+		"type": "fairy",
+		"classification": 0
+	}
+}
