@@ -141,9 +141,8 @@ def format_paste(pasteid, paste):
 
     return html_template['paste'].substitute(pasteid=pasteid, mons=html_mons)
 
-def generic_404(start_response):
+def generic_404(start_response, status='404 Not Found'):
     response = html_static['404'].encode('utf-8')
-    status = '404 Not Found'
     headers = [
         ('Content-Type', 'text/html; charset=utf-8'),
         ('Content-Length', str(len(response)))
@@ -225,8 +224,7 @@ def application(environ, start_response):
                 start_response(status, headers)
                 return [b'']
             else:
-                # TODO Error
-                pass
+                return generic_404(start_response, '400 Bad Request')
             response = form['paste'].value.encode('utf-8')
             status = '200 OK'
             headers = [
@@ -236,8 +234,7 @@ def application(environ, start_response):
             start_response(status, headers)
             return [response]
         else:
-            # TODO 404 or 405
-            pass
+            return generic_404(start_response, '405 Method Not Allowed')
 
 if __name__ == '__main__':
     with make_server('', 8000, application) as httpd:
