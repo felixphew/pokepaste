@@ -18,9 +18,9 @@ img_re = re.compile(r'img/(pokemon/\d+-\d+|items/\d+).png')
 
 conn = sqlite3.connect('pokepaste.db')
 
-pokemon_data = json.load(open('data/pokemon.json'))
-item_data = json.load(open('data/items.json'))
-move_data = json.load(open('data/moves.json'))
+pokemon_data = json.load(open('data/pokemon.json', encoding='utf-8'))
+item_data = json.load(open('data/items.json', encoding='utf-8'))
+move_data = json.load(open('data/moves.json', encoding='utf-8'))
 
 html_template = {}
 for html_file in ('paste', 'paste-mon'):
