@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 
+__version__ = '0.9'
+__author__ = 'Felix Friedlander <felixphew0@gmail.com>'
+
 from string import Template
 from wsgiref.simple_server import make_server
 
