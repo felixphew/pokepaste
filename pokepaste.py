@@ -1,24 +1,24 @@
 #!/usr/bin/env python3
 
+from string import Template
 from wsgiref.simple_server import make_server
 
+import re
+import sqlite3
 import os
+import json
 import cgi
 
 # We pass image requests to open() basically unmodified,
 # so this regex is needed to filter out any funny business.
-import re
 img_re = re.compile(r'img/(pokemon/\d+-\d+|items/\d+).png')
 
-import sqlite3
 conn = sqlite3.connect('pokepaste.db')
 
-import json
 pokemon_data = json.load(open('data/pokemon.json'))
 item_data = json.load(open('data/items.json'))
 move_data = json.load(open('data/moves.json'))
 
-from string import Template
 html_template = {}
 for html_file in ('paste', 'paste-mon'):
     fd = open('html/{}.html'.format(html_file))
