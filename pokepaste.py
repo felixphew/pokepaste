@@ -240,7 +240,5 @@ def application(environ, start_response):
             return generic_404(start_response, '405 Method Not Allowed')
 
 if __name__ == '__main__':
-    import sys
-    sys.stderr = open('pokepaste.log', 'w')
     with make_server('', 80, application) as httpd:
         httpd.serve_forever()
