@@ -4,85 +4,140 @@
 		<title>PokePaste #${pasteid}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-		@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
-		
-		body {
-			background: black;
-			color: #dfdfdf;
-			margin: 0;
-		}
-		
-		div.img-pokemon {
-			margin: 10pt;
-			position: relative;
-			width: 150px;
-			height: 150px;
-			background-size: 150px;
-			background-position: -75px -75px;
-		}
-		div.img-item {
-			position: absolute;
-			bottom: 0px;
-			right: 0px;
-			width: 40px;
-			height: 40px;
-			background-size: 40px;
-		}
-		
-		div.set pre {
-			margin: 10pt;
-			font: 10pt 'Fira Mono', sans-serif;
-			white-space: pre-wrap;
-		}
-		
-		.heading { font-style: italic }
-		
-		@media (min-width: 450px) {
+			@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
+			
+			body {
+				background-color: black;
+				color: #dfdfdf;
+				margin: 0;
+			}
+			
 			div.img-pokemon {
-				float: left;
-				clear: left;
+				margin: 10pt;
+				position: relative;
+				width: 150px;
+				height: 150px;
+				background-size: 150px;
+				background-position: -75px -75px;
 			}
+			div.img-item {
+				position: absolute;
+				bottom: 0px;
+				right: 0px;
+				width: 40px;
+				height: 40px;
+				background-size: 40px;
+			}
+			
 			div.set pre {
-				float: left
+				margin: 10pt;
+				font: 10pt 'Fira Mono', monospace;
+				white-space: pre-wrap;
 			}
-		}
-		
-		@media (max-width: 750px) {
-			aside { display: none }
-		}
-		
-		aside {
-			position: fixed;
-			top: 0;
-			right: 0;
-			margin: 10pt;
-			font: 10pt 'Fira Sans Condensed', sans-serif;
-			text-align: right;
-		}
-		
-		.type-normal { color: #B2AC8C }
-		.type-fighting { color: #934538 }
-		.type-fire { color: #F45C19 }
-		.type-ice { color: #4CACC2 }
-		.type-electric { color: #EAA317 }
-		.type-flying { color: #7E9ECF }
-		.type-grass { color: #04A641 }
-		.type-ground { color: #967344 }
-		.type-poison { color: #8F5B98 }
-		.type-bug { color: #989001 }
-		.type-dark { color: #7A0049 }
-		.type-water { color: #4392D5 }
-		.type-psychic { color: #D7738D }
-		.type-dragon { color: #625EB3 }
-		.type-rock { color: #878052 }
-		.type-ghost { color: #5563A4 }
-		.type-steel { color: #999999 }
-		.type-fairy { color: #FFBBFF }
-		
-		${imgcss}
+			
+			.heading { font-style: italic }
+			
+			@media (min-width: 450px) {
+				div.img-pokemon {
+					float: left;
+					clear: left;
+				}
+				div.set pre {
+					float: left
+				}
+			}
+			
+			@media (max-width: 750px) {
+				aside { display: none }
+			}
+			
+			aside {
+				position: fixed;
+				top: 0;
+				right: 0;
+				margin: 10pt;
+				font: 10pt 'Fira Sans Condensed', sans-serif;
+				text-align: right;
+			}
+	
+			aside h1 {
+				font: inherit;
+				font-size: 14pt;
+			}
+	
+			aside a { color: #5f5fdf }
+	
+			aside a#copylink {
+				color: inherit;
+				cursor: pointer;
+			}
+	
+			aside a#copylink #copied {
+				position: absolute;
+				left: 0;
+				right: 0;
+				margin: auto;
+				opacity: 0;
+			}
+	
+			@keyframes copied {
+				from {
+					opacity: 1;
+					transform: none;
+				}
+				to {
+					opacity: 0;
+					transform: translateY(-20px);
+				}
+			}
+			
+			.type-normal { color: #B2AC8C }
+			.type-fighting { color: #934538 }
+			.type-fire { color: #F45C19 }
+			.type-ice { color: #4CACC2 }
+			.type-electric { color: #EAA317 }
+			.type-flying { color: #7E9ECF }
+			.type-grass { color: #04A641 }
+			.type-ground { color: #967344 }
+			.type-poison { color: #8F5B98 }
+			.type-bug { color: #989001 }
+			.type-dark { color: #7A0049 }
+			.type-water { color: #4392D5 }
+			.type-psychic { color: #D7738D }
+			.type-dragon { color: #625EB3 }
+			.type-rock { color: #878052 }
+			.type-ghost { color: #5563A4 }
+			.type-steel { color: #999999 }
+			.type-fairy { color: #FFBBFF }
+			
+			${imgcss}
 		</style>
 	</head>
 	<body>
 		<main>${mons}</main>
+		<aside>
+			<p>Your team is saved at this address:</p>
+			<p>
+				<a id="permalink" href="http://pokepast.es/${pasteid}">http://pokepast.es/${pasteid}</a> 
+				<a id="copylink" onclick="copyPermalink()">(copy)
+					<span id="copied">copied</span>
+				</a>
+			</p>
+		</aside>
+		<script>
+			function copyPermalink() {
+				var range = document.createRange();
+				range.selectNode(document.getElementById("permalink"));
+				window.getSelection().removeAllRanges();
+				window.getSelection().addRange(range);
+				document.execCommand("copy");
+				window.getSelection().removeAllRanges();
+				var copied = document.getElementById("copied")
+				copied.style.animation = "copied 1s ease-out";
+				copied.addEventListener("animationend", function(){
+					document.getElementById("copied").style.animation = "none";
+				}, false);
+			}
+		</script>
 	</body>
 </html>

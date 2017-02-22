@@ -241,4 +241,7 @@ def application(environ, start_response):
 
 if __name__ == '__main__':
     with make_server('', 8000, application) as httpd:
-        httpd.serve_forever()
+        try:
+            httpd.serve_forever()
+        except KeyboardInterrupt:
+            quit()

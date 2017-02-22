@@ -2,39 +2,66 @@
 <html>
 	<head>
 		<title>PokePaste</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-		@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
-		body {
-			margin: 0;
-		}
-		textarea[name=paste] {
-			margin: 0;
-			border-width: 0;
-			padding: 12pt;
-			position: fixed;
-			height: 100%;
-			width: 100%;
-			background-color: black;
-			color: #dfdfdf;
-			font-family: 'Fira Mono', monospace;
-			font-size: 10pt;
-			resize: none;
-		}
-		input[type=submit] {
-			position: fixed;
-			right: 12pt;
-			bottom: 12pt;
-			margin: 0;
-			padding: 0;
-			border-width: 0;
-			background-color: transparent;
-			color: #dfdfdf;
-			font-family: 'Fira Sans Condensed', monospace;
-			font-size: 18pt;
-		}
-		input[type=submit]:hover {
-			color: #5f5fdf;
-		}
+			@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
+
+			body {
+				background-color: black;
+				color: #dfdfdf;
+				margin: 0;
+			}
+
+			textarea[name=paste] {
+				margin: 0;
+				border-width: 0;
+				padding: 12pt;
+				position: fixed;
+				height: 100%;
+				width: 100%;
+				background-color: transparent;
+				color: inherit;
+				font: 10pt 'Fira Mono', monospace;
+				resize: none;
+			}
+
+			input[type=submit] {
+				position: fixed;
+				right: 12pt;
+				bottom: 12pt;
+				margin: 0;
+				padding: 0;
+				border-width: 0;
+				background-color: transparent;
+				color: inherit;
+				font: 18pt 'Fira Sans Condensed', sans-serif;
+			}
+
+			input[type=submit]:hover {
+				color: #5f5fdf;
+			}
+
+			@media (max-width: 750px) {
+				aside { display: none }
+			}
+			
+			aside {
+				position: fixed;
+				top: 0;
+				right: 0;
+				margin: 10pt;
+				font: 10pt 'Fira Sans Condensed', sans-serif;
+				/* text-align: right; */
+			}
+	
+			aside h1 {
+				font: inherit;
+				font-size: 14pt;
+			}
+
+			aside h1:first-child { margin-top: 0 }
+	
+			aside a { color: #5f5fdf }
 		</style>
 	</head>
 	<body>
@@ -42,5 +69,16 @@
 			<textarea name="paste" placeholder="Paste something here!"></textarea>
 			<input type="submit">
 		</form>
+		<aside>
+			<h1>What's this?</h1>
+			<p>A way to share Pokemon sets with anyone.</p>
+			<h1>How does it work?</h1>
+			<ol>
+				<li>Paste a team</li>
+				<li>Share the link</li>
+				<li>???</li>
+				<li>Profit!</li>
+			</ol>
+		</aside>
 	</body>
 </html>
