@@ -72,7 +72,7 @@ def format_paste(pasteid, paste):
                       + line[rindex:])
 
         if '(F)' in line:
-            index = line.rindex('(M)')
+            index = line.rindex('(F)')
             lindex = index + 1
             rindex = index + 2
             if '(' not in line[rindex + 1:]:
