@@ -58,83 +58,89 @@ def format_paste(pasteid, paste):
         pokemonid = '0-0'
         itemid = 0
 
-        index = len(line)
-
-        if '(M)' in line:
-            index = line.rindex('(M)')
-            lindex = index + 1
-            rindex = index + 2
-            if '(' not in line[rindex + 1:]:
-                line = (line[:lindex]
-                      + '<span class="gender-m">'
-                      + line[lindex:rindex]
-                      + '</span>'
-                      + line[rindex:])
-
-        if '(F)' in line:
-            index = line.rindex('(F)')
-            lindex = index + 1
-            rindex = index + 2
-            if '(' not in line[rindex + 1:]:
-                line = (line[:lindex]
-                      + '<span class="gender-f">'
-                      + line[lindex:rindex]
-                      + '</span>'
-                      + line[rindex:])
-
-        if ')' in line[:index] and '(' in line[line[:index].rindex('('):]:
-            rindex = line[:index].rindex(')')
-            lindex = line[:rindex].rindex('(') + 1
-            if line[lindex:rindex] in pokemon_data:
-                pokemon = pokemon_data[line[lindex:rindex]]
-                pokemonid = '{}-{}'.format(pokemon['id'], pokemon['no'])
-                line = (line[:lindex]
-                      + '<span class="type-{}">'.format(pokemon['type'])
-                      + line[lindex:rindex]
-                      + '</span>'
-                      + line[rindex:])
-        else:
-            lineparts = line.partition('@')
-            if lineparts[0].strip() in pokemon_data:
-                pokemon = pokemon_data[lineparts[0].strip()]
-                pokemonid = '{}-{}'.format(pokemon['id'], pokemon['no'])
-                line = ('<span class="type-{}">'.format(pokemon['type'])
-                      + lineparts[0]
-                      + '</span>'
-                      + lineparts[1]
-                      + lineparts[2])
-
-        lineparts = line.rpartition('@')
-        if lineparts[2].strip() in item_data:
-            item = item_data[lineparts[2].strip()]
-            itemid = item['id']
-            try:
-                line = (lineparts[0]
-                      + lineparts[1]
-                      + '<span class="type-{}">'.format(item['type'])
-                      + lineparts[2]
-                      + '</span>')
-            except KeyError:
-                pass
-
-        mon_formatted = line + '\n'
+        try:
+            index = len(line)
+    
+            if '(M)' in line:
+                index = line.rindex('(M)')
+                lindex = index + 1
+                rindex = index + 2
+                if '(' not in line[rindex + 1:]:
+                    line = (line[:lindex]
+                          + '<span class="gender-m">'
+                          + line[lindex:rindex]
+                          + '</span>'
+                          + line[rindex:])
+    
+            if '(F)' in line:
+                index = line.rindex('(F)')
+                lindex = index + 1
+                rindex = index + 2
+                if '(' not in line[rindex + 1:]:
+                    line = (line[:lindex]
+                          + '<span class="gender-f">'
+                          + line[lindex:rindex]
+                          + '</span>'
+                          + line[rindex:])
+    
+            if ')' in line[:index] and '(' in line[line[:index].rindex('('):]:
+                rindex = line[:index].rindex(')')
+                lindex = line[:rindex].rindex('(') + 1
+                if line[lindex:rindex] in pokemon_data:
+                    pokemon = pokemon_data[line[lindex:rindex]]
+                    pokemonid = '{}-{}'.format(pokemon['id'], pokemon['no'])
+                    line = (line[:lindex]
+                          + '<span class="type-{}">'.format(pokemon['type'])
+                          + line[lindex:rindex]
+                          + '</span>'
+                          + line[rindex:])
+            else:
+                lineparts = line.partition('@')
+                if lineparts[0].strip() in pokemon_data:
+                    pokemon = pokemon_data[lineparts[0].strip()]
+                    pokemonid = '{}-{}'.format(pokemon['id'], pokemon['no'])
+                    line = ('<span class="type-{}">'.format(pokemon['type'])
+                          + lineparts[0]
+                          + '</span>'
+                          + lineparts[1]
+                          + lineparts[2])
+    
+            lineparts = line.rpartition('@')
+            if lineparts[2].strip() in item_data:
+                item = item_data[lineparts[2].strip()]
+                itemid = item['id']
+                try:
+                    line = (lineparts[0]
+                          + lineparts[1]
+                          + '<span class="type-{}">'.format(item['type'])
+                          + lineparts[2]
+                          + '</span>')
+                except KeyError:
+                    pass
+        
+        finally:
+            mon_formatted = line + '\n'
 
         for line in mon_lines:
-            if line[0] == '-' and line[1:].strip() in move_data:
-                move_type = move_data[line[1:].strip()]['type']
-                mon_formatted += '<span class="type-{}">'.format(move_type)
-                mon_formatted += line[0]
-                mon_formatted += '</span>'
-                mon_formatted += line[1:]
-            elif ':' in line:
-                index = line.index(':') + 1
-                mon_formatted += '<span class="heading">'
-                mon_formatted += line[:index]
-                mon_formatted += '</span>'
-                mon_formatted += line[index:]
-            else:
+            try:
+                if line[0] == '-' and line[1:].strip() in move_data:
+                    move_type = move_data[line[1:].strip()]['type']
+                    mon_formatted += '<span class="type-{}">'.format(move_type)
+                    mon_formatted += line[0]
+                    mon_formatted += '</span>'
+                    mon_formatted += line[1:]
+                elif ':' in line:
+                    index = line.index(':') + 1
+                    mon_formatted += '<span class="heading">'
+                    mon_formatted += line[:index]
+                    mon_formatted += '</span>'
+                    mon_formatted += line[index:]
+                else:
+                    mon_formatted += line
+            except:
                 mon_formatted += line
-            mon_formatted += '\n'
+            finally:
+                mon_formatted += '\n'
 
         mon_formatted += '\n'
 
