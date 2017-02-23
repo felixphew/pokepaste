@@ -6,62 +6,49 @@
 		<style>
 			@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
 
-			body {
+			textarea[name=paste] {
+				position: fixed;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: calc(100% - 216pt);
+				resize: none;
+				box-sizing: border-box;
+				margin: 0;
+				border: 0;
+				padding: 10pt;
 				background-color: black;
 				color: #dfdfdf;
-				margin: 0;
-			}
-
-			textarea[name=paste] {
-				margin: 0;
-				border-width: 0;
-				padding: 12pt;
-				position: fixed;
-				height: 100%;
-				width: 100%;
-				background-color: transparent;
-				color: inherit;
-				font: 10pt 'Fira Mono', monospace;
-				resize: none;
+				font: 10pt "Fira Mono", monospace;
 			}
 
 			input[type=submit] {
 				position: fixed;
-				right: 12pt;
-				bottom: 12pt;
+				right: 216pt;
+				bottom: 0;
 				margin: 0;
-				padding: 0;
-				border-width: 0;
+				border: 0;
+				padding: 10pt;
 				background-color: transparent;
-				color: inherit;
-				font: 18pt 'Fira Sans Condensed', sans-serif;
+				color: #dfdfdf;
+				font: 18pt "Fira Sans Condensed", sans-serif;
 			}
 
-			input[type=submit]:hover {
-				color: #5f5fdf;
-			}
+			input[type=submit]:hover { color: #df5f5f }
 
-			@media (max-width: 750px) {
-				aside { display: none }
-			}
-			
 			aside {
 				position: fixed;
 				top: 0;
 				right: 0;
-				margin: 10pt;
-				font: 10pt 'Fira Sans Condensed', sans-serif;
-				/* text-align: right; */
+				bottom: 0;
+				height: 100%;
+				width: 216pt;
+				box-sizing: border-box;
+				padding: 10pt;
+				background-color: #dfdfdf;
+				color: black;
+				font: 10pt "Fira Sans Condensed", sans-serif;
 			}
-	
-			aside h1 {
-				font: inherit;
-				font-size: 14pt;
-			}
-
-			aside h1:first-child { margin-top: 0 }
-	
-			aside a { color: #5f5fdf }
 		</style>
 	</head>
 	<body>
@@ -70,9 +57,9 @@
 			<input type="submit">
 		</form>
 		<aside>
-			<h1>What's this?</h1>
+			<h2>What's this?</h2>
 			<p>A way to share Pokemon sets with anyone.</p>
-			<h1>How does it work?</h1>
+			<h2>How does it work?</h2>
 			<ol>
 				<li>Paste a team</li>
 				<li>Share the link</li>
