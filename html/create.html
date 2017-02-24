@@ -49,6 +49,16 @@
 				color: black;
 				font: 10pt "Fira Sans Condensed", sans-serif;
 			}
+
+			aside h2 { font: 14pt bold "Fira Sans Condensed", sans-serif; }
+
+			aside h2:first-child { padding-top: 0 }
+
+			@media (max-width: 504pt) {
+				textarea[name=paste] { width: 100% }
+				input[type=submit] { right: 0 }
+				aside { display: none }
+			}
 		</style>
 	</head>
 	<body>
