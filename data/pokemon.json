@@ -4579,6 +4579,11 @@
 		"no": 0,
 		"type": "water"
 	},
+	"Type: Null": {
+		"id": 774,
+		"no": 0,
+		"type": "normal"
+	},
 	"Silvally": {
 		"id": 773,
 		"no": 0,
