@@ -612,6 +612,10 @@
 	"Maranga Berry": {
 		"id": 688
 	},
+	"Marshadium Z": {
+		"id": 802,
+		"type": "ghost"
+	},
 	"Master Ball": {
 		"id": 1
 	},
@@ -739,6 +743,10 @@
 	},
 	"Pikanium Z": {
 		"id": 794,
+		"type": "electric"
+	},
+	"Pikashunium Z": {
+		"id": 835,
 		"type": "electric"
 	},
 	"Pinap Berry": {

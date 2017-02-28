@@ -4743,5 +4743,10 @@
 		"id": 801,
 		"no": 0,
 		"type": "steel"
+	},
+	"Marshadow": {
+		"id": 802,
+		"no": 0,
+		"type": "ghost"
 	}
 }

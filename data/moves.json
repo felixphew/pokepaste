@@ -869,6 +869,11 @@
 		"type": "normal",
 		"classification": 2
 	},
+	"Spectral Thief": {
+		"id": 712,
+		"type": "ghost",
+		"classification": 1
+	},
 	"Spike Cannon": {
 		"id": 131,
 		"type": "normal",
