@@ -4,61 +4,61 @@
 		<title>PokePaste</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<style>
-			@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
+		@import url('https://fonts.googleapis.com/css?family=Fira+Mono|Fira+Sans+Condensed');
 
-			textarea[name=paste] {
-				position: fixed;
-				top: 0;
-				left: 0;
-				bottom: 0;
-				width: calc(100% - 216pt);
-				resize: none;
-				box-sizing: border-box;
-				margin: 0;
-				border: 0;
-				padding: 10pt;
-				background-color: black;
-				color: #dfdfdf;
-				font: 10pt "Fira Mono", monospace;
-			}
+		textarea[name=paste] {
+			position: fixed;
+			top: 0;
+			left: 0;
+			bottom: 0;
+			width: calc(100% - 216pt);
+			resize: none;
+			box-sizing: border-box;
+			margin: 0;
+			border: 0;
+			padding: 10pt;
+			background-color: black;
+			color: #dfdfdf;
+			font: 10pt "Fira Mono", monospace;
+		}
 
-			input[type=submit] {
-				position: fixed;
-				right: 216pt;
-				bottom: 0;
-				margin: 0;
-				border: 0;
-				padding: 10pt;
-				background-color: transparent;
-				color: #dfdfdf;
-				font: 18pt "Fira Sans Condensed", sans-serif;
-			}
+		input[type=submit] {
+			position: fixed;
+			right: 216pt;
+			bottom: 0;
+			margin: 0;
+			border: 0;
+			padding: 10pt;
+			background-color: transparent;
+			color: #dfdfdf;
+			font: 18pt "Fira Sans Condensed", sans-serif;
+		}
 
-			input[type=submit]:hover { color: #df5f5f }
+		input[type=submit]:hover { color: #df5f5f }
 
-			aside {
-				position: fixed;
-				top: 0;
-				right: 0;
-				bottom: 0;
-				height: 100%;
-				width: 216pt;
-				box-sizing: border-box;
-				padding: 10pt;
-				background-color: #dfdfdf;
-				color: black;
-				font: 10pt "Fira Sans Condensed", sans-serif;
-			}
+		aside {
+			position: fixed;
+			top: 0;
+			right: 0;
+			bottom: 0;
+			height: 100%;
+			width: 216pt;
+			box-sizing: border-box;
+			padding: 10pt;
+			background-color: #dfdfdf;
+			color: black;
+			font: 10pt "Fira Sans Condensed", sans-serif;
+		}
 
-			aside h2 { font: 14pt bold "Fira Sans Condensed", sans-serif; }
+		aside h2 { font: 14pt bold "Fira Sans Condensed", sans-serif; }
 
-			aside h2:first-child { padding-top: 0 }
+		aside h2:first-child { padding-top: 0 }
 
-			@media (max-width: 504pt) {
-				textarea[name=paste] { width: 100% }
-				input[type=submit] { right: 0 }
-				aside { display: none }
-			}
+		@media (max-width: 504pt) {
+			textarea[name=paste] { width: 100% }
+			input[type=submit] { right: 0 }
+			aside { display: none }
+		}
 		</style>
 	</head>
 	<body>

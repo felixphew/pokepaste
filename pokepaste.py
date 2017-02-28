@@ -35,12 +35,16 @@ for html_file in ('404', 'create'):
     fd.close()
 
 imgcss = ''
-for _, pokemon in pokemon_data.items(): imgcss += '''.pokemon-{id}-{no} {{
-        background-image: url('../img/pokemon/{id}-{no}.png');
-}}'''.format(id=pokemon['id'], no=pokemon['no'])
-for _, item in item_data.items(): imgcss += '''.item-{id} {{
-        background-image: url('../img/items/{id}.png');
-}}'''.format(id=item['id'])
+for pokemon in pokemon_data.values(): imgcss += '''
+\t\t.pokemon-{id}-{no} {{
+\t\t\tbackground-image: url('../img/pokemon/{id}-{no}.png');
+\t\t}}
+'''.format(id=pokemon['id'], no=pokemon['no'])
+for item in item_data.values(): imgcss += '''
+\t\t.item-{id} {{
+\t\t\tbackground-image: url('../img/items/{id}.png');
+\t\t}}
+'''.format(id=item['id'])
 html_template['paste'] = Template(
         html_template['paste'].safe_substitute(imgcss=imgcss))
 

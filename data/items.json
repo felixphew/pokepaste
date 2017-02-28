@@ -203,7 +203,7 @@
 	},
 	"Decidium Z": {
 		"id": 798,
-		"type": "grass"
+		"type": "ghost"
 	},
 	"Deep Sea Scale": {
 		"id": 227
@@ -496,7 +496,7 @@
 	},
 	"Incinium Z": {
 		"id": 799,
-		"type": "fire"
+		"type": "dark"
 	},
 	"Insect Plate": {
 		"id": 308
