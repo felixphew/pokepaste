@@ -6,19 +6,25 @@ from urllib.error import URLError
 
 makedirs('img/pokemon', exist_ok=True)
 
-for n in range(1, 802):
-    for i in range(32): 
+for mon in range(1, 802):
+    for form in range(32): 
         try:
-            r = hex(0x1000000|0x159a55e5*(n+i*0x10000)&0xFFFFFF)[3:]
-            urlretrieve('http://n-3ds-pgl-contents.pokemon-gl.com/share/images/pokemon/{}.png'.format(r), filename='img/pokemon/{}-{}.png'.format(n, i))
+            code = hex(0x1000000 | 0x159a55e5 * (mon + form * 0x10000) & 0xFFFFFF)[3:]
+            url = 'http://n-3ds-pgl-contents.pokemon-gl.com/share/images/pokemon/300/{}.png'.format(code)
+            urlretrieve(url, filename='img/pokemon/{}-{}.png'.format(mon, form))
         except URLError:
-            continue
+            break
+        else:
+            print('{}.png -> {}-{}.png'.format(code, mon, form))
 
 makedirs('img/items', exist_ok=True)
 
-for itemId in range(921):
+for item in range(921):
     try:
-        r = hex(0x1000000|0x159a55e5*(itemId)&0xFFFFFF)[3:]
-        urlretrieve('http://n-3ds-pgl-contents.pokemon-gl.com/share/images/item/{}.png'.format(r), filename='img/items/{}.png'.format(itemId))
+        code = hex(0x1000000 | 0x159a55e5 * item & 0xFFFFFF)[3:]
+        url = 'http://n-3ds-pgl-contents.pokemon-gl.com/share/images/item/{}.png'.format(code)
+        urlretrieve(url, filename='img/items/{}.png'.format(item))
     except URLError:
         pass
+    else:
+        print('{}.png -> {}.png'.format(code, item))
