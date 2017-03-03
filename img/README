@@ -1,0 +1,3 @@
+PokePaste is not distributed with images - see tools/fetch-images.py
+for a script that will download pokemon and item art from the Pokemon
+Global Link website.
