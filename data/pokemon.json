@@ -1424,6 +1424,11 @@
 		"no": 0,
 		"type": "psychic"
 	},
+	"Ho-Oh": {
+		"id": 250,
+		"no": 0,
+		"type": "fire"
+	},
 	"Celebi": {
 		"id": 251,
 		"no": 0,
@@ -4588,6 +4593,91 @@
 		"id": 772,
 		"no": 0,
 		"type": "normal"
+	},
+	"Silvally-Fairy": {
+		"id": 773,
+		"no": 17,
+		"type": "fairy"
+	},
+	"Silvally-Dark": {
+		"id": 773,
+		"no": 16,
+		"type": "dark"
+	},
+	"Silvally-Dragon": {
+		"id": 773,
+		"no": 15,
+		"type": "dragon"
+	},
+	"Silvally-Ice": {
+		"id": 773,
+		"no": 14,
+		"type": "ice"
+	},
+	"Silvally-Psychic": {
+		"id": 773,
+		"no": 13,
+		"type": "psychic"
+	},
+	"Silvally-Electric": {
+		"id": 773,
+		"no": 12,
+		"type": "electric"
+	},
+	"Silvally-Grass": {
+		"id": 773,
+		"no": 11,
+		"type": "grass"
+	},
+	"Silvally-Water": {
+		"id": 773,
+		"no": 10,
+		"type": "water"
+	},
+	"Silvally-Fire": {
+		"id": 773,
+		"no": 9,
+		"type": "fire"
+	},
+	"Silvally-Steel": {
+		"id": 773,
+		"no": 8,
+		"type": "steel"
+	},
+	"Silvally-Ghost": {
+		"id": 773,
+		"no": 7,
+		"type": "ghost"
+	},
+	"Silvally-Bug": {
+		"id": 773,
+		"no": 6,
+		"type": "bug"
+	},
+	"Silvally-Rock": {
+		"id": 773,
+		"no": 5,
+		"type": "rock"
+	},
+	"Silvally-Ground": {
+		"id": 773,
+		"no": 4,
+		"type": "ground"
+	},
+	"Silvally-Poison": {
+		"id": 773,
+		"no": 3,
+		"type": "poison"
+	},
+	"Silvally-Flying": {
+		"id": 773,
+		"no": 2,
+		"type": "flying"
+	},
+	"Silvally-Fighting": {
+		"id": 773,
+		"no": 1,
+		"type": "fighting"
 	},
 	"Silvally": {
 		"id": 773,
