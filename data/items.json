@@ -52,7 +52,8 @@
 		"id": 21
 	},
 	"Babiri Berry": {
-		"id": 199
+		"id": 199,
+		"type": "steel"
 	},
 	"Balm Mushroom": {
 		"id": 580
@@ -143,7 +144,8 @@
 		"id": 678
 	},
 	"Charti Berry": {
-		"id": 195
+		"id": 195,
+		"type": "rock"
 	},
 	"Cheri Berry": {
 		"id": 149
@@ -152,7 +154,8 @@
 		"id": 150
 	},
 	"Chilan Berry": {
-		"id": 200
+		"id": 200,
+		"type": "normal"
 	},
 	"Chill Drive": {
 		"id": 119
@@ -167,7 +170,8 @@
 		"id": 297
 	},
 	"Chople Berry": {
-		"id": 189
+		"id": 189,
+		"type": "fighting"
 	},
 	"Cleanse Tag": {
 		"id": 224
@@ -176,10 +180,12 @@
 		"id": 569
 	},
 	"Coba Berry": {
-		"id": 192
+		"id": 192,
+		"type": "flying"
 	},
 	"Colbur Berry": {
-		"id": 198
+		"id": 198,
+		"type": "dark"
 	},
 	"Comet Shard": {
 		"id": 583
@@ -435,7 +441,8 @@
 		"id": 676
 	},
 	"Haban Berry": {
-		"id": 197
+		"id": 197,
+		"type": "dragon"
 	},
 	"Hard Stone": {
 		"id": 238
@@ -514,10 +521,12 @@
 		"id": 675
 	},
 	"Kasib Berry": {
-		"id": 196
+		"id": 196,
+		"type": "ghost"
 	},
 	"Kebia Berry": {
-		"id": 190
+		"id": 190,
+		"type": "poison"
 	},
 	"Kee Berry": {
 		"id": 687
@@ -703,7 +712,8 @@
 		"id": 92
 	},
 	"Occa Berry": {
-		"id": 184
+		"id": 184,
+		"type": "fire"
 	},
 	"Odd Incense": {
 		"id": 314
@@ -721,10 +731,12 @@
 		"id": 22
 	},
 	"Passho Berry": {
-		"id": 185
+		"id": 185,
+		"type": "water"
 	},
 	"Payapa Berry": {
-		"id": 193
+		"id": 193,
+		"type": "psychic"
 	},
 	"Pearl": {
 		"id": 88
@@ -915,7 +927,8 @@
 		"id": 28
 	},
 	"Rindo Berry": {
-		"id": 187
+		"id": 187,
+		"type": "grass"
 	},
 	"Ring Target": {
 		"id": 543
@@ -937,7 +950,8 @@
 		"id": 318
 	},
 	"Roseli Berry": {
-		"id": 686
+		"id": 686,
+		"type": "fairy"
 	},
 	"Sablenite": {
 		"id": 754
@@ -988,7 +1002,8 @@
 		"id": 117
 	},
 	"Shuca Berry": {
-		"id": 191
+		"id": 191,
+		"type": "ground"
 	},
 	"Silk Scarf": {
 		"id": 251
@@ -1090,7 +1105,8 @@
 		"id": 174
 	},
 	"Tanga Berry": {
-		"id": 194
+		"id": 194,
+		"type": "bug"
 	},
 	"Tapunium Z": {
 		"id": 801,
@@ -1130,7 +1146,8 @@
 		"id": 659
 	},
 	"Wacan Berry": {
-		"id": 186
+		"id": 186,
+		"type": "electric"
 	},
 	"Water Memory": {
 		"id": 913
@@ -1182,7 +1199,8 @@
 		"id": 59
 	},
 	"Yache Berry": {
-		"id": 188
+		"id": 188,
+		"type": "ice"
 	},
 	"Yellow Nectar": {
 		"id": 854
