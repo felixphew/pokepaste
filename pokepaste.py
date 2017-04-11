@@ -11,6 +11,7 @@ import sqlite3
 import os
 import json
 import cgi
+import html
 
 try:
     import integers
@@ -226,10 +227,11 @@ def application(environ, start_response):
             if id >= 256:
                 id = decrypt_id(id)
             c = conn.cursor()
-            c.execute('SELECT * FROM pastes WHERE id=?;', (id,))
+            c.execute('SELECT id,paste FROM pastes WHERE id=?;', (id,))
             paste = c.fetchone()
             if paste:
-                response = format_paste(paste[0], paste[1]).encode('utf-8')
+                response = format_paste(paste[0],
+                                        html.escape(paste[1])).encode('utf-8')
                 status = '200 OK'
                 headers = [
                     ('Content-Type', 'text/html; charset=utf-8'),
