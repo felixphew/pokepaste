@@ -69,6 +69,8 @@
 			font-size: 14pt;
 		}
 
+		aside h2 { font: inherit }
+
 		aside a { color: #5f5fdf }
 
 		aside a#copylink {
@@ -123,13 +125,9 @@ ${imgcss}
 	<body>
 		<main>${mons}</main>
 		<aside>
-			<p>Your team is saved at this address:</p>
-			<p>
-				<a id="permalink" href="http://pokepast.es/${pasteid}">http://pokepast.es/${pasteid}</a> 
-				<a id="copylink" onclick="copyPermalink()">(copy)
-					<span id="copied">copied</span>
-				</a>
-			</p>
+			<h1>${title}</h1>
+			<h2>by ${author}</h2>
+			<p>${notes}</p>
 		</aside>
 		<script>
 		function copyPermalink() {

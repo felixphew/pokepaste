@@ -88,7 +88,7 @@ def encrypt_id(id):
 def decrypt_id(id):
     return (id * integers.key2) % integers.mod
 
-def format_paste(pasteid, paste):
+def format_paste(pasteid, paste, title, author, notes):
 
     html_mons = ''
 
@@ -193,7 +193,15 @@ def format_paste(pasteid, paste):
                                                            itemid=itemid,
                                                            paste=mon_formatted)
 
-    return html_template['paste'].substitute(pasteid=encrypt_id(pasteid), mons=html_mons)
+    if not title: title = 'Untitled'
+    if not author: author = 'Anonymous'
+    if not notes: notes = ''
+
+    return html_template['paste'].substitute(pasteid=encrypt_id(pasteid),
+                                             mons=html_mons,
+                                             title=title,
+                                             author=author,
+                                             notes=notes)
 
 def generic_404(start_response, status='404 Not Found'):
     response = html_static['404'].encode('utf-8')
@@ -227,11 +235,10 @@ def application(environ, start_response):
             if id >= 256:
                 id = decrypt_id(id)
             c = conn.cursor()
-            c.execute('SELECT id,paste FROM pastes WHERE id=?;', (id,))
+            c.execute('SELECT paste,title,author,notes FROM pastes WHERE id=?;', (id,))
             paste = c.fetchone()
             if paste:
-                response = format_paste(paste[0],
-                                        html.escape(paste[1])).encode('utf-8')
+                response = format_paste(id, *[html.escape(field) for field in paste]).encode('utf-8')
                 status = '200 OK'
                 headers = [
                     ('Content-Type', 'text/html; charset=utf-8'),
@@ -270,10 +277,13 @@ def application(environ, start_response):
         if path == 'create':
             # Submit a new paste
             form = cgi.FieldStorage(fp=environ['wsgi.input'], environ=environ)
-            if 'paste' in form and form['paste'].value:
+            if form.getvalue('paste'):
+                metadata = {}
                 c = conn.cursor()
-                c.execute('INSERT INTO pastes(paste) VALUES(?)',
-                          (form['paste'].value,))
+                c.execute('INSERT INTO pastes(paste,title,author,notes)'
+                          'VALUES(?,?,?,?)',
+                          [form.getvalue(key) for key in ('paste', 'title',
+                                                          'author', 'notes')])
                 conn.commit()
                 status = '302 Found'
                 headers = [
