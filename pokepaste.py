@@ -12,6 +12,39 @@ import os
 import json
 import cgi
 
+try:
+    import integers
+except ModuleNotFoundError:
+    print('''It looks like you're missing integers.py.
+
+integers.py contains the parameters used for obfuscating (I hesitate to
+say hashing) the database keys in PokePaste URLs. The algorithm is quite
+simple, taking advantage of multiplicative inverses and modular division
+to produce a value that can be easily reversed on the server side but
+appears non-sequential.
+
+You can read about the theory behind it here:
+
+https://ericlippert.com/2013/11/14/a-practical-use-of-multiplicative-inverses/
+
+In short, you need to pick a modulus mod (PokePaste is designed to use 2**32)
+and two coprime integers less than mod such that:
+
+    (key1 * key2) % mod == 1
+
+and therefore
+    
+    (((id * key1) % mod) * key2) % mod == id
+
+for each value of id less than mod.
+
+This is not cryptographically secure, but makes guessing database keys from
+URLs non-trivial unless you know the key(s).
+
+And no, I'm not giving you PokePaste's parameters, because they're *special*.
+''')
+    exit()
+
 # We pass image requests to open() basically unmodified,
 # so this regex is needed to filter out any funny business.
 img_re = re.compile(r'img/(pokemon/\d+-\d+|items/\d+).png')
@@ -47,6 +80,12 @@ for item in item_data.values(): imgcss += '''
 '''.format(id=item['id'])
 html_template['paste'] = Template(
         html_template['paste'].safe_substitute(imgcss=imgcss))
+
+def encrypt_id(id):
+    return (id * integers.key1) % integers.mod
+
+def decrypt_id(id):
+    return (id * integers.key2) % integers.mod
 
 def format_paste(pasteid, paste):
 
@@ -152,7 +191,7 @@ def format_paste(pasteid, paste):
                                                            itemid=itemid,
                                                            paste=mon_formatted)
 
-    return html_template['paste'].substitute(pasteid=pasteid, mons=html_mons)
+    return html_template['paste'].substitute(pasteid=encrypt_id(pasteid), mons=html_mons)
 
 def generic_404(start_response, status='404 Not Found'):
     response = html_static['404'].encode('utf-8')
@@ -181,9 +220,12 @@ def application(environ, start_response):
             return [response]
 
         elif path.isdigit():
-            # Requesting a specific paste, format and return it
+            # Requesting a paste - old or new id?
+            id = int(path)
+            if id >= 256:
+                id = decrypt_id(id)
             c = conn.cursor()
-            c.execute('SELECT * FROM pastes WHERE id=?;', (int(path),))
+            c.execute('SELECT * FROM pastes WHERE id=?;', (id,))
             paste = c.fetchone()
             if paste:
                 response = format_paste(paste[0], paste[1]).encode('utf-8')
@@ -232,7 +274,7 @@ def application(environ, start_response):
                 conn.commit()
                 status = '302 Found'
                 headers = [
-                    ('Location', '/{}'.format(c.lastrowid))
+                    ('Location', '/{}'.format(encrypt_id(c.lastrowid)))
                 ]
                 start_response(status, headers)
                 return [b'']
