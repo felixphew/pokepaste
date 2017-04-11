@@ -138,7 +138,7 @@ def format_paste(pasteid, paste):
                           + '</span>'
                           + line[rindex:])
             else:
-                lineparts = line.partition('@')
+                lineparts = line[:index].partition('@')
                 if lineparts[0].strip() in pokemon_data:
                     pokemon = pokemon_data[lineparts[0].strip()]
                     pokemonid = '{}-{}'.format(pokemon['id'], pokemon['no'])
@@ -146,7 +146,8 @@ def format_paste(pasteid, paste):
                           + lineparts[0]
                           + '</span>'
                           + lineparts[1]
-                          + lineparts[2])
+                          + lineparts[2]
+                          + line[index:])
     
             lineparts = line.rpartition('@')
             if lineparts[2].strip() in item_data:
