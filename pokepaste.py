@@ -206,7 +206,7 @@ def format_paste(pasteid, paste, title, author, notes):
         author = 'Anonymous'
         
     if notes:
-        notes = html.escape(notes)
+        notes = html.escape(notes).replace('\r\n', '</p><p>')
     else:
         notes = ''
 
