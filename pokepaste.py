@@ -90,6 +90,8 @@ def decrypt_id(id):
 
 def format_paste(pasteid, paste, title, author, notes):
 
+    paste = html.escape(paste)
+
     html_mons = ''
 
     for mon in paste.split('\r\n\r\n'):
@@ -193,9 +195,20 @@ def format_paste(pasteid, paste, title, author, notes):
                                                            itemid=itemid,
                                                            paste=mon_formatted)
 
-    if not title: title = 'Untitled'
-    if not author: author = 'Anonymous'
-    if not notes: notes = ''
+    if title:
+        title = html.escape(title)
+    else:
+        title = 'Untitled'
+        
+    if author:
+        author = html.escape(author)
+    else:
+        author = 'Anonymous'
+        
+    if notes:
+        notes = html.escape(notes)
+    else:
+        notes = ''
 
     return html_template['paste'].substitute(pasteid=encrypt_id(pasteid),
                                              mons=html_mons,
@@ -235,10 +248,10 @@ def application(environ, start_response):
             if id >= 256:
                 id = decrypt_id(id)
             c = conn.cursor()
-            c.execute('SELECT paste,title,author,notes FROM pastes WHERE id=?;', (id,))
+            c.execute('SELECT id,paste,title,author,notes FROM pastes WHERE id=?;', (id,))
             paste = c.fetchone()
             if paste:
-                response = format_paste(id, *[html.escape(field) for field in paste]).encode('utf-8')
+                response = format_paste(*paste).encode('utf-8')
                 status = '200 OK'
                 headers = [
                     ('Content-Type', 'text/html; charset=utf-8'),
