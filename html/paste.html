@@ -104,20 +104,5 @@ ${imgcss}
 			<h2>by ${author}</h2>
 			<p>${notes}</p>
 		</aside>
-		<script>
-		function copyPermalink() {
-			var range = document.createRange();
-			range.selectNode(document.getElementById("permalink"));
-			window.getSelection().removeAllRanges();
-			window.getSelection().addRange(range);
-			document.execCommand("copy");
-			window.getSelection().removeAllRanges();
-			var copied = document.getElementById("copied")
-			copied.style.animation = "copied 1s ease-out";
-			copied.addEventListener("animationend", function(){
-				document.getElementById("copied").style.animation = "none";
-			}, false);
-		}
-		</script>
 	</body>
 </html>
