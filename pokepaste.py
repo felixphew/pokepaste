@@ -63,7 +63,7 @@ for html_file in ('paste', 'paste-mon'):
     fd.close()
 
 html_static = {}
-for html_file in ('404', 'create'):
+for html_file in ('404', 'create', 'howto'):
     fd = open('html/{}.html'.format(html_file))
     html_static[html_file] = fd.read()
     fd.close()
@@ -231,18 +231,7 @@ def application(environ, start_response):
 
     if method == 'GET':
 
-        if not path:
-            # Requesting /, return the (static) submit page
-            response = html_static['create'].encode('utf-8')
-            status = '200 OK'
-            headers = [
-                ('Content-Type', 'text/html; charset=utf-8'),
-                ('Content-Length', str(len(html_static['create'])))
-            ]
-            start_response(status, headers)
-            return [response]
-
-        elif path.isdigit():
+        if path.isdigit():
             # Requesting a paste - old or new id?
             id = int(path)
             if id >= 256:
@@ -261,6 +250,29 @@ def application(environ, start_response):
                 return [response]
             else:
                 return generic_404(start_response)
+
+        elif not path:
+            # Requesting /, return the (static) submit page
+            response = html_static['create'].encode('utf-8')
+            status = '200 OK'
+            headers = [
+                ('Content-Type', 'text/html; charset=utf-8'),
+                ('Content-Length', str(len(html_static['create'])))
+            ]
+            start_response(status, headers)
+            return [response]
+
+        elif path == 'howto':
+            # Requesting the (static) PokePaste HOWTO
+            response = html_static['howto'].encode('utf-8')
+            status = '200 OK'
+            headers = [
+                ('Content-Type', 'text/html; charset=utf-8'),
+                ('Content-Length', str(len(html_static['howto'])))
+            ]
+            start_response(status, headers)
+            return [response]
+
 
         elif img_re.fullmatch(path):
             # Requesting an image
