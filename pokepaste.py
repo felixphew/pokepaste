@@ -5,6 +5,7 @@ __author__ = 'Felix Friedlander <felixphew0@gmail.com>'
 
 from string import Template
 from wsgiref.simple_server import make_server
+from Crypto.Cipher import Blowfish
 
 import re
 import sqlite3
@@ -28,6 +29,8 @@ parameter is crypto_secrets.key, which should be a bytestring of 448
 bits or shorter.
 ''')
     exit()
+
+cipher = Blowfish.new(crypto_secrets.key)
 
 # We pass image requests to open() basically unmodified,
 # so this regex is needed to filter out any funny business.
@@ -71,7 +74,7 @@ def encrypt_id_v1(id):
 def decrypt_id_v1(id):
     return (id * crypto_secrets.key2) % crypto_secrets.mod
 
-def format_paste(pasteid, paste, title, author, notes):
+def format_paste(paste, title, author, notes):
 
     paste = html.escape(paste)
 
@@ -193,8 +196,7 @@ def format_paste(pasteid, paste, title, author, notes):
     else:
         notes = ''
 
-    return html_template['paste'].substitute(pasteid=encrypt_id_v1(pasteid),
-                                             mons=html_mons,
+    return html_template['paste'].substitute(mons=html_mons,
                                              title=title,
                                              author=author,
                                              notes=notes)
@@ -220,7 +222,7 @@ def application(environ, start_response):
             if id >= 256:
                 id = decrypt_id_v1(id)
             c = conn.cursor()
-            c.execute('SELECT id,paste,title,author,notes FROM pastes WHERE id=?;', (id,))
+            c.execute('SELECT paste,title,author,notes FROM pastes WHERE id=?;', (id,))
             paste = c.fetchone()
             if paste:
                 response = format_paste(*paste).encode('utf-8')
