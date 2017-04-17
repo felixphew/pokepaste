@@ -14,35 +14,18 @@ import cgi
 import html
 
 try:
-    import integers
+    import crypto_secrets
 except ModuleNotFoundError:
-    print('''It looks like you're missing integers.py.
+    print('''It looks like you're missing crypto_secrets.py.
 
-integers.py contains the parameters used for obfuscating (I hesitate to
-say hashing) the database keys in PokePaste URLs. The algorithm is quite
-simple, taking advantage of multiplicative inverses and modular division
-to produce a value that can be easily reversed on the server side but
-appears non-sequential.
+crypto_secrets.py contains all the secrets necessary for the various
+URL obfuscation schemes that PokePaste has used. This includes the mod
+and two keys used for the original obfuscation scheme, and the blowfish
+key for the new scheme.
 
-You can read about the theory behind it here:
-
-https://ericlippert.com/2013/11/14/a-practical-use-of-multiplicative-inverses/
-
-In short, you need to pick a modulus mod (PokePaste is designed to use 2**32)
-and two coprime integers less than mod such that:
-
-    (key1 * key2) % mod == 1
-
-and therefore
-    
-    (((id * key1) % mod) * key2) % mod == id
-
-for each value of id less than mod.
-
-This is not cryptographically secure, but makes guessing database keys from
-URLs non-trivial unless you know the key(s).
-
-And no, I'm not giving you PokePaste's parameters, because they're *special*.
+If you're setting up your own instance of PokePaste, the most important
+parameter is crypto_secrets.key, which should be a bytestring of 448
+bits or shorter.
 ''')
     exit()
 
@@ -82,11 +65,11 @@ for item in item_data.values(): imgcss += '''
 html_template['paste'] = Template(
         html_template['paste'].safe_substitute(imgcss=imgcss))
 
-def encrypt_id(id):
-    return (id * integers.key1) % integers.mod
+def encrypt_id_v1(id):
+    return (id * crypto_secrets.key1) % crypto_secrets.mod
 
-def decrypt_id(id):
-    return (id * integers.key2) % integers.mod
+def decrypt_id_v1(id):
+    return (id * crypto_secrets.key2) % crypto_secrets.mod
 
 def format_paste(pasteid, paste, title, author, notes):
 
@@ -210,7 +193,7 @@ def format_paste(pasteid, paste, title, author, notes):
     else:
         notes = ''
 
-    return html_template['paste'].substitute(pasteid=encrypt_id(pasteid),
+    return html_template['paste'].substitute(pasteid=encrypt_id_v1(pasteid),
                                              mons=html_mons,
                                              title=title,
                                              author=author,
@@ -235,7 +218,7 @@ def application(environ, start_response):
             # Requesting a paste - old or new id?
             id = int(path)
             if id >= 256:
-                id = decrypt_id(id)
+                id = decrypt_id_v1(id)
             c = conn.cursor()
             c.execute('SELECT id,paste,title,author,notes FROM pastes WHERE id=?;', (id,))
             paste = c.fetchone()
@@ -312,7 +295,7 @@ def application(environ, start_response):
                 conn.commit()
                 status = '302 Found'
                 headers = [
-                    ('Location', '/{}'.format(encrypt_id(c.lastrowid)))
+                    ('Location', '/{}'.format(encrypt_id_v1(c.lastrowid)))
                 ]
                 start_response(status, headers)
                 return [b'']
