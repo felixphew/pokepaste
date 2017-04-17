@@ -74,6 +74,12 @@ def encrypt_id_v1(id):
 def decrypt_id_v1(id):
     return (id * crypto_secrets.key2) % crypto_secrets.mod
 
+def encrypt_id_v2(id):
+    return cipher.encrypt(id.to_bytes(8, 'big')).hex()
+
+def decrypt_id_v2(id):
+    return int.from_bytes(cipher.decrypt(bytes.fromhex(id)), 'big')
+
 def format_paste(paste, title, author, notes):
 
     paste = html.escape(paste)
@@ -201,6 +207,22 @@ def format_paste(paste, title, author, notes):
                                              author=author,
                                              notes=notes)
 
+def retrieve_paste(id, start_response):
+    c = conn.cursor()
+    c.execute('SELECT paste,title,author,notes FROM pastes WHERE id=?;', (id,))
+    paste = c.fetchone()
+    if paste:
+        response = format_paste(*paste).encode('utf-8')
+        status = '200 OK'
+        headers = [
+            ('Content-Type', 'text/html; charset=utf-8'),
+            ('Content-Length', str(len(response)))
+        ]
+        start_response(status, headers)
+        return [response]
+    else:
+        return generic_404(start_response)
+
 def generic_404(start_response, status='404 Not Found'):
     response = html_static['404'].encode('utf-8')
     headers = [
@@ -216,25 +238,26 @@ def application(environ, start_response):
 
     if method == 'GET':
 
-        if path.isdigit():
-            # Requesting a paste - old or new id?
+        if len(path) == 16:
+            # Requesting a paste - new encrypted ID
+            try:
+                id = decrypt_id_v2(path)
+            except:
+                return generic_404(start_response)
+            else:
+                return retrieve_paste(id, start_response)
+
+        elif path.isdigit():
+            # Requesting a paste - unencrypted or old encrypted ID?
             id = int(path)
             if id >= 256:
+                # Old encrypted ID
                 id = decrypt_id_v1(id)
-            c = conn.cursor()
-            c.execute('SELECT paste,title,author,notes FROM pastes WHERE id=?;', (id,))
-            paste = c.fetchone()
-            if paste:
-                response = format_paste(*paste).encode('utf-8')
-                status = '200 OK'
-                headers = [
-                    ('Content-Type', 'text/html; charset=utf-8'),
-                    ('Content-Length', str(len(response)))
-                ]
-                start_response(status, headers)
-                return [response]
-            else:
-                return generic_404(start_response)
+                if id >= 1000:
+                    # Prevent using old hash format on new pastes
+                    return generic_404(start_response)
+            return retrieve_paste(id, start_response)
+
 
         elif not path:
             # Requesting /, return the (static) submit page
@@ -297,7 +320,7 @@ def application(environ, start_response):
                 conn.commit()
                 status = '302 Found'
                 headers = [
-                    ('Location', '/{}'.format(encrypt_id_v1(c.lastrowid)))
+                    ('Location', '/{}'.format(encrypt_id_v2(c.lastrowid)))
                 ]
                 start_response(status, headers)
                 return [b'']
