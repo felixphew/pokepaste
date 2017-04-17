@@ -1,3 +1,6 @@
+crypto_secrets.py
 pokepaste.db
+img/pokemon/
+img/items/
 __pycache__/
 .DS_Store
