@@ -109,6 +109,10 @@
 	"Bright Powder": {
 		"id": 213
 	},
+	"Bug Gem": {
+		"id": 558,
+		"type": "bug"
+	},
 	"Bug Memory": {
 		"id": 909
 	},
@@ -197,6 +201,10 @@
 		"id": 285,
 		"type": "water"
 	},
+	"Dark Gem": {
+		"id": 562,
+		"type": "dark"
+	},
 	"Dark Memory": {
 		"id": 919
 	},
@@ -235,6 +243,10 @@
 	"Dragon Fang": {
 		"id": 250
 	},
+	"Dragon Gem": {
+		"id": 561,
+		"type": "dragon"
+	},
 	"Dragon Memory": {
 		"id": 918
 	},
@@ -269,6 +281,10 @@
 	},
 	"Electirizer": {
 		"id": 322
+	},
+	"Electric Gem": {
+		"id": 550,
+		"type": "Electric"
 	},
 	"Electric Memory": {
 		"id": 915
@@ -308,6 +324,10 @@
 		"id": 793,
 		"type": "fairy"
 	},
+	"Fairy Gem": {
+		"id": 715,
+		"type": "fairy"
+	},
 	"Fairy Memory": {
 		"id": 920
 	},
@@ -316,6 +336,10 @@
 	},
 	"Festival Ticket": {
 		"id": 844
+	},
+	"Fighting Gem": {
+		"id": 553,
+		"type": "fighting"
 	},
 	"Fighting Memory": {
 		"id": 904
@@ -326,6 +350,10 @@
 	},
 	"Figy Berry": {
 		"id": 159
+	},
+	"Fire Gem": {
+		"id": 548,
+		"type": "Fire"
 	},
 	"Fire Memory": {
 		"id": 912
@@ -348,6 +376,10 @@
 	},
 	"Float Stone": {
 		"id": 539
+	},
+	"Flying Gem": {
+		"id": 556,
+		"type": "flying"
 	},
 	"Flying Memory": {
 		"id": 905
@@ -389,6 +421,10 @@
 	"Genius Wing": {
 		"id": 568
 	},
+	"Ghost Gem": {
+		"id": 560,
+		"type": "ghost"
+	},
 	"Ghost Memory": {
 		"id": 910
 	},
@@ -401,6 +437,10 @@
 	},
 	"Gold Bottle Cap": {
 		"id": 796
+	},
+	"Grass Gem": {
+		"id": 551,
+		"type": "Grass"
 	},
 	"Grass Memory": {
 		"id": 914
@@ -427,6 +467,10 @@
 	"Griseous Orb": {
 		"id": 112
 	},
+	"Ground Gem": {
+		"id": 555,
+		"type": "ground"
+	},
 	"Ground Memory": {
 		"id": 907
 	},
@@ -439,6 +483,9 @@
 	},
 	"Gyaradosite": {
 		"id": 676
+	},
+	"HP Up": {
+		"id": 45
 	},
 	"Haban Berry": {
 		"id": 197,
@@ -472,14 +519,15 @@
 	"Honey": {
 		"id": 94
 	},
-	"HP Up": {
-		"id": 45
-	},
 	"Hyper Potion": {
 		"id": 25
 	},
 	"Iapapa Berry": {
 		"id": 163
+	},
+	"Ice Gem": {
+		"id": 552,
+		"type": "Ice"
 	},
 	"Ice Heal": {
 		"id": 20
@@ -727,6 +775,12 @@
 	"Oval Stone": {
 		"id": 110
 	},
+	"PP Max": {
+		"id": 53
+	},
+	"PP Up": {
+		"id": 51
+	},
 	"Paralyze Heal": {
 		"id": 22
 	},
@@ -779,6 +833,10 @@
 	"Poison Barb": {
 		"id": 245
 	},
+	"Poison Gem": {
+		"id": 554,
+		"type": "poison"
+	},
 	"Poison Memory": {
 		"id": 906
 	},
@@ -786,13 +844,13 @@
 		"id": 783,
 		"type": "poison"
 	},
-	"Poké Ball": {
+	"Pok\u00e9 Ball": {
 		"id": 4
 	},
-	"Poké Doll": {
+	"Pok\u00e9 Doll": {
 		"id": 63
 	},
-	"Poké Toy": {
+	"Pok\u00e9 Toy": {
 		"id": 577
 	},
 	"Pomeg Berry": {
@@ -822,12 +880,6 @@
 	"Power Weight": {
 		"id": 294
 	},
-	"PP Max": {
-		"id": 53
-	},
-	"PP Up": {
-		"id": 51
-	},
 	"Premier Ball": {
 		"id": 12
 	},
@@ -849,6 +901,10 @@
 	},
 	"Protein": {
 		"id": 46
+	},
+	"Psychic Gem": {
+		"id": 557,
+		"type": "psychic"
 	},
 	"Psychic Memory": {
 		"id": 916
@@ -932,6 +988,10 @@
 	},
 	"Ring Target": {
 		"id": 543
+	},
+	"Rock Gem": {
+		"id": 559,
+		"type": "rock"
 	},
 	"Rock Incense": {
 		"id": 315
@@ -1067,6 +1127,10 @@
 	"Starf Berry": {
 		"id": 207
 	},
+	"Steel Gem": {
+		"id": 563,
+		"type": "steel"
+	},
 	"Steel Memory": {
 		"id": 911
 	},
@@ -1148,6 +1212,10 @@
 	"Wacan Berry": {
 		"id": 186,
 		"type": "electric"
+	},
+	"Water Gem": {
+		"id": 549,
+		"type": "Water"
 	},
 	"Water Memory": {
 		"id": 913
