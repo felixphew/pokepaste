@@ -13,10 +13,11 @@ friendly.
 
 You can use PokePaste at <http://pokepast.es>.
 
-Running PokePaste only needs Python 3+, compiled with SQlite support
-(which is nearly always the case). To run it, initialise pokepaste.db
-from the schema in the tools directory, then run pokepaste.py. It
-listens on port 8000 by default.
+Running PokePaste only needs Python 3+, plus SQlite (normally included)
+and PyCrypto. You can use tools/schema.sql to initialise pokepaste.db,
+and tools/fetch-images.py to fetch images from Pokemon Global Link (or
+provide your own). Running pokepaste.py directly will start up a server
+on port 8000 that's fine for development purposes.
 
 If you plan on putting this on anything resembling the public Internet,
 running behind a reverse proxy such as nginx is recommended. Is supports
