@@ -4764,6 +4764,21 @@
 		"no": 0,
 		"type": "ghost"
 	},
+	"Jangmo-o": {
+		"id": 782,
+		"no": 0,
+		"type": "dragon"
+	},
+	"Hakamo-o": {
+		"id": 783,
+		"no": 0,
+		"type": "dragon"
+	},
+	"Kommo-o": {
+		"id": 784,
+		"no": 0,
+		"type": "dragon"
+	},
 	"Tapu Koko": {
 		"id": 785,
 		"no": 0,
