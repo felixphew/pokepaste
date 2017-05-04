@@ -734,6 +734,11 @@
 		"no": 0,
 		"type": "water"
 	},
+	"Mr. Mime" : {
+		"id": 122,
+		"no": 0,
+		"type": "psychic"
+	},
 	"Scyther": {
 		"id": 123,
 		"no": 0,
@@ -2061,7 +2066,7 @@
 	},
 	"Wynaut": {
 		"id": 360,
-		"no": 1,
+		"no": 0,
 		"type": "psychic"
 	},
 	"Snorunt": {
@@ -2548,6 +2553,11 @@
 		"id": 438,
 		"no": 0,
 		"type": "rock"
+	},
+	"Mime Jr." : {
+		"id": 439,
+		"no": 0,
+		"type": "psychic"
 	},
 	"Happiny": {
 		"id": 440,
@@ -3389,7 +3399,7 @@
 		"no": 0,
 		"type": "psychic"
 	},
-	"Solosis ": {
+	"Solosis": {
 		"id": 577,
 		"no": 0,
 		"type": "psychic"
@@ -4014,14 +4024,84 @@
 		"no": 0,
 		"type": "fire"
 	},
+	"Flabebe": {
+		"id": 669,
+		"no": 0,
+		"type": "fairy"
+	},
+	"Flabebe-Yellow": {
+		"id": 669,
+		"no": 1,
+		"type": "fairy"
+	},
+	"Flabebe-Orange": {
+		"id": 669,
+		"no": 2,
+		"type": "fairy"
+	},
+	"Flabebe-Blue": {
+		"id": 669,
+		"no": 3,
+		"type": "fairy"
+	},
+	"Flabebe-White": {
+		"id": 669,
+		"no": 4,
+		"type": "fairy"
+	},
 	"Floette": {
 		"id": 670,
 		"no": 0,
 		"type": "fairy"
 	},
+	"Floette-Yellow": {
+		"id": 670,
+		"no": 1,
+		"type": "fairy"
+	},
+	"Floette-Orange": {
+		"id": 670,
+		"no": 2,
+		"type": "fairy"
+	},
+	"Floette-Blue": {
+		"id": 670,
+		"no": 3,
+		"type": "fairy"
+	},
+	"Floette-White": {
+		"id": 670,
+		"no": 4,
+		"type": "fairy"
+	},
+	"Floette-Eternal": {
+		"id": 670,
+		"no": 5,
+		"type": "fairy"
+	},
 	"Florges": {
 		"id": 671,
 		"no": 0,
+		"type": "fairy"
+	},
+	"Florges-Yellow": {
+		"id": 671,
+		"no": 1,
+		"type": "fairy"
+	},
+	"Florges-Orange": {
+		"id": 671,
+		"no": 2,
+		"type": "fairy"
+	},
+	"Florges-Blue": {
+		"id": 671,
+		"no": 3,
+		"type": "fairy"
+	},
+	"Florges-White": {
+		"id": 671,
+		"no": 4,
 		"type": "fairy"
 	},
 	"Skiddo": {
