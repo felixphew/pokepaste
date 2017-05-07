@@ -83,10 +83,12 @@
 		"id": 544
 	},
 	"Black Belt": {
-		"id": 241
+		"id": 241,
+		"type": "fighting"
 	},
 	"Black Glasses": {
-		"id": 240
+		"id": 240,
+		"type": "dark"
 	},
 	"Black Sludge": {
 		"id": 281
@@ -139,7 +141,8 @@
 		"id": 546
 	},
 	"Charcoal": {
-		"id": 249
+		"id": 249,
+		"type": "fire"
 	},
 	"Charizardite X": {
 		"id": 660
@@ -241,7 +244,8 @@
 		"id": 311
 	},
 	"Dragon Fang": {
-		"id": 250
+		"id": 250,
+		"type": "dragon"
 	},
 	"Dragon Gem": {
 		"id": 561,
@@ -492,7 +496,8 @@
 		"type": "dragon"
 	},
 	"Hard Stone": {
-		"id": 238
+		"id": 238,
+		"type": "rock"
 	},
 	"Heal Ball": {
 		"id": 14
@@ -661,7 +666,8 @@
 		"id": 323
 	},
 	"Magnet": {
-		"id": 242
+		"id": 242,
+		"type": "electric"
 	},
 	"Mago Berry": {
 		"id": 161
@@ -701,7 +707,8 @@
 		"id": 758
 	},
 	"Metal Coat": {
-		"id": 233
+		"id": 233,
+		"type": "steel"
 	},
 	"Metal Powder": {
 		"id": 257
@@ -717,7 +724,8 @@
 		"id": 307
 	},
 	"Miracle Seed": {
-		"id": 239
+		"id": 239,
+		"type": "grass"
 	},
 	"Misty Seed": {
 		"id": 883
@@ -738,7 +746,8 @@
 		"id": 566
 	},
 	"Mystic Water": {
-		"id": 243
+		"id": 243,
+		"type": "water"
 	},
 	"Nest Ball": {
 		"id": 8
@@ -747,7 +756,8 @@
 		"id": 6
 	},
 	"Never-Melt Ice": {
-		"id": 246
+		"id": 246,
+		"type": "ice"
 	},
 	"Normal Gem": {
 		"id": 564
@@ -831,7 +841,8 @@
 		"id": 573
 	},
 	"Poison Barb": {
-		"id": 245
+		"id": 245,
+		"type": "poison"
 	},
 	"Poison Gem": {
 		"id": 554,
@@ -1044,7 +1055,8 @@
 		"id": 709
 	},
 	"Sharp Beak": {
-		"id": 244
+		"id": 244,
+		"type": "flying"
 	},
 	"Sharpedonite": {
 		"id": 759
@@ -1066,10 +1078,16 @@
 		"type": "ground"
 	},
 	"Silk Scarf": {
-		"id": 251
+		"id": 251,
+		"type": "normal"
+	},
+	"SilverPowder": {
+		"id": 222,
+		"type": "bug"
 	},
 	"Silver Powder": {
-		"id": 222
+		"id": 222,
+		"type": "bug"
 	},
 	"Sitrus Berry": {
 		"id": 158
@@ -1101,7 +1119,8 @@
 		"id": 31
 	},
 	"Soft Sand": {
-		"id": 237
+		"id": 237,
+		"type": "ground"
 	},
 	"Soothe Bell": {
 		"id": 218
@@ -1110,7 +1129,8 @@
 		"id": 225
 	},
 	"Spell Tag": {
-		"id": 247
+		"id": 247,
+		"type": "ghost"
 	},
 	"Splash Plate": {
 		"id": 299
@@ -1198,7 +1218,8 @@
 		"id": 304
 	},
 	"Twisted Spoon": {
-		"id": 248
+		"id": 248,
+		"type": "psychic"
 	},
 	"Ultra Ball": {
 		"id": 2
