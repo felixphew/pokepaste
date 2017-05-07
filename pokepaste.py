@@ -223,6 +223,118 @@ def retrieve_paste(id, start_response):
     else:
         return generic_404(start_response)
 
+def parse_pokemon(mon):
+    # Example input:
+    # ffffffffff (Gyarados) (M) @ Leftovers
+    # Ability: Intimidate
+    # Level: 57
+    # Shiny: Yes
+    # Happiness: 64
+    # EVs: 252 Atk / 4 SpD / 252 Spe
+    # Adamant Nature
+    # IVs: 21 HP / 7 Atk / 19 Def / 30 SpA / 0 SpD
+    # - Dragon Dance
+    # - Substitute
+    # - Waterfall
+    # - Crunch
+
+    # Example output (curSet dictionary)
+    # {'item': {'name': 'Leftovers', 'id': 234}, 'gender': 'M', 'species': 'Gyarados', 'nick': 'ffffffffff', 'ability': 'Intimidate', 'level': 57, 'shiny': True, 'happiness': 64, 'evs': {'hp': 0, 'atk': 252, 'def': 0, 'spa': 0, 'spd': 4, 'spe': 252}, 'ivs': {'hp': 21, 'atk': 7, 'def': 19, 'spa': 30, 'spd': 0, 'spe': 31}, 'moves': [{'name': 'Dragon Dance', 'moveid': 349, 'type': 'dragon', 'classification': 0}, {'name': 'Substitute', 'moveid': 164, 'type': 'normal', 'classification': 0}, {'name': 'Waterfall', 'moveid': 127, 'type': 'water', 'classification': 1}, {'name': 'Crunch', 'moveid': 242, 'type': 'dark', 'classification': 1}]}
+
+    text = mon.split("\n")
+    curSet = None
+
+    for x in range(0, len(text)):
+        line = text[x].strip()
+        if (line == '' or line == '---'):
+            curSet = None
+
+        #Initialization - first line of import
+        elif (curSet is None):
+            curSet = {}
+
+            #Parse item
+            atIndex = line.rfind(' @ ')
+            if (atIndex != -1):
+                item = line[atIndex+3:].strip()
+                if (item in item_data):
+                    curSet['item'] = {'name': item, 'id': item_data[item]['id']}
+                else:
+                    curSet['item'] = None
+                line = line[:atIndex]
+
+            #Parse gender
+            if (line[-4:] == ' (M)'):
+                curSet['gender'] = 'M'
+                line = line[0:-4]
+            if (line[-4:] == ' (F)'):
+                curSet['gender'] = 'F'
+                line = line[0:-4]
+
+            #Parse species name and nick (if any)
+            parenIndex = line.rfind(' (')
+            if (line[-1:] == ')' and parenIndex != -1):
+                line = line[0:-1]
+                curSet['species'] = line[parenIndex+2:]
+                line = line[:parenIndex]
+                curSet['nick'] = line
+            else:
+                curSet['species'] = line
+                curSet['nick'] = ""
+
+        #Parse other aspects of Pokemon, each with its own line:
+        elif (line[:9] == 'Ability: '):
+            line = line[9:]
+            curSet['ability'] = line
+        elif (line == 'Shiny: Yes'):
+            curSet['shiny'] = True
+        elif (line[:7] == 'Level: '):
+            line = line[7:]
+            curSet['level'] = int(line)
+        elif (line[:11] == 'Happiness: '):
+            line = line[11:]
+            curSet['happiness'] = int(line)
+        elif (line[:5] == 'EVs: '):
+            line = line[5:]
+            evLines = line.split('/')
+            curSet['evs'] = {'hp': 0, 'atk': 0, 'def': 0, 'spa': 0, 'spd': 0, 'spe': 0}
+            for y in range(len(evLines)):
+                evLine = evLines[y].strip()
+                spaceIndex = evLine.find(' ')
+                if (spaceIndex == -1):
+                    continue
+                statId = evLine[spaceIndex+1:].lower()
+                statVal = int(evLine[:spaceIndex])
+                if (statId in curSet['evs']):
+                    curSet['evs'][statId] = statVal
+        elif (line[:5] == 'IVs: '):
+            line = line[5:]
+            ivLines = line.split('/')
+            curSet['ivs'] = {'hp': 31, 'atk': 31, 'def': 31, 'spa': 31, 'spd': 31, 'spe': 31}
+            for y in range(len(ivLines)):
+                ivLine = ivLines[y].strip()
+                spaceIndex = ivLine.find(' ')
+                if (spaceIndex == -1):
+                    continue
+                statId = ivLine[spaceIndex + 1:].lower()
+                statVal = int(ivLine[:spaceIndex])
+                if (statId in curSet['ivs']):
+                    curSet['ivs'][statId] = statVal
+        elif (line[:-6].lower() == 'nature'):
+            test = 0
+            #nature.json not created yet...do this later
+        #Parse move
+        elif (line[:1] == '-' or line[:1] == '~'):
+            line = line[1:].strip()
+            if ('moves' not in curSet):
+                curSet['moves'] = []
+            #Check for Hidden Power case. Also (possibly) adjust for IVs
+            if (line in move_data):
+                curSet['moves'].append({'name': line, 'moveid': int(move_data[line]['id']), 'type': move_data[line]['type'], 'classification': int(move_data[line]['classification'])})
+
+    # print(curSet)
+    return curSet
+
 def generic_404(start_response, status='404 Not Found'):
     response = html_static['404'].encode('utf-8')
     headers = [
