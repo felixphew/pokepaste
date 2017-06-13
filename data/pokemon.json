@@ -514,6 +514,16 @@
 		"no": 0,
 		"type": "electric"
 	},
+	"Farfetch'd": {
+		"id": 83,
+		"no": 0,
+		"type": "normal"
+	},
+	"Farfetch&#x27;d": {
+		"id": 83,
+		"no": 0,
+		"type": "normal"
+	},
 	"Doduo": {
 		"id": 84,
 		"no": 0,
@@ -4377,6 +4387,16 @@
 	"Zygarde": {
 		"id": 718,
 		"no": 0,
+		"type": "dragon"
+	},
+	"Zygarde-10%": {
+		"id": 718,
+		"no": 1,
+		"type": "dragon"
+	},
+	"Zygarde-Complete": {
+		"id": 718,
+		"no": 4,
 		"type": "dragon"
 	},
 	"Diancie": {
