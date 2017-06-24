@@ -20,6 +20,7 @@
 			background-size: 150px;
 			background-position: -75px -75px;
 		}
+
 		div.img-item {
 			position: absolute;
 			bottom: 0px;
@@ -38,11 +39,7 @@
 		.heading { font-style: italic }
 
 		@media (min-width: 450px) {
-			div.img-pokemon {
-				float: left;
-				clear: left;
-			}
-			div.set pre {
+			div.img-pokemon, div.set pre {
 				float: left
 			}
 		}
@@ -96,6 +93,18 @@
 
 ${imgcss}
 		</style>
+		<style id="vgc-mode-css">div.set { clear: left }</style>
+		<script type="text/javascript">
+			function vgcmode() {
+				checkbox = document.getElementById("vgc-mode")
+				css = document.getElementById('vgc-mode-css');
+				if (checkbox.checked) {
+					css.innerHTML = "div.set:nth-of-type(odd) { clear: left }";
+				} else {
+					css.innerHTML = "div.set { clear: left }";
+				}
+			}
+		</script>
 	</head>
 	<body>
 		<main>${mons}</main>
@@ -103,6 +112,7 @@ ${imgcss}
 			<h1>${title}</h1>
 			<h2>by ${author}</h2>
 			<p>${notes}</p>
+			<p><input id="vgc-mode" name="vgc-mode" type="checkbox" onchange="vgcmode()"><label for="vgcmode"> Columns mode (experimental)</label></p>
 		</aside>
 	</body>
 </html>

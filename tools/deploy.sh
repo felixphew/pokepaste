@@ -1,2 +1,2 @@
-sudo -u uwsgi git -C /usr/local/www/pokepaste pull
-sudo service uwsgi restart
+su -m uwsgi -c 'git -C /usr/local/www/pokepaste pull'
+service uwsgi restart
