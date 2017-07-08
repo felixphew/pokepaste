@@ -94,14 +94,24 @@
 ${imgcss}
 		</style>
 		<style id="vgc-mode-css">div.set { clear: left }</style>
+		<style id="stat-colours-css"></style>
 		<script type="text/javascript">
 			function vgcmode() {
 				checkbox = document.getElementById("vgc-mode")
 				css = document.getElementById('vgc-mode-css');
 				if (checkbox.checked) {
-					css.innerHTML = "div.set:nth-of-type(odd) { clear: left } div.set pre { width: 200pt } .magic-wrap { display: inline-block }";
+					css.innerHTML = "div.set:nth-of-type(odd) { clear: left } div.set pre { width: 200pt } .stat-wrap { display: inline-block }";
 				} else {
 					css.innerHTML = "div.set { clear: left }";
+				}
+			}
+			function statcolours() {
+				checkbox = document.getElementById("stat-colours")
+				css = document.getElementById('stat-colours-css');
+				if (checkbox.checked) {
+					css.innerHTML = ".stat-hp { color: #FF0000 } .stat-atk { color: #F08030 } .stat-def { color: #F8D030 } .stat-spa { color: #6890F0 } .stat-spd { color: #78C850 } .stat-spe { color: #F85888 }";
+				} else {
+					css.innerHTML = "";
 				}
 			}
 		</script>
@@ -112,7 +122,7 @@ ${imgcss}
 			<h1>${title}</h1>
 			<h2>by ${author}</h2>
 			<p>${notes}</p>
-			<p><input id="vgc-mode" name="vgc-mode" type="checkbox" onchange="vgcmode()"><label for="vgcmode"> Columns mode (experimental)</label></p>
+			<p><input id="vgc-mode" name="vgc-mode" type="checkbox" onchange="vgcmode()"><label for="vgc-mode"> Columns mode</label> <input id="stat-colours" name="stat-colours" type="checkbox" onchange="statcolours()"><label for="stat-colours"> Stat colours</label></p>
 		</aside>
 	</body>
 </html>

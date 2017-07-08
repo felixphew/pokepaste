@@ -168,18 +168,28 @@ def format_paste(paste, title, author, notes):
                     mon_formatted += line[0]
                     mon_formatted += '</span>'
                     mon_formatted += line[1:]
-                elif line[:5] in ('EVs: ', 'IVs: '):
-                    mon_formatted += '<span class="heading">'
-                    mon_formatted += line[:4]
-                    mon_formatted += '</span> <span class="magic-wrap">'
-                    mon_formatted += line[5:].rstrip().replace(' / ', '</span> / <span class="magic-wrap">')
-                    mon_formatted += '</span>'
                 elif ':' in line:
                     index = line.index(':') + 1
                     mon_formatted += '<span class="heading">'
                     mon_formatted += line[:index]
                     mon_formatted += '</span>'
-                    mon_formatted += line[index:]
+                    if line[:5] in ('EVs: ', 'IVs: '):
+                        mon_formatted += ' '
+                        statsline = line[5:].rstrip().split(' / ')
+                        for i, stat in enumerate(statsline):
+                            if stat.endswith('HP'): s = 'stat-hp'
+                            elif stat.endswith('Atk'): s = 'stat-atk'
+                            elif stat.endswith('Def'): s = 'stat-def'
+                            elif stat.endswith('SpA'): s = 'stat-spa'
+                            elif stat.endswith('SpD'): s = 'stat-spd'
+                            elif stat.endswith('Spe'): s = 'stat-spe'
+                            else: s = ''
+                            mon_formatted += '<span class="stat-wrap {}">'.format(s)
+                            mon_formatted += stat
+                            mon_formatted += '</span>'
+                            if i != len(statsline) - 1: mon_formatted += ' / '
+                    else:
+                        mon_formatted += line[index:]
                 else:
                     mon_formatted += line
             except:
