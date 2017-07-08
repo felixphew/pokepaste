@@ -98,7 +98,7 @@ def format_paste(paste, title, author, notes):
 
         try:
             index = len(line)
-    
+
             if '(M)' in line:
                 index = line.rindex('(M)')
                 lindex = index + 1
@@ -109,7 +109,7 @@ def format_paste(paste, title, author, notes):
                           + line[lindex:rindex]
                           + '</span>'
                           + line[rindex:])
-    
+
             if '(F)' in line:
                 index = line.rindex('(F)')
                 lindex = index + 1
@@ -120,7 +120,7 @@ def format_paste(paste, title, author, notes):
                           + line[lindex:rindex]
                           + '</span>'
                           + line[rindex:])
-    
+
             if ')' in line[:index] and '(' in line[line[:index].rindex('('):]:
                 rindex = line[:index].rindex(')')
                 lindex = line[:rindex].rindex('(') + 1
@@ -143,7 +143,7 @@ def format_paste(paste, title, author, notes):
                           + lineparts[1]
                           + lineparts[2]
                           + line[index:])
-    
+
             lineparts = line.rpartition('@')
             if lineparts[2].strip() in item_data:
                 item = item_data[lineparts[2].strip()]
@@ -156,7 +156,7 @@ def format_paste(paste, title, author, notes):
                           + '</span>')
                 except KeyError:
                     pass
-        
+
         finally:
             mon_formatted = line + '\n'
 
@@ -168,6 +168,12 @@ def format_paste(paste, title, author, notes):
                     mon_formatted += line[0]
                     mon_formatted += '</span>'
                     mon_formatted += line[1:]
+                elif line[:5] in ('EVs: ', 'IVs: '):
+                    mon_formatted += '<span class="heading">'
+                    mon_formatted += line[:4]
+                    mon_formatted += '</span> <span class="magic-wrap">'
+                    mon_formatted += line[5:].rstrip().replace(' / ', '</span> / <span class="magic-wrap">')
+                    mon_formatted += '</span>'
                 elif ':' in line:
                     index = line.index(':') + 1
                     mon_formatted += '<span class="heading">'
@@ -191,12 +197,12 @@ def format_paste(paste, title, author, notes):
         title = html.escape(title)
     else:
         title = 'Untitled'
-        
+
     if author:
         author = html.escape(author)
     else:
         author = 'Anonymous'
-        
+
     if notes:
         notes = html.escape(notes).replace('\r\n', '</p><p>')
     else:
