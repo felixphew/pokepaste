@@ -241,7 +241,8 @@
 		"id": 116
 	},
 	"Draco Plate": {
-		"id": 311
+		"id": 311,
+		"type": "dragon"
 	},
 	"Dragon Fang": {
 		"id": 250,
@@ -262,7 +263,8 @@
 		"type": "dragon"
 	},
 	"Dread Plate": {
-		"id": 312
+		"id": 312,
+		"type": "dark"
 	},
 	"Dubious Disc": {
 		"id": 324
@@ -274,7 +276,8 @@
 		"id": 108
 	},
 	"Earth Plate": {
-		"id": 305
+		"id": 305,
+		"type": "ground"
 	},
 	"Eevium Z": {
 		"id": 805,
@@ -370,13 +373,15 @@
 		"type": "fire"
 	},
 	"Fist Plate": {
-		"id": 303
+		"id": 303,
+		"type": "fighting"
 	},
 	"Flame Orb": {
 		"id": 273
 	},
 	"Flame Plate": {
-		"id": 298
+		"id": 298,
+		"type": "fire"
 	},
 	"Float Stone": {
 		"id": 539
@@ -544,7 +549,8 @@
 		"id": 849
 	},
 	"Icicle Plate": {
-		"id": 302
+		"id": 302,
+		"type": "ice"
 	},
 	"Icium Z": {
 		"id": 781,
@@ -559,7 +565,8 @@
 		"type": "dark"
 	},
 	"Insect Plate": {
-		"id": 308
+		"id": 308,
+		"type": "bug"
 	},
 	"Iron": {
 		"id": 47
@@ -568,7 +575,8 @@
 		"id": 278
 	},
 	"Iron Plate": {
-		"id": 313
+		"id": 313,
+		"type": "steel"
 	},
 	"Kangaskhanite": {
 		"id": 675
@@ -698,7 +706,8 @@
 		"id": 29
 	},
 	"Meadow Plate": {
-		"id": 301
+		"id": 301,
+		"type": "grass"
 	},
 	"Mental Herb": {
 		"id": 219
@@ -721,7 +730,8 @@
 		"type": "psychic"
 	},
 	"Mind Plate": {
-		"id": 307
+		"id": 307,
+		"type": "psychic"
 	},
 	"Miracle Seed": {
 		"id": 239,
@@ -835,7 +845,8 @@
 		"id": 671
 	},
 	"Pixie Plate": {
-		"id": 644
+		"id": 644,
+		"type": "fairy"
 	},
 	"Plume Fossil": {
 		"id": 573
@@ -1096,7 +1107,8 @@
 		"id": 105
 	},
 	"Sky Plate": {
-		"id": 306
+		"id": 306,
+		"type": "flying"
 	},
 	"Slowbronite": {
 		"id": 760
@@ -1133,10 +1145,12 @@
 		"type": "ghost"
 	},
 	"Splash Plate": {
-		"id": 299
+		"id": 299,
+		"type": "water"
 	},
 	"Spooky Plate": {
-		"id": 310
+		"id": 310,
+		"type": "ghost"
 	},
 	"Star Piece": {
 		"id": 91
@@ -1165,7 +1179,8 @@
 		"id": 288
 	},
 	"Stone Plate": {
-		"id": 309
+		"id": 309,
+		"type": "rock"
 	},
 	"Strange Souvenir": {
 		"id": 704
@@ -1215,7 +1230,8 @@
 		"id": 272
 	},
 	"Toxic Plate": {
-		"id": 304
+		"id": 304,
+		"type": "poison"
 	},
 	"Twisted Spoon": {
 		"id": 248,
@@ -1298,7 +1314,8 @@
 		"id": 74
 	},
 	"Zap Plate": {
-		"id": 300
+		"id": 300,
+		"type": "electric"
 	},
 	"Zinc": {
 		"id": 52

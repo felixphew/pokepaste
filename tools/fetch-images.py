@@ -6,7 +6,7 @@ from urllib.error import URLError
 
 makedirs('img/pokemon', exist_ok=True)
 
-for mon in range(1, 802):
+for mon in range(1, 803):
     for form in range(32): 
         try:
             code = hex(0x1000000 | 0x159a55e5 * (mon + form * 0x10000) & 0xFFFFFF)[3:]
