@@ -8,11 +8,11 @@ from wsgiref.simple_server import make_server
 from Crypto.Cipher import Blowfish
 
 import re
-import sqlite3
 import os
 import json
 import cgi
 import html
+import mysql.connector
 
 try:
     import crypto_secrets
@@ -36,7 +36,9 @@ cipher = Blowfish.new(crypto_secrets.key)
 # so this regex is needed to filter out any funny business.
 img_re = re.compile(r'img/(pokemon/\d+-\d+|items/\d+).png')
 
-conn = sqlite3.connect('pokepaste.db')
+conn = mysql.connector.connect(user='pokepaste',
+                               database='pokepaste',
+                               host='localhost')
 
 pokemon_data = json.load(open('data/pokemon.json', encoding='utf-8'))
 item_data = json.load(open('data/items.json', encoding='utf-8'))
@@ -225,7 +227,8 @@ def format_paste(paste, title, author, notes):
 
 def retrieve_paste(id, start_response):
     c = conn.cursor()
-    c.execute('SELECT paste,title,author,notes FROM pastes WHERE id=?;', (id,))
+    c.execute('SELECT paste, title, author, notes FROM pastes '
+              'WHERE id = %s', (id,))
     paste = c.fetchone()
     if paste:
         response = format_paste(*paste).encode('utf-8')
@@ -329,8 +332,8 @@ def application(environ, start_response):
             if form.getvalue('paste'):
                 metadata = {}
                 c = conn.cursor()
-                c.execute('INSERT INTO pastes(paste,title,author,notes)'
-                          'VALUES(?,?,?,?)',
+                c.execute('INSERT INTO pastes (paste, title, author, notes) '
+                          'VALUES (%s, %s, %s, %s)',
                           [form.getvalue(key) for key in ('paste', 'title',
                                                           'author', 'notes')])
                 conn.commit()
@@ -358,4 +361,5 @@ if __name__ == '__main__':
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
+            conn.close()
             quit()
