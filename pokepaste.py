@@ -39,6 +39,7 @@ img_re = re.compile(r'img/(pokemon/\d+-\d+|items/\d+).png')
 
 conn_sqlite3 = sqlite3.connect('pokepaste.db')
 conn_mysql = mysql.connector.connect(user='pokepaste',
+                                     password=crypto_secrets.mysql_pass,
                                      database='pokepaste',
                                      host='localhost')
 
