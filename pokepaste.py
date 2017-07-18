@@ -41,7 +41,9 @@ conn_sqlite3 = sqlite3.connect('pokepaste.db')
 conn_mysql = mysql.connector.connect(user='pokepaste',
                                      password=crypto_secrets.mysql_pass,
                                      database='pokepaste',
-                                     host='localhost')
+                                     unix_socket='/tmp/mysql.sock',
+                                     charset='utf8mb4',
+                                     collation='utf8mb4_unicode_ci')
 
 pokemon_data = json.load(open('data/pokemon.json', encoding='utf-8'))
 item_data = json.load(open('data/items.json', encoding='utf-8'))
