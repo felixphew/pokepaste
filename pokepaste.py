@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 
-__version__ = '0.9'
+__version__ = '1.1'
 __author__ = 'Felix Friedlander <felixphew0@gmail.com>'
 
 from string import Template
@@ -37,13 +37,13 @@ cipher = Blowfish.new(crypto_secrets.key)
 # so this regex is needed to filter out any funny business.
 img_re = re.compile(r'img/(pokemon/\d+-\d+|items/\d+).png')
 
-conn_sqlite3 = sqlite3.connect('pokepaste.db')
-conn_mysql = mysql.connector.connect(user='pokepaste',
-                                     password=crypto_secrets.mysql_pass,
-                                     database='pokepaste',
-                                     unix_socket='/tmp/mysql.sock',
-                                     charset='utf8mb4',
-                                     collation='utf8mb4_unicode_ci')
+conn = mysql.connector.connect(user='pokepaste',
+                               password=crypto_secrets.mysql_pass,
+                               database='pokepaste',
+                               unix_socket='/tmp/mysql.sock',
+                               charset='utf8mb4',
+                               collation='utf8mb4_unicode_ci',
+                               autocommit=True)
 
 pokemon_data = json.load(open('data/pokemon.json', encoding='utf-8'))
 item_data = json.load(open('data/items.json', encoding='utf-8'))
@@ -231,9 +231,9 @@ def format_paste(paste, title, author, notes):
                                              notes=notes)
 
 def retrieve_paste(id, start_response):
-	# All retrieval is still done from SQLite3... for now
-    c = conn_sqlite3.cursor()
-    c.execute('SELECT paste, title, author, notes FROM pastes WHERE id = ?', (id,))
+    c = conn.cursor()
+    c.execute('SELECT paste, title, author, notes FROM pastes WHERE id = %s',
+              (id,))
     paste = c.fetchone()
     if paste:
         response = format_paste(*paste).encode('utf-8')
@@ -335,20 +335,12 @@ def application(environ, start_response):
             # Submit a new paste
             form = cgi.FieldStorage(fp=environ['wsgi.input'], environ=environ)
             if form.getvalue('paste'):
-                # Insert into SQLite3 first, then grab the rowid
-                # and insert a matching value into MySQL
-                c_sqlite3 = conn_sqlite3.cursor()
-                c_mysql = conn_mysql.cursor()
-                c_sqlite3.execute('INSERT INTO pastes (paste, title, author, notes) VALUES (?, ?, ?, ?)',
-                                  [form.getvalue(key) for key in ('paste', 'title', 'author', 'notes')])
-                rowid = c_sqlite3.lastrowid
-                c_mysql.execute('INSERT INTO pastes (id, paste, title, author, notes) VALUES (%s, %s, %s, %s, %s)',
-                                [rowid] + [form.getvalue(key) for key in ('paste', 'title', 'author', 'notes')])
-                conn_sqlite3.commit()
-                conn_mysql.commit()
+                c = conn.cursor()
+                c.execute('INSERT INTO pastes (paste, title, author, notes) VALUES (%s, %s, %s, %s)',
+                          [form.getvalue(key) for key in ('paste', 'title', 'author', 'notes')])
                 status = '302 Found'
                 headers = [
-                    ('Location', '/{}'.format(encrypt_id_v2(rowid)))
+                    ('Location', '/{}'.format(encrypt_id_v2(c.lastrowid)))
                 ]
                 start_response(status, headers)
                 return [b'']
@@ -370,6 +362,5 @@ if __name__ == '__main__':
         try:
             httpd.serve_forever()
         except KeyboardInterrupt:
-            conn_sqlite3.close()
-            conn_mysql.close()
+            conn.close()
             quit()
