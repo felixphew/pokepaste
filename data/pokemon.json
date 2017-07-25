@@ -4968,5 +4968,120 @@
 		"id": 802,
 		"no": 0,
 		"type": "ghost"
+	},
+	"Syclant": {
+		"id": 10001,
+		"no": 0,
+		"type": "ice"
+	},
+	"Revenankh": {
+		"id": 10002,
+		"no": 0,
+		"type": "ghost"
+	},
+	"Pyroak": {
+		"id": 10003,
+		"no": 0,
+		"type": "fire"
+	},
+	"Fidgit": {
+		"id": 10004,
+		"no": 0,
+		"type": "poison"
+	},
+	"Stratagem": {
+		"id": 10005,
+		"no": 0,
+		"type": "rock"
+	},
+	"Arghonaut": {
+		"id": 10006,
+		"no": 0,
+		"type": "water"
+	},
+	"Kitsunoh": {
+		"id": 10007,
+		"no": 0,
+		"type": "steel"
+	},
+	"Cyclohm": {
+		"id": 10008,
+		"no": 0,
+		"type": "electric"
+	},
+	"Colossoil": {
+		"id": 10009,
+		"no": 0,
+		"type": "dark"
+	},
+	"Krilowatt": {
+		"id": 10010,
+		"no": 0,
+		"type": "electric"
+	},
+	"Voodoom": {
+		"id": 10011,
+		"no": 0,
+		"type": "fighting"
+	},
+	"Tomohawk": {
+		"id": 10012,
+		"no": 0,
+		"type": "flying"
+	},
+	"Necturna": {
+		"id": 10013,
+		"no": 0,
+		"type": "grass"
+	},
+	"Mollux": {
+		"id": 10014,
+		"no": 0,
+		"type": "fire"
+	},
+	"Aurumoth": {
+		"id": 10015,
+		"no": 0,
+		"type": "bug"
+	},
+	"Malaconda": {
+		"id": 10016,
+		"no": 0,
+		"type": "dark"
+	},
+	"Cawmodore": {
+		"id": 10017,
+		"no": 0,
+		"type": "steel"
+	},
+	"Volkraken": {
+		"id": 10018,
+		"no": 0,
+		"type": "water"
+	},
+	"Plasmanta": {
+		"id": 10019,
+		"no": 0,
+		"type": "electric"
+	},
+	"Naviathan": {
+		"id": 10020,
+		"no": 0,
+		"type": "water"
+	},
+	"Crucibelle-Mega": {
+		"id": 10021,
+		"no": 1,
+		"type": "rock"
+	},
+	"Crucibelle": {
+		"id": 10021,
+		"no": 0,
+		"type": "rock"
+	},
+	"Kerfluffle": {
+		"id": 10022,
+		"no": 0,
+		"type": "fairy"
 	}
 }
