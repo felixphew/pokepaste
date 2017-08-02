@@ -199,6 +199,11 @@
 		"no": 1,
 		"type": "ice"
 	},
+	"Nidoran-F": {
+		"id": 29,
+		"no": 0,
+		"type": "poison"
+	},
 	"Nidorina": {
 		"id": 30,
 		"no": 0,
@@ -206,6 +211,11 @@
 	},
 	"Nidoqueen": {
 		"id": 31,
+		"no": 0,
+		"type": "poison"
+	},
+	"Nidoran-M": {
+		"id": 32,
 		"no": 0,
 		"type": "poison"
 	},
