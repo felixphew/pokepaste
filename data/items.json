@@ -1322,5 +1322,80 @@
 	},
 	"Zoom Lens": {
 		"id": 276
+	},
+		"Gardevoirite": {
+		"id": 657
+	},
+	"Ampharosite": {
+		"id": 658
+	},
+	"Mewtwonite X": {
+		"id": 662
+	},
+	"Mewtwonite Y": {
+		"id": 663
+	},
+	"Blazikenite": {
+		"id": 664
+	},
+	"Aggronite": {
+		"id": 667
+	},
+	"Banettite": {
+		"id": 668
+	},
+	"Tyranitarite": {
+		"id": 669
+	},
+	"Abomasite": {
+		"id": 674
+	},
+	"Heracronite": {
+		"id": 680
+	},
+	"Mawilite": {
+		"id": 681
+	},
+	"Manectite": {
+		"id": 682
+	},
+	"Latiasite": {
+		"id": 684
+	},
+	"Latiosite": {
+		"id": 685
+	},
+	"Swampertite": {
+		"id": 752
+	},
+	"Sceptilite": {
+		"id": 753
+	},
+	"Altarianite": {
+		"id": 755
+	},
+	"Galladite": {
+		"id": 756
+	},
+	"Audinite": {
+		"id": 757
+	},
+	"Steelixite": {
+		"id": 761
+	},
+	"Pidgeotite": {
+		"id": 762
+	},
+	"Diancite": {
+		"id": 764
+	},
+	"Cameruptite": {
+		"id": 767
+	},
+	"Lopunnite": {
+		"id": 768
+	},
+	"Beedrillite": {
+		"id": 770
 	}
 }
