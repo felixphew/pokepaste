@@ -1,0 +1,68 @@
+@import url('fonts.css');
+@import url('syntax.css');
+
+body {
+	margin: 0;
+	background-color: black;
+	color: white;
+	font: 300 12px "M+ 1c", sans-serif;
+}
+
+article {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+div.img-mon {
+	position: relative;
+	width: 150px;
+	height: 150px;
+	margin: 15px;
+	background-size: 150px;
+	background-position: -75px -75px;
+}
+
+div.img-item {
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	width: 40px;
+	height: 40px;
+	background-size: 40px;
+}
+
+pre {
+	margin: 15px 15px 0;
+	font: 300 larger "M+ 1m", monospace;
+	white-space: pre-wrap;
+}
+
+aside {
+	position: fixed;
+	top: 0;
+	right: 0;
+	max-width: 300px;
+	margin: 15px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+}
+
+@media (max-width: 750px) {
+	aside {
+		display: none;
+	}
+}
+
+h1 { font-size: x-large }
+
+h2 { font-size: larger }
+
+aside > button {
+	margin: 0 12px;
+	border: 0;
+	background-color: inherit;
+	color: inherit;
+	font: inherit;
+}

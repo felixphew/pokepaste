@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{ title if title else 'Untitled PokePaste' }}</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" href="/static/css/paste.css">
+		<style>/* Dummy stylesheet for VGC CSS */</style>
+		<style>/* Dummy stylesheet for stat colours CSS */</style>
+	</head>
+	<body>
+		{% for mon in mons %}
+		<article>
+			<div class="img-mon" style="background-image: url('/static/img/pokemon/{{ mon.monid }}-{{ mon.monno }}.png')">
+				{% if mon.itemid %}<div class="img-item" style="background-image: url('/static/img/items/{{ mon.itemid }}.png"></div>{% endif %}
+			</div>
+			<pre>{{ mon.text }}</pre>
+		</article>
+		{% endfor %}
+		<aside>
+			{% if title %}<h1>{{ title }}</h1>{% endif %}
+			{% if author %}<h2>&nbsp;by {{ author }}</h2>{% endif %}
+			{% if notes %}<p>{{ notes }}</p>{% endif %}
+			<button onclick="vgctoggle(this)">Columns Mode off</button><button onclick="statstoggle(this)">Stat Colours off</button>
+		</aside>
+		<script>
+if (document.cookie == "") {
+	document.cookie = "1b";
+} else {
+	buttons = document.getElementsByTagName("button");
+
+	if (document.cookie[0] == "2") {
+		vgctoggle(buttons[0]);
+	}
+
+	if (document.cookie[1] == "c") {
+		statstoggle(buttons[1]);
+	}
+}
+
+function vgctoggle(button) {
+	if (button.innerText == "Columns Mode off") {
+		document.styleSheets[1].insertRule("@import url('/static/css/paste-vgc.css')", 0);
+		button.innerText = "Columns Mode on";
+		document.cookie = "2" + document.cookie[1];
+	} else {
+		document.styleSheets[1].deleteRule(0);
+		button.innerText = "Columns Mode off";
+		document.cookie = "1" + document.cookie[1];
+	}
+}
+
+function statstoggle(button) {
+	if (button.innerText == "Stat Colours off") {
+		document.styleSheets[2].insertRule("@import url('/static/css/syntax-stats.css')", 0);
+		button.innerText = "Stat Colours on";
+		document.cookie = document.cookie[0] + "c";
+	} else {
+		document.styleSheets[2].deleteRule(0);
+		button.innerText = "Stat Colours off";
+		document.cookie = document.cookie[0] + "b";
+	}
+}
+		</script>
+	</body>
+</html>

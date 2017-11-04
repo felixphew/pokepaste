@@ -1,0 +1,6 @@
+__pycache__/
+pokepaste.cfg
+*.swp
+.DS_Store
+static/img/pokemon/*.png
+static/img/items/*.png
