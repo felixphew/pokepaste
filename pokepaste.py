@@ -7,8 +7,6 @@ from cryptography.hazmat.backends import default_backend
 
 from mysql.connector import connect as MySQL
 
-from os import urandom
-
 import re
 import json
 
@@ -222,7 +220,8 @@ def render_paste(paste, title, author, notes):
     return render_template('paste.html', mons=mons, title=title,
                            author=author, notes=notes)
 
-#@app.errorhandler(403)
-#@app.errorhandler(404)
-#def not_found(error):
-#    return render_template('error.html', error=error)
+@app.errorhandler(403)
+@app.errorhandler(404)
+@app.errorhandler(500)
+def not_found(error):
+    return render_template('error.html', error=error), error.code
