@@ -11,7 +11,7 @@ also features an image preview for mons and items using art from the
 Pokemon Global Link. The site is simple, standards-compliant and mobile-
 friendly.
 
-You can use PokePaste at <http://pokepast.es>.
+You can use PokePaste at <https://pokepast.es>.
 
 PokePaste v2 is written in Python, and depends on the Flask web
 framework (for routing, templating, all the stuff PokePaste v1 used to
