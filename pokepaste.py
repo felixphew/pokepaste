@@ -1,11 +1,11 @@
-from flask import Flask, Markup, escape, render_template, request, flash, redirect, abort
+from flask import Flask, Markup, g, escape, render_template, request, flash, redirect, abort
 
 from cryptography.hazmat.primitives.ciphers import Cipher
 from cryptography.hazmat.primitives.ciphers.algorithms import Blowfish
 from cryptography.hazmat.primitives.ciphers.modes import ECB
 from cryptography.hazmat.backends import default_backend
 
-from mysql.connector import connect as MySQL
+from mysql.connector.pooling import MySQLConnectionPool
 
 import re
 import json
@@ -19,13 +19,12 @@ cipher = Cipher(
         default_backend()
 )
 
-conn = MySQL(
+pool = MySQLConnectionPool(
     user='pokepaste',
     database='pokepaste',
     charset='utf8mb4',
     collation='utf8mb4_unicode_ci',
-    autocommit=True,
-    buffered=True
+    autocommit=True
 )
 
 res = {
@@ -43,6 +42,16 @@ res = {n: re.compile(r) for n, r in res.items()}
 data = ['pokemon', 'items', 'moves']
 data = {n: json.load(open('data/{}.json'.format(n))) for n in data}
 
+def mysql_conn():
+    if not hasattr(g, 'conn'):
+        g.conn = pool.get_connection()
+    return g.conn
+
+@app.teardown_appcontext
+def return_mysql_conn(error=None):
+    if hasattr(g, 'conn'):
+        g.conn.close()
+
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -55,7 +64,7 @@ def create():
         return redirect('/')
 
     # Create the paste
-    c = conn.cursor()
+    c = mysql_conn().cursor()
     c.execute('INSERT INTO pastes (paste, title, author, notes) VALUES (%s, %s, %s, %s)',
               [request.form.get(k) for k in ('paste', 'title', 'author', 'notes')])
 
@@ -96,7 +105,7 @@ def paste(cryptid):
     else:
         abort(404)
 
-    c = conn.cursor()
+    c = mysql_conn().cursor()
     c.execute('SELECT paste, title, author, notes FROM pastes WHERE id = %s',
               (pasteid,))
     paste = c.fetchone()
