@@ -20,6 +20,7 @@ cipher = Cipher(
 )
 
 pool = MySQLConnectionPool(
+    pool_size=20,
     user='pokepaste',
     database='pokepaste',
     charset='utf8mb4',
@@ -42,16 +43,6 @@ res = {n: re.compile(r) for n, r in res.items()}
 data = ['pokemon', 'items', 'moves']
 data = {n: json.load(open('data/{}.json'.format(n))) for n in data}
 
-def mysql_conn():
-    if not hasattr(g, 'conn'):
-        g.conn = pool.get_connection()
-    return g.conn
-
-@app.teardown_appcontext
-def return_mysql_conn(error=None):
-    if hasattr(g, 'conn'):
-        g.conn.close()
-
 @app.route('/')
 def index():
     return render_template('index.html')
@@ -64,13 +55,16 @@ def create():
         return redirect('/')
 
     # Create the paste
-    c = mysql_conn().cursor()
+    conn = pool.get_connection()
+    c = conn.cursor()
     c.execute('INSERT INTO pastes (paste, title, author, notes) VALUES (%s, %s, %s, %s)',
               [request.form.get(k) for k in ('paste', 'title', 'author', 'notes')])
 
     # Encrypt ID and return
     encryptor = cipher.encryptor()
     url = encryptor.update(c.lastrowid.to_bytes(8, 'big')).hex()
+    encryptor.finalize()
+    conn.close()
     return redirect('/' + url)
 
 
@@ -105,10 +99,12 @@ def paste(cryptid):
     else:
         abort(404)
 
-    c = mysql_conn().cursor()
+    conn = pool.get_connection()
+    c = conn.cursor()
     c.execute('SELECT paste, title, author, notes FROM pastes WHERE id = %s',
               (pasteid,))
     paste = c.fetchone()
+    conn.close()
 
     if not paste:
         abort(404)
