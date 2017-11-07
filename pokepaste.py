@@ -24,7 +24,8 @@ conn = MySQL(
     database='pokepaste',
     charset='utf8mb4',
     collation='utf8mb4_unicode_ci',
-    autocommit=True
+    autocommit=True,
+    buffered=True
 )
 
 res = {
