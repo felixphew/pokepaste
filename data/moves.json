@@ -609,6 +609,11 @@
 		"type": "normal",
 		"classification": 0
 	},
+	"Mind Blown": {
+		"id": 720,
+		"type": "fire",
+		"classification": 2
+	},
 	"Mind Reader": {
 		"id": 170,
 		"type": "normal",
@@ -663,6 +668,16 @@
 		"id": 195,
 		"type": "normal",
 		"classification": 0
+	},
+	"Photon Geyser": {
+		"id": 722,
+		"type": "psychic",
+		"classification": 2
+	},
+	"Plasma Fists": {
+		"id": 721,
+		"type": "electric",
+		"classification": 1
 	},
 	"Play Nice": {
 		"id": 589,

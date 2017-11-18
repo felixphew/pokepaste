@@ -598,6 +598,9 @@
 	"King's Rock": {
 		"id": 221
 	},
+	"Kommonium Z": {
+		"id": 926
+	},
 	"Lagging Tail": {
 		"id": 279
 	},
@@ -661,6 +664,9 @@
 	"Lumiose Galette": {
 		"id": 708
 	},
+	"Lunalium Z": {
+		"id": 922
+	},
 	"Lure Ball": {
 		"id": 494
 	},
@@ -669,6 +675,9 @@
 	},
 	"Luxury Ball": {
 		"id": 11
+	},
+	"Lycanium Z": {
+		"id": 925
 	},
 	"Magmarizer": {
 		"id": 323
@@ -728,6 +737,9 @@
 	"Mewnium Z": {
 		"id": 806,
 		"type": "psychic"
+	},
+	"Mimikium Z": {
+		"id": 924
 	},
 	"Mind Plate": {
 		"id": 307,
@@ -1134,6 +1146,9 @@
 		"id": 237,
 		"type": "ground"
 	},
+	"Solgalium Z": {
+		"id": 921
+	},
 	"Soothe Bell": {
 		"id": 218
 	},
@@ -1239,6 +1254,9 @@
 	},
 	"Ultra Ball": {
 		"id": 2
+	},
+	"Ultranecrozium Z": {
+		"id": 923
 	},
 	"Up-Grade": {
 		"id": 252

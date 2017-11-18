@@ -4574,6 +4574,11 @@
 		"no": 1,
 		"type": "rock"
 	},
+	"Lycanroc-Dusk": {
+		"id": 745,
+		"no": 2,
+		"type": "rock"
+	},
 	"Wishiwashi": {
 		"id": 746,
 		"no": 0,
@@ -4969,6 +4974,21 @@
 		"no": 0,
 		"type": "psychic"
 	},
+	"Necrozma-Dusk-Mane": {
+		"id": 800,
+		"no": 1,
+		"type": "psychic"
+	},
+	"Necrozma-Dawn-Wings": {
+		"id": 800,
+		"no": 2,
+		"type": "psychic"
+	},
+	"Necrozma-Ultra": {
+		"id": 800,
+		"no": 3,
+		"type": "psychic"
+	},
 	"Magearna": {
 		"id": 801,
 		"no": 0,
@@ -4978,6 +4998,31 @@
 		"id": 802,
 		"no": 0,
 		"type": "ghost"
+	},
+	"Poipole": {
+		"id": 803,
+		"no": 0,
+		"type": "poison"
+	},
+	"Naganadel": {
+		"id": 804,
+		"no": 0,
+		"type": "poison"
+	},
+	"Stakataka": {
+		"id": 805,
+		"no": 0,
+		"type": "rock"
+	},
+	"Blacephalon": {
+		"id": 806,
+		"no": 0,
+		"type": "fire"
+	},
+	"Zeraora": {
+		"id": 807,
+		"no": 0,
+		"type": "electric"
 	},
 	"Syclant": {
 		"id": 10001,
