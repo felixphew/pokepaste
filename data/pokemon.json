@@ -5138,5 +5138,10 @@
 		"id": 10022,
 		"no": 0,
 		"type": "fairy"
+	},
+	"Pajantom": {
+		"id": 10023,
+		"no": 0,
+		"type": "dragon"
 	}
 }
