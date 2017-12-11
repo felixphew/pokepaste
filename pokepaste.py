@@ -47,6 +47,10 @@ data = {n: json.load(open('data/{}.json'.format(n))) for n in data}
 def index():
     return render_template('index.html')
 
+@app.route('/syntax')
+def syntax_info():
+    return render_template('syntax.html')
+
 @app.route('/create', methods=['POST'])
 def create():
     # Check that we have a paste (everything else is optional)

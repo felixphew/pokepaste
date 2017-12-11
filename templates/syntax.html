@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>PokePaste Syntax HOWTO</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<style>
+@import url('static/css/fonts.css');
+@import url('static/css/syntax.css');
+
+body {
+	background-color: black;
+	color: white;
+	font: 300 12px 'M+ 1c', sans-serif;
+}
+
+pre {
+	font: 300 12px 'M+ 1m', monospace;
+}
+
+hr {
+	border: 0.1px solid white;
+}
+
+a {
+	color: inherit;
+}
+		</style>
+		<style>/* Dummy stylesheet for stat colours CSS */</style>
+	</head>
+	<body>
+		<h1>PokePaste formatting howto</h1>
+		<p>A paste can contain any number of Pokemon (typically 6), separated by one or more blank lines. A Pokemon is represented by a block of text like this one:</p>
+		<pre><span class="type-fire">Talonflame</span> @ <span class="type-flying">Flyinium Z</span>
+<span class="attr">Ability:</span> Gale Wings
+<span class="attr">EVs:</span> 252 Atk / 4 Def / 252 Spe
+Jolly Nature
+<span class="type-flying">-</span> Brave Bird
+<span class="type-fire">-</span> Flare Blitz
+<span class="type-normal">-</span> Swords Dance
+<span class="type-flying">-</span> Roost</pre>
+		<p>Let's break this down line-by-line.</p>
+		<hr>
+		<p>The first line is both the most important, and the most complex. For starters, it includes the Pokemon's name:</p>
+		<pre><span class="type-fire">Talonflame</span></pre>
+		<p>This is a perfectly valid first line - it would be a Talonflame with no item, no nickname, and unspecified gender. We can add an item using an @ sign:</p>
+		<pre><span class="type-fire">Talonflame </span>@<span class="type-flying"> Flyinium Z</span></pre>
+		<p>So far, this is pretty generic. What if we want to give it a nickname?</p>
+		<pre>Smogonbirb (<span class="type-fire">Talonflame</span>) @<span class="type-flying"> Flyinium Z</span></pre>
+		<p>The nickname goes first, followed by the actual name in brackets. Pretty straightforward.</p>
+		<p>Finally, let's suppose Attract Chansey has become a thing, and so we want our birb to be female:</p>
+		<pre>Smogonbirb (<span class="type-fire">Talonflame</span>) (<span class="gender-f">F</span>) @<span class="type-flying"> Flyinium Z</span></pre>
+		<p>You can mix and match any combination of these - a nickname and no item is fine, as is a gender with no nickname <i>or</i> item.</p>
+		<hr>
+		<p>Next, we can specify stats - Ability, EVs, IVs, Nature, even shinyness.</p>
+		<p>EVs and IVs both take the same format:</p>
+		<pre><span class="attr">EVs:</span> <span class="stat-hp">X HP</span> / <span class="stat-atk">X Atk</span> / <span class="stat-def">X Def</span> / <span class="stat-spa">X SpA</span> / <span class="stat-spd">X SpD</span> / <span class="stat-spe">X Spe</span>
+<span class="attr">IVs:</span> <span class="stat-hp">X HP</span> / <span class="stat-atk">X Atk</span> / <span class="stat-def">X Def</span> / <span class="stat-spa">X SpA</span> / <span class="stat-spd">X SpD</span> / <span class="stat-spe">X Spe</span></pre>
+		<p>You don't need to specify every field - unspecified EVs are assumed to be 0, and unspecified IVs are assumed to be 31. Many sets don't have an IVs line at all, because perfect IVs are OK most of the time.</p>
+		<hr>
+		<p>The rest of the stats lines are pretty straightforward:</p>
+		<pre><span class="attr">Shiny:</span> Yes / No
+<span class="attr">Ability:</span> XXXXXXXX
+<span class="attr">Level:</span> 1-100
+<span class="attr">Happiness:</span> 0-255
+XXXXXXXX Nature</pre>
+		<p>Again, all of these lines are optional:</p>
+		<ul>
+			<li>Shiny is assumed to be No</li>
+			<li>Some pokemon only have one Ability so no need to specify</li>
+			<li>Level is often irrelevant and generally assumed to be 100 (or 50 for VGC)</li>
+			<li>Happiness is assumed to be max (255)</li>
+			<li>Nature is assumed to be neutral (Hardy, Docile, Bashful, Quirky or Serious)</li>
+			<li>etc.</li>
+		</ul>
+		<hr>
+		<p>Finally, up to 4 moveslots are specified. They look like this:</p>
+		<pre><span class="type-electric">-</span> Volt Tackle</pre>
+		<p>The space between the hyphen and the move is optional.</p>
+		<p>Sometimes there is more than one option for a moveslot. PokePaste will only highlight the first move, but the convention is to write it like this:</p>
+		<pre><span class="type-normal">-</span> Protect / Detect</pre>
+		<p>When using Hidden Power (and sometimes Natural Gift), it is conventional to specify the type for clarity, using either the old style:</p>
+		<pre><span class="type-fire">-</span> Hidden Power Fire</pre>
+		<p>or the new style (preferred):</p>
+		<pre><span class="type-normal">-</span> Hidden Power [<span class="type-fire">Fire</span>]</pre>
+		<hr>
+		<p>And that's all there is to it!</p>
+		<p>For the technically inclined, you can see how <a href=https://github.com/felixphew/pokepaste/blob/master/pokepaste.py#L31-L40">PokePaste highlights pastes</a> (Python, minimal regex-based parsing), or how <a href="https://github.com/Zarel/Pokemon-Showdown-Client/blob/master/js/storage.js#L973">Pokemon Showdown stores team data</a> (JavaScript, full parsing and validation).
+		<script>
+if (document.cookie[1] == "c") {
+		document.styleSheets[1].insertRule("@import url('/static/css/syntax-stats.css')", 0);
+}
+		</script>
+	</body>
+</html>
