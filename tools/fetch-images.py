@@ -19,7 +19,7 @@ for mon in range(1, 803):
 
 makedirs('img/items', exist_ok=True)
 
-for item in range(921):
+for item in range(927):
     try:
         code = hex(0x1000000 | 0x159a55e5 * item & 0xFFFFFF)[3:]
         url = 'http://n-3ds-pgl-contents.pokemon-gl.com/share/images/item/{}.png'.format(code)
