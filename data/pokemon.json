@@ -144,6 +144,11 @@
 		"no": 1,
 		"type": "dark"
 	},
+	"Raticate-Alola-Totem": {
+		"id": 20,
+		"no": 1,
+		"type": "dark"
+	},
 	"Spearow": {
 		"id": 21,
 		"no": 0,
@@ -665,6 +670,11 @@
 		"type": "ground"
 	},
 	"Marowak-Alola": {
+		"id": 105,
+		"no": 1,
+		"type": "fire"
+	},
+	"Marowak-Alola-Totem": {
 		"id": 105,
 		"no": 1,
 		"type": "fire"
@@ -4504,6 +4514,11 @@
 		"no": 0,
 		"type": "normal"
 	},
+	"Gumshoos-Totem": {
+		"id": 735,
+		"no": 0,
+		"type": "normal"
+	},
 	"Grubbin": {
 		"id": 736,
 		"no": 0,
@@ -4515,6 +4530,11 @@
 		"type": "bug"
 	},
 	"Vikavolt": {
+		"id": 738,
+		"no": 0,
+		"type": "bug"
+	},
+	"Vikavolt-Totem": {
 		"id": 738,
 		"no": 0,
 		"type": "bug"
@@ -4555,6 +4575,11 @@
 		"type": "bug"
 	},
 	"Ribombee": {
+		"id": 743,
+		"no": 0,
+		"type": "bug"
+	},
+	"Ribombee-Totem": {
 		"id": 743,
 		"no": 0,
 		"type": "bug"
@@ -4619,12 +4644,22 @@
 		"no": 0,
 		"type": "water"
 	},
+	"Araquanid-Totem": {
+		"id": 752,
+		"no": 0,
+		"type": "water"
+	},
 	"Fomantis": {
 		"id": 753,
 		"no": 0,
 		"type": "grass"
 	},
 	"Lurantis": {
+		"id": 754,
+		"no": 0,
+		"type": "grass"
+	},
+	"Lurantis-Totem": {
 		"id": 754,
 		"no": 0,
 		"type": "grass"
@@ -4645,6 +4680,11 @@
 		"type": "poison"
 	},
 	"Salazzle": {
+		"id": 758,
+		"no": 0,
+		"type": "poison"
+	},
+	"Salazzle-Totem": {
 		"id": 758,
 		"no": 0,
 		"type": "poison"
@@ -4859,7 +4899,17 @@
 		"no": 0,
 		"type": "electric"
 	},
+	"Togedemaru-Totem": {
+		"id": 777,
+		"no": 0,
+		"type": "electric"
+	},
 	"Mimikyu": {
+		"id": 778,
+		"no": 0,
+		"type": "ghost"
+	},
+	"Mimikyu-Totem": {
 		"id": 778,
 		"no": 0,
 		"type": "ghost"
@@ -4890,6 +4940,11 @@
 		"type": "dragon"
 	},
 	"Kommo-o": {
+		"id": 784,
+		"no": 0,
+		"type": "dragon"
+	},
+	"Kommo-o-Totem": {
 		"id": 784,
 		"no": 0,
 		"type": "dragon"
