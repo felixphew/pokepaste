@@ -6,7 +6,6 @@
 		<link rel="stylesheet" href="/static/css/index.css">
 	</head>
 	<body>
-		<div style="width: 100%; padding: 12px; background-color: #FFCC00; color: #663300; font: 300 12px &quot;M+ 1c&quot;, sans-serif;"><strong>ATTENTION</strong> Due to domain registration issues PokePaste may be offline briefly from 2018-02-22. We aim to have this resolved ASAP.</div>
 		{% with messages = get_flashed_messages() %}{% if messages %}{% for message in messages %}<div style="padding: 12px; font: 300 12px 'M+ 1c'; background-color: #BF0000; color: white">{{ messages[0] }}</div>{% endfor %}{% endif %}{% endwith %}
 		<form action="/create" method="post">
 			<textarea name="paste" placeholder="Paste something here!"></textarea>
