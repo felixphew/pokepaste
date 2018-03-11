@@ -2,6 +2,9 @@
 	"Ability Capsule": {
 		"id": 645
 	},
+	"Abomasite": {
+		"id": 674
+	},
 	"Absolite": {
 		"id": 677
 	},
@@ -18,6 +21,9 @@
 	"Aerodactylite": {
 		"id": 672
 	},
+	"Aggronite": {
+		"id": 667
+	},
 	"Aguav Berry": {
 		"id": 162
 	},
@@ -30,6 +36,12 @@
 	"Aloraichium Z": {
 		"id": 803,
 		"type": "electric"
+	},
+	"Altarianite": {
+		"id": 755
+	},
+	"Ampharosite": {
+		"id": 658
 	},
 	"Amulet Coin": {
 		"id": 223
@@ -49,6 +61,9 @@
 	"Assault Vest": {
 		"id": 640
 	},
+	"Audinite": {
+		"id": 757
+	},
 	"Awakening": {
 		"id": 21
 	},
@@ -59,8 +74,14 @@
 	"Balm Mushroom": {
 		"id": 580
 	},
+	"Banettite": {
+		"id": 668
+	},
 	"Beast Ball": {
 		"id": 851
+	},
+	"Beedrillite": {
+		"id": 770
 	},
 	"Berry Juice": {
 		"id": 43
@@ -96,6 +117,9 @@
 	},
 	"Blastoisinite": {
 		"id": 661
+	},
+	"Blazikenite": {
+		"id": 664
 	},
 	"Blue Orb": {
 		"id": 535
@@ -133,6 +157,9 @@
 	},
 	"Calcium": {
 		"id": 49
+	},
+	"Cameruptite": {
+		"id": 767
 	},
 	"Carbos": {
 		"id": 48
@@ -235,6 +262,9 @@
 	},
 	"Destiny Knot": {
 		"id": 280
+	},
+	"Diancite": {
+		"id": 764
 	},
 	"Dire Hit": {
 		"id": 56
@@ -429,11 +459,17 @@
 	"Full Restore": {
 		"id": 23
 	},
+	"Galladite": {
+		"id": 756
+	},
 	"Ganlon Berry": {
 		"id": 202
 	},
 	"Garchompite": {
 		"id": 683
+	},
+	"Gardevoirite": {
+		"id": 657
 	},
 	"Gengarite": {
 		"id": 656
@@ -537,6 +573,9 @@
 	"Heavy Ball": {
 		"id": 495
 	},
+	"Heracronite": {
+		"id": 680
+	},
 	"Hondew Berry": {
 		"id": 172
 	},
@@ -623,6 +662,12 @@
 	"Lansat Berry": {
 		"id": 206
 	},
+	"Latiasite": {
+		"id": 684
+	},
+	"Latiosite": {
+		"id": 685
+	},
 	"Lava Cookie": {
 		"id": 42
 	},
@@ -655,6 +700,9 @@
 	},
 	"Light Clay": {
 		"id": 269
+	},
+	"Lopunnite": {
+		"id": 768
 	},
 	"Love Ball": {
 		"id": 496
@@ -708,6 +756,9 @@
 	"Mago Berry": {
 		"id": 161
 	},
+	"Manectite": {
+		"id": 682
+	},
 	"Maranga Berry": {
 		"id": 688
 	},
@@ -717,6 +768,9 @@
 	},
 	"Master Ball": {
 		"id": 1
+	},
+	"Mawilite": {
+		"id": 681
 	},
 	"Max Elixir": {
 		"id": 41
@@ -756,6 +810,12 @@
 	"Mewnium Z": {
 		"id": 806,
 		"type": "psychic"
+	},
+	"Mewtwonite X": {
+		"id": 662
+	},
+	"Mewtwonite Y": {
+		"id": 663
 	},
 	"Mimikium Z": {
 		"id": 924,
@@ -860,6 +920,9 @@
 	},
 	"Petaya Berry": {
 		"id": 204
+	},
+	"Pidgeotite": {
+		"id": 762
 	},
 	"Pikanium Z": {
 		"id": 794,
@@ -1092,6 +1155,9 @@
 	"Salamencite": {
 		"id": 769
 	},
+	"Sceptilite": {
+		"id": 753
+	},
 	"Scizorite": {
 		"id": 670
 	},
@@ -1218,6 +1284,9 @@
 		"id": 792,
 		"type": "steel"
 	},
+	"Steelixite": {
+		"id": 761
+	},
 	"Stick": {
 		"id": 259
 	},
@@ -1239,6 +1308,9 @@
 	},
 	"Super Repel": {
 		"id": 76
+	},
+	"Swampertite": {
+		"id": 752
 	},
 	"Sweet Heart": {
 		"id": 134
@@ -1282,6 +1354,9 @@
 	"Twisted Spoon": {
 		"id": 248,
 		"type": "psychic"
+	},
+	"Tyranitarite": {
+		"id": 669
 	},
 	"Ultra Ball": {
 		"id": 2
@@ -1374,80 +1449,5 @@
 	},
 	"Zoom Lens": {
 		"id": 276
-	},
-	"Gardevoirite": {
-		"id": 657
-	},
-	"Ampharosite": {
-		"id": 658
-	},
-	"Mewtwonite X": {
-		"id": 662
-	},
-	"Mewtwonite Y": {
-		"id": 663
-	},
-	"Blazikenite": {
-		"id": 664
-	},
-	"Aggronite": {
-		"id": 667
-	},
-	"Banettite": {
-		"id": 668
-	},
-	"Tyranitarite": {
-		"id": 669
-	},
-	"Abomasite": {
-		"id": 674
-	},
-	"Heracronite": {
-		"id": 680
-	},
-	"Mawilite": {
-		"id": 681
-	},
-	"Manectite": {
-		"id": 682
-	},
-	"Latiasite": {
-		"id": 684
-	},
-	"Latiosite": {
-		"id": 685
-	},
-	"Swampertite": {
-		"id": 752
-	},
-	"Sceptilite": {
-		"id": 753
-	},
-	"Altarianite": {
-		"id": 755
-	},
-	"Galladite": {
-		"id": 756
-	},
-	"Audinite": {
-		"id": 757
-	},
-	"Steelixite": {
-		"id": 761
-	},
-	"Pidgeotite": {
-		"id": 762
-	},
-	"Diancite": {
-		"id": 764
-	},
-	"Cameruptite": {
-		"id": 767
-	},
-	"Lopunnite": {
-		"id": 768
-	},
-	"Beedrillite": {
-		"id": 770
 	}
 }
