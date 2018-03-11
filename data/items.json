@@ -676,7 +676,7 @@
 	},
 	"Luminous Moss": {
 		"id": 648,
-		"Type": "water"
+		"type": "water"
 	},
 	"Lumiose Galette": {
 		"id": 708
@@ -1100,7 +1100,7 @@
 	},
 	"Sea Incense": {
 		"id": 254,
-		"Type": "water"
+		"type": "water"
 	},
 	"Shalour Sable": {
 		"id": 709
