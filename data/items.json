@@ -6,7 +6,8 @@
 		"id": 677
 	},
 	"Absorb Bulb": {
-		"id": 545
+		"id": 545, 
+		"type" "water"
 	},
 	"Adamant Orb": {
 		"id": 135
@@ -116,14 +117,16 @@
 		"type": "bug"
 	},
 	"Bug Memory": {
-		"id": 909
+		"id": 909,
+		"type": "bug"
 	},
 	"Buginium Z": {
 		"id": 787,
 		"type": "bug"
 	},
 	"Burn Drive": {
-		"id": 118
+		"id": 118,
+		"type": "fire"
 	},
 	"Burn Heal": {
 		"id": 19
@@ -165,7 +168,8 @@
 		"type": "normal"
 	},
 	"Chill Drive": {
-		"id": 119
+		"id": 119,
+		"type": "ice"
 	},
 	"Choice Band": {
 		"id": 220
@@ -209,7 +213,8 @@
 		"type": "dark"
 	},
 	"Dark Memory": {
-		"id": 919
+		"id": 919,
+		"type": "dark"
 	},
 	"Darkinium Z": {
 		"id": 791,
@@ -238,7 +243,8 @@
 		"id": 7
 	},
 	"Douse Drive": {
-		"id": 116
+		"id": 116,
+		"type": "water",
 	},
 	"Draco Plate": {
 		"id": 311,
@@ -253,7 +259,8 @@
 		"type": "dragon"
 	},
 	"Dragon Memory": {
-		"id": 918
+		"id": 918,
+		"type": "dragon"
 	},
 	"Dragon Scale": {
 		"id": 235
@@ -291,10 +298,11 @@
 	},
 	"Electric Gem": {
 		"id": 550,
-		"type": "Electric"
+		"type": "electric"
 	},
 	"Electric Memory": {
-		"id": 915
+		"id": 915,
+		"type": "electric"
 	},
 	"Electric Seed": {
 		"id": 881
@@ -336,7 +344,8 @@
 		"type": "fairy"
 	},
 	"Fairy Memory": {
-		"id": 920
+		"id": 920,
+		"type": "fairy"
 	},
 	"Fast Ball": {
 		"id": 492
@@ -360,10 +369,11 @@
 	},
 	"Fire Gem": {
 		"id": 548,
-		"type": "Fire"
+		"type": "fire"
 	},
 	"Fire Memory": {
-		"id": 912
+		"id": 912,
+		"type": "fire"
 	},
 	"Fire Stone": {
 		"id": 82
@@ -391,7 +401,8 @@
 		"type": "flying"
 	},
 	"Flying Memory": {
-		"id": 905
+		"id": 905,
+		"type": "flying"
 	},
 	"Flyinium Z": {
 		"id": 785,
@@ -435,7 +446,8 @@
 		"type": "ghost"
 	},
 	"Ghost Memory": {
-		"id": 910
+		"id": 910,
+		"type": "ghost"
 	},
 	"Ghostium Z": {
 		"id": 789,
@@ -449,10 +461,11 @@
 	},
 	"Grass Gem": {
 		"id": 551,
-		"type": "Grass"
+		"type": "grass"
 	},
 	"Grass Memory": {
-		"id": 914
+		"id": 914,
+		"type": "grass"
 	},
 	"Grassium Z": {
 		"id": 780,
@@ -481,7 +494,8 @@
 		"type": "ground"
 	},
 	"Ground Memory": {
-		"id": 907
+		"id": 907,
+		"type": "ground"
 	},
 	"Groundium Z": {
 		"id": 784,
@@ -537,13 +551,14 @@
 	},
 	"Ice Gem": {
 		"id": 552,
-		"type": "Ice"
+		"type": "ice"
 	},
 	"Ice Heal": {
 		"id": 20
 	},
 	"Ice Memory": {
-		"id": 917
+		"id": 917,
+		"type": "ice"
 	},
 	"Ice Stone": {
 		"id": 849
@@ -599,7 +614,8 @@
 		"id": 221
 	},
 	"Kommonium Z": {
-		"id": 926
+		"id": 926,
+		"type": "dragon"
 	},
 	"Lagging Tail": {
 		"id": 279
@@ -659,13 +675,15 @@
 		"id": 157
 	},
 	"Luminous Moss": {
-		"id": 648
+		"id": 648,
+		"Type": "water"
 	},
 	"Lumiose Galette": {
 		"id": 708
 	},
 	"Lunalium Z": {
-		"id": 922
+		"id": 922,
+		"type": "ghost"
 	},
 	"Lure Ball": {
 		"id": 494
@@ -677,7 +695,8 @@
 		"id": 11
 	},
 	"Lycanium Z": {
-		"id": 925
+		"id": 925,
+		"type": "rock"
 	},
 	"Magmarizer": {
 		"id": 323
@@ -739,7 +758,8 @@
 		"type": "psychic"
 	},
 	"Mimikium Z": {
-		"id": 924
+		"id": 924,
+		"type": "fairy"
 	},
 	"Mind Plate": {
 		"id": 307,
@@ -782,7 +802,8 @@
 		"type": "ice"
 	},
 	"Normal Gem": {
-		"id": 564
+		"id": 564,
+		"type": "normal"
 	},
 	"Normalium Z": {
 		"id": 776,
@@ -796,7 +817,8 @@
 		"type": "fire"
 	},
 	"Odd Incense": {
-		"id": 314
+		"id": 314,
+		"type": "psychic"
 	},
 	"Old Gateau": {
 		"id": 54
@@ -872,7 +894,8 @@
 		"type": "poison"
 	},
 	"Poison Memory": {
-		"id": 906
+		"id": 906,
+		"type": "poison"
 	},
 	"Poisonium Z": {
 		"id": 783,
@@ -941,7 +964,8 @@
 		"type": "psychic"
 	},
 	"Psychic Memory": {
-		"id": 916
+		"id": 916,
+		"type": "psychic"
 	},
 	"Psychic Seed": {
 		"id": 882
@@ -1028,10 +1052,12 @@
 		"type": "rock"
 	},
 	"Rock Incense": {
-		"id": 315
+		"id": 315,
+		"type": "rock"
 	},
 	"Rock Memory": {
-		"id": 908
+		"id": 908,
+		"type": "rock"
 	},
 	"Rockium Z": {
 		"id": 788,
@@ -1041,7 +1067,8 @@
 		"id": 540
 	},
 	"Rose Incense": {
-		"id": 318
+		"id": 318,
+		"type": "grass"
 	},
 	"Roseli Berry": {
 		"id": 686,
@@ -1072,7 +1099,8 @@
 		"id": 232
 	},
 	"Sea Incense": {
-		"id": 254
+		"id": 254,
+		"Type": "water"
 	},
 	"Shalour Sable": {
 		"id": 709
@@ -1094,7 +1122,8 @@
 		"id": 107
 	},
 	"Shock Drive": {
-		"id": 117
+		"id": 117,
+		"type": "electric"
 	},
 	"Shuca Berry": {
 		"id": 191,
@@ -1147,7 +1176,8 @@
 		"type": "ground"
 	},
 	"Solganium Z": {
-		"id": 921
+		"id": 921,
+		"type": "steel"
 	},
 	"Soothe Bell": {
 		"id": 218
@@ -1181,7 +1211,8 @@
 		"type": "steel"
 	},
 	"Steel Memory": {
-		"id": 911
+		"id": 911,
+		"type": "steel"
 	},
 	"Steelium Z": {
 		"id": 792,
@@ -1256,7 +1287,8 @@
 		"id": 2
 	},
 	"Ultranecrozium Z": {
-		"id": 923
+		"id": 923,
+		"type": "psychic"
 	},
 	"Up-Grade": {
 		"id": 252
@@ -1270,10 +1302,11 @@
 	},
 	"Water Gem": {
 		"id": 549,
-		"type": "Water"
+		"type": "water"
 	},
 	"Water Memory": {
-		"id": 913
+		"id": 913,
+		"type": "water"
 	},
 	"Water Stone": {
 		"id": 84
@@ -1283,7 +1316,8 @@
 		"type": "water"
 	},
 	"Wave Incense": {
-		"id": 317
+		"id": 317,
+		"type": "water"
 	},
 	"Weakness Policy": {
 		"id": 639
@@ -1341,7 +1375,7 @@
 	"Zoom Lens": {
 		"id": 276
 	},
-		"Gardevoirite": {
+	"Gardevoirite": {
 		"id": 657
 	},
 	"Ampharosite": {
