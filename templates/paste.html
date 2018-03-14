@@ -11,7 +11,7 @@
 		{% for mon in mons %}
 		<article>
 			<div class="img-mon" style="background-image: url('/static/img/pokemon/{{ mon.monid }}-{{ mon.monno }}.png')">
-				{% if mon.itemid %}<div class="img-item" style="background-image: url('/static/img/items/{{ mon.itemid }}.png"></div>{% endif %}
+				{% if mon.itemid %}<div class="img-item" style="background-image: url('/static/img/items/{{ mon.itemid }}.png')"></div>{% endif %}
 			</div>
 			<pre>{{ mon.text }}</pre>
 		</article>
