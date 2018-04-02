@@ -6,6 +6,7 @@
 		<link rel="stylesheet" href="/static/css/paste.css">
 		<style>/* Dummy stylesheet for VGC CSS */</style>
 		<style>/* Dummy stylesheet for stat colours CSS */</style>
+		<style>/* Dummy stylesheet for light mode CSS */</style>
 	</head>
 	<body>
 		{% for mon in mons %}
@@ -20,11 +21,11 @@
 			{% if title %}<h1>{{ title }}</h1>{% endif %}
 			{% if author %}<h2>&nbsp;by {{ author }}</h2>{% endif %}
 			{% if notes %}<p>{{ notes }}</p>{% endif %}
-			<button onclick="vgctoggle(this)">Columns Mode off</button><button onclick="statstoggle(this)">Stat Colours off</button>
+			<button onclick="vgctoggle(this)">Columns Mode off</button><button onclick="statstoggle(this)">Stat Colours off</button><button onclick="lighttoggle(this)">Dark Mode</button>
 		</aside>
 		<script>
 if (document.cookie == "") {
-	document.cookie = "1b";
+	document.cookie = "1bd";
 } else {
 	buttons = document.getElementsByTagName("button");
 
@@ -41,11 +42,11 @@ function vgctoggle(button) {
 	if (button.innerText == "Columns Mode off") {
 		document.styleSheets[1].insertRule("@import url('/static/css/paste-vgc.css')", 0);
 		button.innerText = "Columns Mode on";
-		document.cookie = "2" + document.cookie[1];
+		document.cookie = "2" + document.cookie[1] + document.cookie[2];
 	} else {
 		document.styleSheets[1].deleteRule(0);
 		button.innerText = "Columns Mode off";
-		document.cookie = "1" + document.cookie[1];
+		document.cookie = "1" + document.cookie[1] + document.cookie[2];
 	}
 }
 
@@ -53,11 +54,23 @@ function statstoggle(button) {
 	if (button.innerText == "Stat Colours off") {
 		document.styleSheets[2].insertRule("@import url('/static/css/syntax-stats.css')", 0);
 		button.innerText = "Stat Colours on";
-		document.cookie = document.cookie[0] + "c";
+		document.cookie = document.cookie[0] + "c" + document.cookie[2];
 	} else {
 		document.styleSheets[2].deleteRule(0);
 		button.innerText = "Stat Colours off";
-		document.cookie = document.cookie[0] + "b";
+		document.cookie = document.cookie[0] + "b" + document.cookie[2];
+	}
+}
+
+function lighttoggle(button) {
+	if (button.innerText == "Dark Mode") {
+		document.styleSheets[3].insertRule("@import url('/static/css/paste-light.css')", 0);
+		button.innerText = "Light Mode";
+		document.cookie = document.cookie[0] + document.cookie[1] + "l";
+	} else {
+		document.styleSheets[3].deleteRule(0);
+		button.innerText = "Dark Mode";
+		document.cookie = document.cookie[0] + document.cookie[1] + "d";
 	}
 }
 		</script>
