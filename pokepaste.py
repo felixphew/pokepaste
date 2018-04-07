@@ -1,4 +1,4 @@
-from flask import Flask, Markup, g, escape, render_template, request, flash, redirect, abort
+from flask import Flask, Markup, Response, g, escape, render_template, request, flash, redirect, abort
 
 from cryptography.hazmat.primitives.ciphers import Cipher
 from cryptography.hazmat.primitives.ciphers.algorithms import Blowfish
@@ -74,6 +74,15 @@ def create():
 
 @app.route('/<cryptid>')
 def paste(cryptid):
+    return render_paste(*get_paste(cryptid))
+
+@app.route('/<cryptid>/raw')
+def paste_raw(cryptid):
+    (paste, title, author, notes) = get_paste(cryptid)
+    return Response(paste, mimetype='text/plain')
+
+def get_paste(cryptid):
+
     if len(cryptid) == 16:
         # Looks like an encrypted ID, check validity
         try:
@@ -113,7 +122,7 @@ def paste(cryptid):
     if not paste:
         abort(404)
 
-    return render_paste(*paste)
+    return paste
 
 def render_paste(paste, title, author, notes):
     mons = []
