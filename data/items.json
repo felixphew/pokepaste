@@ -10,7 +10,6 @@
 	},
 	"Absorb Bulb": {
 		"id": 545, 
-		"type" "water"
 	},
 	"Adamant Orb": {
 		"id": 135
@@ -724,7 +723,6 @@
 	},
 	"Luminous Moss": {
 		"id": 648,
-		"type": "water"
 	},
 	"Lumiose Galette": {
 		"id": 708
