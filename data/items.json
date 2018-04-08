@@ -9,7 +9,7 @@
 		"id": 677
 	},
 	"Absorb Bulb": {
-		"id": 545, 
+		"id": 545
 	},
 	"Adamant Orb": {
 		"id": 135
@@ -273,7 +273,7 @@
 	},
 	"Douse Drive": {
 		"id": 116,
-		"type": "water",
+		"type": "water"
 	},
 	"Draco Plate": {
 		"id": 311,
@@ -722,7 +722,7 @@
 		"id": 157
 	},
 	"Luminous Moss": {
-		"id": 648,
+		"id": 648
 	},
 	"Lumiose Galette": {
 		"id": 708
