@@ -1,4 +1,4 @@
-from flask import Flask, Markup, Response, g, escape, render_template, request, flash, redirect, abort
+from flask import Flask, Markup, Response, g, escape, render_template, jsonify, request, flash, redirect, abort
 
 from cryptography.hazmat.primitives.ciphers import Cipher
 from cryptography.hazmat.primitives.ciphers.algorithms import Blowfish
@@ -80,6 +80,11 @@ def paste(cryptid):
 def paste_raw(cryptid):
     (paste, title, author, notes) = get_paste(cryptid)
     return Response(paste, mimetype='text/plain')
+
+@app.route('/<cryptid>/json')
+def paste_json(cryptid):
+    (paste, title, author, notes) = get_paste(cryptid)
+    return jsonify(paste=paste, title=title, author=author, notes=notes)
 
 def get_paste(cryptid):
 
