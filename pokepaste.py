@@ -81,11 +81,6 @@ def paste_raw(cryptid):
     (paste, title, author, notes) = get_paste(cryptid)
     return Response(paste, mimetype='text/plain')
 
-@app.route('/robots.txt')
-def robots():
-    return Response('''User-agent: *
-Disallow: /''', mimetype='text/plain')
-
 @app.route('/<cryptid>/json')
 def paste_json(cryptid):
     (paste, title, author, notes) = get_paste(cryptid)
