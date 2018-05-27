@@ -5198,5 +5198,10 @@
 		"id": 10023,
 		"no": 0,
 		"type": "dragon"
+	},
+	"Jumbao": {
+		"id": 10024,
+		"no": 0,
+		"type": "grass"
 	}
 }
