@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{with .Title}}{{.}}{{else}}Untitled PokePaste{{end}}</title>
+		<link rel="stylesheet" href="/css/paste.css">
+	</head>
+	<body>
+	{{- range .Paste}}
+		<article>
+			<div class="img-pokemon" style="background-image: url(https://pokepast.es/static/img/pokemon/{{.Pokemon}}-{{.Form}}.png)">
+			{{- with .Item}}
+				<div class="img-item" style="background-image: url(https://pokepast.es/static/img/items/{{.}}.png)"></div>
+			{{end -}}
+			</div>
+			<pre>{{.Text}}</pre>
+		</article>
+	{{- end}}
+		<aside>
+		{{- with .Title}}
+			<h1>{{.}}</h1>
+		{{- end}}
+		{{- with .Author}}
+			<h2>&nbsp;by {{.}}</h2>
+		{{- end}}
+		{{- with .Notes}}
+			<p>{{.}}</p>
+		{{- end}}
+		</aside>
+	</body>
+</html>

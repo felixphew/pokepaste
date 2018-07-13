@@ -1,0 +1,11 @@
+@font-face {
+	font-family: "M+ 1c";
+	src: url("../fonts/mplus-1c-light.woff2") format("woff2"), url("../fonts/mplus-1c-light.woff") format("woff"), url("../fonts/mplus-1c-light.otf") format("opentype");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "M+ 1m";
+	src: url("../fonts/mplus-1m-light.woff2") format("woff2"), url("../fonts/mplus-1m-light.woff") format("woff"), url("../fonts/mplus-1m-light.otf") format("opentype");
+	font-weight: 300;
+}

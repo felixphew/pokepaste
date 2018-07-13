@@ -1,0 +1,64 @@
+@import url("fonts.css");
+
+body {
+	margin: 0;
+}
+
+form {
+	display: flex;
+	flex-flow: row wrap;
+}
+
+form > textarea[name=paste] {
+	flex: 1 1 auto;
+	width: 600px;
+	height: 100vh;
+	margin: 0;
+	border: 0;
+	padding: 12px;
+	box-sizing: border-box;
+	background-color: black;
+	color: white;
+	font: 300 12px "M+ 1m", monospace;
+}
+
+form > div#sidebar {
+	flex: 0 1 auto;
+	width: 300px;
+	padding: 0 12px;
+	box-sizing: border-box;
+	font: 300 12px "M+ 1c", sans-serif;
+}
+
+form div label {
+	display: block;
+	text-align: right;
+	margin: 3px 0;
+	width: 100%;
+}
+
+form div input[type=text], form div textarea {
+	width: 75%;
+	margin: 0 0 0 6px;
+	border: 0;
+	padding: 3px;
+	background-color: #CCC;
+	color: white;
+	font: inherit;
+	border-radius: 2px;
+}
+
+form div textarea {
+	vertical-align: middle;
+}
+
+form div input[type=submit] {
+	width: 100%;
+	margin: 0;
+	border: 0;
+	padding: 6px;
+	background-color: inherit;
+	font: inherit;
+	font-size: larger;
+	text-align: center;
+}
