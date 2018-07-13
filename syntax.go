@@ -9,17 +9,17 @@ import (
 )
 
 type paste struct {
-	Paste	[]set
-	Title	string
-	Author	string
-	Notes	string
+	Paste  []set
+	Title  string
+	Author string
+	Notes  string
 }
 
 type set struct {
-	Pokemon	uint
-	Form	uint
-	Item	uint
-	Text	template.HTML
+	Pokemon uint
+	Form    uint
+	Item    uint
+	Text    template.HTML
 }
 
 var (
@@ -32,10 +32,10 @@ var (
 func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 	sets := bytes.Split(text, []byte("\r\n\r\n"))
 	fpaste := paste{
-		Paste: make([]set, 0, len(sets)),
-		Title: string(title),
+		Paste:  make([]set, 0, len(sets)),
+		Title:  string(title),
 		Author: string(author),
-		Notes: string(notes),
+		Notes:  string(notes),
 	}
 
 	for _, bset := range sets {

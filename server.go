@@ -31,10 +31,10 @@ func servePaste(w http.ResponseWriter, id uint64, p string) {
 		w.Write(paste)
 	case "/json":
 		json.NewEncoder(w).Encode(map[string]interface{}{
-			"paste": string(paste),
-			"title": string(title),
+			"paste":  string(paste),
+			"title":  string(title),
 			"author": string(author),
-			"notes": string(notes),
+			"notes":  string(notes),
 		})
 	default:
 		http.NotFound(w, nil)
@@ -112,9 +112,9 @@ func post(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handle)
 	/*
-	http.HandleFunc("/create", post)
-	http.Handle("/css/", static)
-	http.Handle("/fonts/", static)
+		http.HandleFunc("/create", post)
+		http.Handle("/css/", static)
+		http.Handle("/fonts/", static)
 	*/
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
