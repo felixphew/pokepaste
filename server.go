@@ -8,6 +8,8 @@ import (
 	"net/http"
 	"regexp"
 	"strconv"
+
+	"golang.org/x/crypto/blowfish"
 )
 
 var (
@@ -15,6 +17,8 @@ var (
 
 	pathOld = regexp.MustCompile(`^/([0-9]{1,10})(/.*)?$`)
 	pathNew = regexp.MustCompile(`^/([0-9a-f]{16})(/.*)?$`)
+
+	cipher *blowfish.Cipher
 )
 
 func servePaste(w http.ResponseWriter, id uint64, p string) {
@@ -107,6 +111,12 @@ func handle(w http.ResponseWriter, r *http.Request) {
 }
 
 func main() {
+	var err error
+	cipher, err = blowfish.NewCipher(key)
+	if err != nil {
+		log.Fatal(err)
+	}
+
 	http.HandleFunc("/", handle)
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
