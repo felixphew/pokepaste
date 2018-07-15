@@ -26,7 +26,7 @@ var (
 	reHead = regexp.MustCompile(`^(?:(.* \()([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*)(\))|([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*))(?:( \()([MF])(\)))?(?:( @ )([A-Z][a-z0-9:']+(?:[- ][A-Z][a-z0-9:']*)*))?( *)$`)
 	reMove = regexp.MustCompile(`^(-)( *([A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)(?: */ *[A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)* *)$`)
 
-	tmpl = template.Must(template.ParseFiles("paste.html"))
+	tmpl = template.Must(template.ParseFiles("paste.tmpl"))
 )
 
 func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
