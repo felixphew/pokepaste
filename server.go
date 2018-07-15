@@ -13,7 +13,7 @@ import (
 )
 
 var (
-	static = http.FileServer(http.Dir("static"))
+	assets = http.FileServer(http.Dir("assets"))
 
 	pathOld = regexp.MustCompile(`^/([0-9]{1,10})(/.*)?$`)
 	pathNew = regexp.MustCompile(`^/([0-9a-f]{16})(/.*)?$`)
@@ -106,7 +106,7 @@ func handle(w http.ResponseWriter, r *http.Request) {
 
 		http.Redirect(w, r, hex.EncodeToString(dst), http.StatusSeeOther)
 	} else {
-		static.ServeHTTP(w, r)
+		assets.ServeHTTP(w, r)
 	}
 }
 
