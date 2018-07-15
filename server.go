@@ -106,16 +106,8 @@ func handle(w http.ResponseWriter, r *http.Request) {
 	}
 }
 
-func post(w http.ResponseWriter, r *http.Request) {
-}
-
 func main() {
 	http.HandleFunc("/", handle)
-	/*
-		http.HandleFunc("/create", post)
-		http.Handle("/css/", static)
-		http.Handle("/fonts/", static)
-	*/
 
 	log.Fatal(http.ListenAndServe(":8080", nil))
 }
