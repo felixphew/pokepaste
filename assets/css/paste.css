@@ -66,3 +66,17 @@ aside > button {
 	color: inherit;
 	font: inherit;
 }
+
+aside input[type=checkbox] {
+	display: none;
+}
+
+aside input[type=checkbox] + label:after {
+	font: inherit;
+	content: " Off";
+}
+
+aside input[type=checkbox]:checked + label:after {
+	font: inherit;
+	content: " On";
+}

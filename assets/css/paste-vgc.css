@@ -1,0 +1,11 @@
+article {
+	float: left;
+}
+
+article:nth-child(odd) {
+	clear: left;
+}
+
+article > pre {
+	width: 300px;
+}
