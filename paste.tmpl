@@ -7,9 +7,9 @@
 	<body>
 	{{- range .Paste}}
 		<article>
-			<div class="img-pokemon" style="background-image: url(https://pokepast.es/static/img/pokemon/{{.Pokemon}}-{{.Form}}.png)">
+			<div class="img-pokemon" style="background-image: url(/img/pokemon/{{.Pokemon}}-{{.Form}}.png)">
 			{{- with .Item}}
-				<div class="img-item" style="background-image: url(https://pokepast.es/static/img/items/{{.}}.png)"></div>
+				<div class="img-item" style="background-image: url(/img/items/{{.}}.png)"></div>
 			{{end -}}
 			</div>
 			<pre>{{.Text}}</pre>
