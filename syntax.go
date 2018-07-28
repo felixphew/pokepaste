@@ -25,6 +25,7 @@ type set struct {
 var (
 	reHead = regexp.MustCompile(`^(?:(.* \()([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*)(\))|([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*))(?:( \()([MF])(\)))?(?:( @ )([A-Z][a-z0-9:']+(?:[- ][A-Z][a-z0-9:']*)*))?( *)$`)
 	reMove = regexp.MustCompile(`^(-)( *([A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)(?: */ *[A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)* *)$`)
+	reStat = regexp.MustCompile(`^(\d+ HP)?( / )?(\d+ Atk)?( / )?(\d+ Def)?( / )?(\d+ SpA)?( / )?(\d+ SpD)?( / )?(\d+ Spe)?( *)$`)
 
 	tmpl = template.Must(template.ParseFiles("paste.tmpl"))
 )
@@ -138,7 +139,25 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 				b.WriteString(`<span class="attr">`)
 				template.HTMLEscape(&b, m[0])
 				b.WriteString(`</span>`)
-				template.HTMLEscape(&b, m[1])
+				if len(m[1]) == 5 && m[1][1] == 'V' && m[1][2] == 's' {
+					attr := m[1]
+					if m := reStat.FindSubmatch(attr); m != nil {
+						for i, stat := range [...]string{"hp", "atk", "def", "spa", "spd", "spe"} {
+							if len(m[i * 2 + 1]) > 0 {
+								b.WriteString(`<span class="stat-`)
+								b.WriteString(stat)
+								b.WriteString(`">`)
+								template.HTMLEscape(&b, m[i * 2 + 1])
+								b.WriteString(`</span>`)
+							}
+							template.HTMLEscape(&b, m[i * 2 + 2])
+						}
+					} else {
+						template.HTMLEscape(&b, attr)
+					}
+				} else {
+					template.HTMLEscape(&b, m[1])
+				}
 			} else {
 				template.HTMLEscape(&b, line)
 			}
