@@ -7,10 +7,11 @@
 	<body>
 	{{- range .Paste}}
 		<article>
-			<div class="img-pokemon" style="background-image: url(/img/pokemon/{{.Pokemon}}-{{.Form}}.png)">
+			<div class="img">
+				<img class="img-pokemon" src="/img/pokemon/{{.Pokemon}}-{{.Form}}.png">
 			{{- with .Item}}
-				<div class="img-item" style="background-image: url(/img/items/{{.}}.png)"></div>
-			{{end -}}
+				<img class="img-item" src="/img/items/{{.}}.png">
+			{{- end}}
 			</div>
 			<pre>{{.Text}}</pre>
 		</article>

@@ -13,22 +13,26 @@ article {
 	flex-flow: row wrap;
 }
 
-div.img-pokemon {
+div.img {
 	position: relative;
-	width: 150px;
-	height: 150px;
 	margin: 15px;
-	background-size: 150px;
-	background-position: -75px -75px;
+	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
 }
 
-div.img-item {
+img.img-pokemon {
+	width: 150px;
+	height: 150px;
+}
+
+img.img-item {
 	position: absolute;
 	right: 0;
 	bottom: 0;
 	width: 40px;
 	height: 40px;
-	background-size: 40px;
 }
 
 pre {
