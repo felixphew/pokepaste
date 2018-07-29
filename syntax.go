@@ -139,7 +139,7 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 				b.WriteString(`<span class="attr">`)
 				template.HTMLEscape(&b, m[0])
 				b.WriteString(`</span>`)
-				if len(m[1]) == 5 && m[1][1] == 'V' && m[1][2] == 's' {
+				if len(m[0]) == 5 && m[0][1] == 'V' && m[0][2] == 's' {
 					attr := m[1]
 					if m := reStat.FindSubmatch(attr); m != nil {
 						for i, stat := range [...]string{"hp", "atk", "def", "spa", "spd", "spe"} {
