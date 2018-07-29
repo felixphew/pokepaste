@@ -47,7 +47,7 @@ func servePaste(w http.ResponseWriter, id uint64, p string) {
 
 func handle(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Strict-Transport-Security", "max-age=31536000")
-	w.Header().Set("Content-Security-Policy", "default-src 'self'; style-src 'self' 'unsafe-inline'")
+	w.Header().Set("Content-Security-Policy", "default-src 'none'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'")
 
 	if m := pathNew.FindStringSubmatch(r.URL.Path); m != nil {
 		src, err := hex.DecodeString(m[1])
