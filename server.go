@@ -123,7 +123,7 @@ func main() {
 	http.HandleFunc("/", handle)
 
 	go http.ListenAndServe(":80", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		http.Redirect(w, r, "https://" + r.Host + r.RequestURI, http.StatusMovedPermanently)
+		http.Redirect(w, r, "https://"+r.Host+r.RequestURI, http.StatusMovedPermanently)
 	}))
 
 	log.Fatal(http.ListenAndServeTLS(":443", "cert.pem", "key.pem", nil))
