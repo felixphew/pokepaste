@@ -16,7 +16,11 @@ const makeListener = (tgt, id, href) => {
 				css.parentNode.removeChild(css);
 			}
 		}
-		document.cookie = `${id}=${checked}`;
+
+		let date = new Date();
+		date.setTime(date.getTime() + 31536000)
+
+		document.cookie = `${id}=${checked}; expires=${date.toUTCString()}`;
 	});
 
 	tgt.checked = false;
