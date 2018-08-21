@@ -10106,4 +10106,16 @@ var itemData = map[string]map[string]interface{}{
 	"Zoom Lens": {
 		"id": uint(276),
 	},
+	"S Tier": {
+		"id": uint(1),
+	},
+	"A Tier": {
+		"id": uint(2),
+	},
+	"B Tier": {
+		"id": uint(3),
+	},
+	"C Tier": {
+		"id": uint(4),
+	},
 }
