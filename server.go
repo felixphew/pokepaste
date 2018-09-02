@@ -9,6 +9,7 @@ import (
 	"regexp"
 	"strconv"
 
+	"golang.org/x/crypto/acme/autocert"
 	"golang.org/x/crypto/blowfish"
 )
 
@@ -126,5 +127,5 @@ func main() {
 		http.Redirect(w, r, "https://"+r.Host+r.RequestURI, http.StatusMovedPermanently)
 	}))
 
-	log.Fatal(http.ListenAndServeTLS(":443", "cert.pem", "key.pem", nil))
+	log.Fatal(http.Serve(autocert.NewListener(domain), nil))
 }
