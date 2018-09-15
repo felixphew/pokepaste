@@ -18,7 +18,7 @@ const makeListener = (tgt, id, href) => {
 		}
 
 		let date = new Date();
-		date.setTime(date.getTime() + 31536000)
+		date.setTime(date.getTime() + 31536000);
 
 		document.cookie = `${id}=${checked}; expires=${date.toUTCString()}`;
 	});
