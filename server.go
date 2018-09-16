@@ -1,25 +1,19 @@
 package main
 
 import (
-	"encoding/binary"
-	"encoding/hex"
 	"encoding/json"
 	"log"
 	"net/http"
 	"regexp"
-	"strconv"
 
 	"golang.org/x/crypto/acme/autocert"
-	"golang.org/x/crypto/blowfish"
 )
 
 var (
 	assets = http.FileServer(http.Dir("assets"))
 
+	path    = regexp.MustCompile(`^/([0-9a-f]{16})(/.*)?$`)
 	pathOld = regexp.MustCompile(`^/([0-9]{1,10})(/.*)?$`)
-	pathNew = regexp.MustCompile(`^/([0-9a-f]{16})(/.*)?$`)
-
-	cipher *blowfish.Cipher
 )
 
 func servePaste(w http.ResponseWriter, id uint64, p string) {
@@ -50,27 +44,19 @@ func handle(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Strict-Transport-Security", "max-age=31536000")
 	w.Header().Set("Content-Security-Policy", "default-src 'none'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'")
 
-	if m := pathNew.FindStringSubmatch(r.URL.Path); m != nil {
-		src, err := hex.DecodeString(m[1])
+	if m := path.FindStringSubmatch(r.URL.Path); m != nil {
+		id, err := decodeID(m[1])
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
 		}
 
-		dst := make([]byte, 8)
-		cipher.Decrypt(dst, src)
-
-		id := binary.BigEndian.Uint64(dst)
 		servePaste(w, id, m[2])
 	} else if m := pathOld.FindStringSubmatch(r.URL.Path); m != nil {
-		id, err := strconv.ParseUint(m[1], 10, 64)
+		id, err := decodeOldID(m[1])
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
 			return
-		}
-
-		if id >= 256 {
-			id = (id * 0x7FFFFFFF) % 0x100000000
 		}
 
 		if id >= 1000 {
@@ -102,25 +88,13 @@ func handle(w http.ResponseWriter, r *http.Request) {
 			return
 		}
 
-		src := make([]byte, 8)
-		binary.BigEndian.PutUint64(src, uint64(id))
-
-		dst := make([]byte, 8)
-		cipher.Encrypt(dst, src)
-
-		http.Redirect(w, r, hex.EncodeToString(dst), http.StatusSeeOther)
+		http.Redirect(w, r, "/"+encodeID(id), http.StatusSeeOther)
 	} else {
 		assets.ServeHTTP(w, r)
 	}
 }
 
 func main() {
-	var err error
-	cipher, err = blowfish.NewCipher(key)
-	if err != nil {
-		log.Fatal(err)
-	}
-
 	http.HandleFunc("/", handle)
 
 	go http.ListenAndServe(":80", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {

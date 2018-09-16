@@ -13,7 +13,7 @@ func getPaste(id uint64) (paste, title, author, notes []byte, err error) {
 	return
 }
 
-func postPaste(paste, title, author, notes *string) (id int64, err error) {
+func postPaste(paste, title, author, notes *string) (id uint64, err error) {
 	if len(*title) == 0 {
 		title = nil
 	}
@@ -31,6 +31,11 @@ func postPaste(paste, title, author, notes *string) (id int64, err error) {
 		return
 	}
 
-	id, err = res.LastInsertId()
+	idSigned, err := res.LastInsertId()
+	if err != nil {
+		return
+	}
+
+	id = uint64(idSigned)
 	return
 }
