@@ -9,7 +9,11 @@
 	{{- range .Paste}}
 		<article>
 			<div class="img">
+			{{- if .Pokemon}}
 				<img class="img-pokemon" src="/img/pokemon/{{.Pokemon}}-{{.Form}}.png">
+			{{- else}}
+				<div class="img-pokemon img-stub" />
+			{{- end}}
 			{{- with .Item}}
 				<img class="img-item" src="/img/items/{{.}}.png">
 			{{- end}}
