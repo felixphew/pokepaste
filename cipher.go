@@ -4,6 +4,7 @@ import (
 	"encoding/binary"
 	"encoding/hex"
 	"log"
+	"os"
 	"strconv"
 
 	"golang.org/x/crypto/blowfish"
@@ -13,7 +14,7 @@ var cipher *blowfish.Cipher
 
 func init() {
 	var err error
-	cipher, err = blowfish.NewCipher(key)
+	cipher, err = blowfish.NewCipher([]byte(os.Getenv("KEY")))
 	if err != nil {
 		log.Fatal(err)
 	}

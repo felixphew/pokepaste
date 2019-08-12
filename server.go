@@ -4,9 +4,8 @@ import (
 	"encoding/json"
 	"log"
 	"net/http"
+	"os"
 	"regexp"
-
-	"golang.org/x/crypto/acme/autocert"
 )
 
 var (
@@ -97,9 +96,5 @@ func handle(w http.ResponseWriter, r *http.Request) {
 func main() {
 	http.HandleFunc("/", handle)
 
-	go http.ListenAndServe(":80", http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
-		http.Redirect(w, r, "https://"+r.Host+r.RequestURI, http.StatusMovedPermanently)
-	}))
-
-	log.Fatal(http.Serve(autocert.NewListener(domain), nil))
+	log.Fatal(http.ListenAndServe(os.Getenv("ADDR"), nil))
 }

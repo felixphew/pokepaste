@@ -2,10 +2,12 @@ package main
 
 import (
 	"database/sql"
+	"os"
+
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var db, _ = sql.Open("mysql", dataSourceName)
+var db, _ = sql.Open("mysql", os.Getenv("DATA_SOURCE_NAME"))
 
 func getPaste(id uint64) (paste, title, author, notes []byte, err error) {
 	row := db.QueryRow("SELECT paste, title, author, notes FROM pastes WHERE id = ?", id)
