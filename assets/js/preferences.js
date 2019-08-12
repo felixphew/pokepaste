@@ -20,7 +20,7 @@ const makeListener = (tgt, id, href) => {
 		let date = new Date();
 		date.setTime(date.getTime() + 31536000);
 
-		document.cookie = `${id}=${checked}; expires=${date.toUTCString()}`;
+		document.cookie = `${id}=${checked}; max-age=31536000`;
 	});
 
 	tgt.checked = false;
