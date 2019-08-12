@@ -26,8 +26,10 @@ func servePaste(w http.ResponseWriter, id uint64, p string) {
 	case "", "/":
 		renderPaste(w, paste, title, author, notes)
 	case "/raw":
+		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Write(paste)
 	case "/json":
+		w.Header().Set("Access-Control-Allow-Origin", "*")
 		json.NewEncoder(w).Encode(map[string]interface{}{
 			"paste":  string(paste),
 			"title":  string(title),
