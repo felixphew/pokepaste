@@ -5,12 +5,13 @@ body {
 	margin: 0;
 	background-color: black;
 	color: white;
-	font: 300 12px "M+ 1c", sans-serif;
+	font: 12px "M+ 1c", sans-serif;
 }
 
 article {
 	display: flex;
 	flex-flow: row wrap;
+	align-items: flex-start;
 }
 
 div.img {
@@ -37,7 +38,7 @@ img.img-item {
 
 pre {
 	margin: 15px 15px 0;
-	font: 300 larger "M+ 1m", monospace;
+	font: 15px "M+ 1m", monospace;
 	white-space: pre-wrap;
 }
 
@@ -77,10 +78,11 @@ aside input[type=checkbox] {
 
 aside input[type=checkbox] + label:after {
 	font: inherit;
+	color: #FF0000;
 	content: " Off";
 }
 
 aside input[type=checkbox]:checked + label:after {
-	font: inherit;
+	color: #78C850;
 	content: " On";
 }

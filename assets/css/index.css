@@ -19,7 +19,7 @@ form > textarea[name=paste] {
 	box-sizing: border-box;
 	background-color: black;
 	color: white;
-	font: 300 12px "M+ 1m", monospace;
+	font: 12px "M+ 1m", monospace;
 }
 
 form > div#sidebar {
@@ -27,7 +27,7 @@ form > div#sidebar {
 	width: 300px;
 	padding: 0 12px;
 	box-sizing: border-box;
-	font: 300 12px "M+ 1c", sans-serif;
+	font: 12px "M+ 1c", sans-serif;
 }
 
 form div label {
@@ -43,7 +43,6 @@ form div input[type=text], form div textarea {
 	border: 0;
 	padding: 3px;
 	background-color: #CCC;
-	color: white;
 	font: inherit;
 	border-radius: 2px;
 }
