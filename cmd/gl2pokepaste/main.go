@@ -8,10 +8,22 @@ import (
 	"log"
 	"net/http"
 	"os"
+	"sync"
 )
 
+var wg sync.WaitGroup
+
 func main() {
-	for mon := 1; mon <= 807; mon++ {
+	wg.Add(8)
+	for i := 0; i < 8; i++ {
+		go worker(i)
+	}
+	wg.Wait()
+}
+
+func worker(i int) {
+	defer wg.Done()
+	for mon := i; mon <= 807; mon += 8 {
 		for form := 0; ; form++ {
 			code := (mon + form<<16) * 0x159a55e5 & 0xffffff
 			url := fmt.Sprintf("http://n-3ds-pgl-contents.pokemon-gl.com/share/images/pokemon/300/%06x.png", code)
@@ -20,13 +32,14 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
-			defer resp.Body.Close()
 
 			if resp.StatusCode != 200 {
+				resp.Body.Close()
 				break
 			}
 
 			src, err := png.Decode(resp.Body)
+			resp.Body.Close()
 			if err != nil {
 				log.Fatal(err)
 			}
@@ -44,9 +57,9 @@ func main() {
 			if err != nil {
 				log.Fatal(err)
 			}
-			defer file.Close()
 
 			err = png.Encode(file, dst)
+			file.Close()
 			if err != nil {
 				log.Fatal(err)
 			}
