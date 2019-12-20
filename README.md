@@ -36,7 +36,8 @@ If you plan on putting this on anything resembling the public Internet,
 please consider running it under a framework or behind a reverse proxy
 of some kind (nginx works well).
 
-##Licensing
+Licensing
+======
 
 PokePaste is licensed under the 3-clause BSD licence. In short, you can
 do whatever you want with the code as long as you retain the copyright
