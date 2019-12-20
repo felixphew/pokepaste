@@ -14,7 +14,7 @@ friendly.</em>
 PokePaste is grateful to [BrowserStack](https://www.browserstack.com) for
 help testing PokePaste v3 across different browsers.
 
-You can use PokePaste at <https://pokepast.es>.
+You can use PokePaste [here](https://pokepast.es).
 
 PokePaste v3 was rewritten from the ground up in Go. Most of the
 functionality required is in the standard library, with the exception of
