@@ -11,7 +11,7 @@ also features an image preview for mons and items using art from the
 Pokemon Global Link. The site is simple, standards-compliant and mobile-
 friendly.</em>
 
-PokePaste is grateful to BrowserStack <https://www.browserstack.com> for
+PokePaste is grateful to [BrowserStack] (https://www.browserstack.com) for
 help testing PokePaste v3 across different browsers.
 
 You can use PokePaste at <https://pokepast.es>.
