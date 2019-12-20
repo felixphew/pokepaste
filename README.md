@@ -30,7 +30,7 @@ Example:
 		key            = []byte("Super Secret Key")
 	)
 
-See <https://github.com/go-sql-driver/mysql#dsn-data-source-name> for
+See [this page](https://github.com/go-sql-driver/mysql#dsn-data-source-name) for
 more information on the database connection parameters.
 
 If you plan on putting this on anything resembling the public Internet,
@@ -42,6 +42,6 @@ Licensing
 
 PokePaste is licensed under the 3-clause BSD licence. In short, you can
 do whatever you want with the code as long as you retain the copyright
-notice (see LICENSE) and don't hold me liable.</em>
+notice (see LICENSE) and don't hold me liable.
 
 Pokémon and Pokémon character names are trademarks of Nintendo.
