@@ -1,6 +1,6 @@
 PokePaste
 
-Pokepaste is a simple pastebin, with a clean interface, that supports
+PokePaste is a simple pastebin, with a clean interface, that supports
 highlighting of the syntax created by Pokemon Showdown. This syntax has
 become a standard, and is supported by multiple tools, yet no pastebin
 (up until now) has had support for syntax-highlighting it.
@@ -18,23 +18,17 @@ You can use PokePaste at <https://pokepast.es>.
 
 PokePaste v3 was rewritten from the ground up in Go. Most of the
 functionality required is in the standard library, with the exception of
-the MySQL and Blowfish libraries. The file `config.go' is not included;
-it contains the settings for URL encryption and database connection.
-Example:
+the MySQL and Blowfish libraries.
 
-	package main
+A standalone tool is included to run PokePaste for development purposes;
+use it something like this:
 
-	var (
-		dataSourceName = "username:password@/dbname"
-		key            = []byte("Super Secret Key")
-	)
+	$ go get github.com/felixphew/pokepaste/cmd/pokepaste
+	$ POKEPASTE_DB=username:password@/dbname \
+	> POKEPASTE_KEY='Super Secret Key' ~/go/bin/pokepaste
 
 See <https://github.com/go-sql-driver/mysql#dsn-data-source-name> for
 more information on the database connection parameters.
-
-If you plan on putting this on anything resembling the public Internet,
-please consider running it under a framework or behind a reverse proxy
-of some kind (nginx works well).
 
 Licensing
 

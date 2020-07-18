@@ -1,47 +1,15 @@
-package main
+package pokepaste
 
 import (
 	"encoding/json"
 	"log"
 	"net/http"
-	"os"
+	"path/filepath"
 	"regexp"
+	"runtime"
 )
 
-var (
-	assets = http.FileServer(http.Dir("assets"))
-
-	path    = regexp.MustCompile(`^/([0-9a-f]{16})(/.*)?$`)
-	pathOld = regexp.MustCompile(`^/([0-9]{1,10})(/.*)?$`)
-)
-
-func servePaste(w http.ResponseWriter, id uint64, p string) {
-	paste, title, author, notes, err := getPaste(id)
-	if err != nil {
-		http.NotFound(w, nil)
-		return
-	}
-
-	switch p {
-	case "", "/":
-		renderPaste(w, paste, title, author, notes)
-	case "/raw":
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-		w.Write(paste)
-	case "/json":
-		w.Header().Set("Access-Control-Allow-Origin", "*")
-		json.NewEncoder(w).Encode(map[string]interface{}{
-			"paste":  string(paste),
-			"title":  string(title),
-			"author": string(author),
-			"notes":  string(notes),
-		})
-	default:
-		http.NotFound(w, nil)
-	}
-}
-
-func handle(w http.ResponseWriter, r *http.Request) {
+var Handler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Strict-Transport-Security", "max-age=31536000")
 	w.Header().Set("Content-Security-Policy", "default-src 'none'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'")
 
@@ -93,10 +61,47 @@ func handle(w http.ResponseWriter, r *http.Request) {
 	} else {
 		assets.ServeHTTP(w, r)
 	}
+})
+
+var (
+	dir    = getDir()
+	assets = http.FileServer(http.Dir(filepath.Join(dir, "assets")))
+
+	path    = regexp.MustCompile(`^/([0-9a-f]{16})(/.*)?$`)
+	pathOld = regexp.MustCompile(`^/([0-9]{1,10})(/.*)?$`)
+)
+
+func getDir() string {
+	_, file, _, ok := runtime.Caller(1)
+	if !ok {
+		log.Fatal("Could not recover file path")
+	}
+
+	return filepath.Dir(file)
 }
 
-func main() {
-	http.HandleFunc("/", handle)
+func servePaste(w http.ResponseWriter, id uint64, p string) {
+	paste, title, author, notes, err := getPaste(id)
+	if err != nil {
+		http.NotFound(w, nil)
+		return
+	}
 
-	log.Fatal(http.ListenAndServe(os.Getenv("ADDR"), nil))
+	switch p {
+	case "", "/":
+		renderPaste(w, paste, title, author, notes)
+	case "/raw":
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		w.Write(paste)
+	case "/json":
+		w.Header().Set("Access-Control-Allow-Origin", "*")
+		json.NewEncoder(w).Encode(map[string]interface{}{
+			"paste":  string(paste),
+			"title":  string(title),
+			"author": string(author),
+			"notes":  string(notes),
+		})
+	default:
+		http.NotFound(w, nil)
+	}
 }

@@ -1,4 +1,4 @@
-package main
+package pokepaste
 
 import (
 	"encoding/binary"
@@ -14,7 +14,7 @@ var cipher *blowfish.Cipher
 
 func init() {
 	var err error
-	cipher, err = blowfish.NewCipher([]byte(os.Getenv("KEY")))
+	cipher, err = blowfish.NewCipher([]byte(os.Getenv("POKEPASTE_KEY")))
 	if err != nil {
 		log.Fatal(err)
 	}

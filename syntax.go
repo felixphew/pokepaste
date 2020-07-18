@@ -1,9 +1,10 @@
-package main
+package pokepaste
 
 import (
 	"bytes"
 	"html/template"
 	"net/http"
+	"path/filepath"
 	"regexp"
 	"strings"
 )
@@ -27,7 +28,7 @@ var (
 	reMove = regexp.MustCompile(`^(-)( ([A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)(?: \[([A-Z][a-z]+)\])?(?: / [A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)* *)$`)
 	reStat = regexp.MustCompile(`^(\d+ HP)?( / )?(\d+ Atk)?( / )?(\d+ Def)?( / )?(\d+ SpA)?( / )?(\d+ SpD)?( / )?(\d+ Spe)?( *)$`)
 
-	tmpl = template.Must(template.ParseFiles("paste.tmpl"))
+	tmpl = template.Must(template.ParseFiles(filepath.Join(dir, "paste.tmpl")))
 )
 
 func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {

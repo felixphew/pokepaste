@@ -1,4 +1,4 @@
-package main
+package pokepaste
 
 import (
 	"database/sql"
@@ -7,7 +7,7 @@ import (
 	_ "github.com/go-sql-driver/mysql"
 )
 
-var db, _ = sql.Open("mysql", os.Getenv("DATA_SOURCE_NAME"))
+var db, _ = sql.Open("mysql", os.Getenv("POKEPASTE_DB"))
 
 func getPaste(id uint64) (paste, title, author, notes []byte, err error) {
 	row := db.QueryRow("SELECT paste, title, author, notes FROM pastes WHERE id = ?", id)
