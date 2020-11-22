@@ -1,4 +1,4 @@
-PokePaste
+# PokePaste
 
 PokePaste is a simple pastebin, with a clean interface, that supports
 highlighting of the syntax created by Pokemon Showdown. This syntax has
@@ -11,10 +11,10 @@ also features an image preview for mons and items using art from the
 Pokemon Global Link. The site is simple, standards-compliant and mobile-
 friendly.
 
-PokePaste is grateful to BrowserStack <https://www.browserstack.com> for
+PokePaste is grateful to [BrowserStack](https://www.browserstack.com) for
 help testing PokePaste v3 across different browsers.
 
-You can use PokePaste at <https://pokepast.es>.
+You can use PokePaste at https://pokepast.es.
 
 PokePaste v3 was rewritten from the ground up in Go. Most of the
 functionality required is in the standard library, with the exception of
@@ -22,18 +22,18 @@ the MySQL and Blowfish libraries.
 
 A standalone tool is included to run PokePaste for development purposes;
 use it something like this:
-
-	$ go get github.com/felixphew/pokepaste/cmd/pokepaste
-	$ POKEPASTE_DB=username:password@/dbname \
-	> POKEPASTE_KEY='Super Secret Key' ~/go/bin/pokepaste
-
-See <https://github.com/go-sql-driver/mysql#dsn-data-source-name> for
+```sh
+$ go get github.com/felixphew/pokepaste/cmd/pokepaste
+$ POKEPASTE_DB=username:password@/dbname \
+> POKEPASTE_KEY='Super Secret Key' ~/go/bin/pokepaste
+```
+See https://github.com/go-sql-driver/mysql#dsn-data-source-name for
 more information on the database connection parameters.
 
-Licensing
+## Licensing
 
-PokePaste is licensed under the 3-clause BSD licence. In short, you can
+PokePaste is licensed under the 3-clause BSD license. In short, you can
 do whatever you want with the code as long as you retain the copyright
-notice (see LICENSE) and don't hold me liable.
+notice (see [LICENSE](LICENSE)) and don't hold me liable.
 
 Pokémon and Pokémon character names are trademarks of Nintendo.
