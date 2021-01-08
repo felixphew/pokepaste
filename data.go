@@ -5736,6 +5736,41 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "dragon",
 	},
+	"Jumabo": {
+		"id":   uint(10024),
+		"form": uint(0),
+		"type": "grass",
+	},
+	"Caribolt": {
+		"id":   uint(10025),
+		"form": uint(0),
+		"type": "grass",
+	},
+	"Smokomodo": {
+		"id":   uint(10026),
+		"form": uint(0),
+		"type": "fire",
+	},
+	"Snaelstrom": {
+		"id":   uint(10027),
+		"form": uint(0),
+		"type": "water",
+	},
+	"Equilibra": {
+		"id":   uint(10028),
+		"form": uint(0),
+		"type": "steel",
+	},
+	"Astrolotl": {
+		"id":   uint(10029),
+		"form": uint(0),
+		"type": "fire",
+	},
+	"Miasmaw": {
+		"id":   uint(10030),
+		"form": uint(0),
+		"type": "bug",
+	},
 }
 
 var moveData = map[string]map[string]interface{}{
