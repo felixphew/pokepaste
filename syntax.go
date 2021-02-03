@@ -27,6 +27,7 @@ var (
 	reHead = regexp.MustCompile(`^(?:(.* \()([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*)(\))|([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*))(?:( \()([MF])(\)))?(?:( @ )([A-Z][a-z0-9:']*(?:[- ][A-Z][a-z0-9:']*)*))?( *)$`)
 	reMove = regexp.MustCompile(`^(-)( ([A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)(?: \[([A-Z][a-z]+)\])?(?: / [A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)* *)$`)
 	reStat = regexp.MustCompile(`^(\d+ HP)?( / )?(\d+ Atk)?( / )?(\d+ Def)?( / )?(\d+ SpA)?( / )?(\d+ SpD)?( / )?(\d+ Spe)?( *)$`)
+	reShiny = regexp.MustCompile(`^Shiny: *(.*) *$`)
 
 	tmpl = template.Must(template.ParseFiles(filepath.Join(dir, "paste.tmpl")))
 )
@@ -89,6 +90,14 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 		}
 
 		if len(m[6]) != 0 {
+			if p, ok := pokemonData[string(m[6])]; ok {
+				if p["genderDifference"] {
+					fset.Gender = m[6][0]
+				}
+				else {
+					fset.Gender = ""
+				}
+			}
 			template.HTMLEscape(&b, m[5])
 			if m[6][0] == 'M' {
 				b.WriteString(`<span class="gender-m">`)
@@ -100,6 +109,16 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 			template.HTMLEscape(&b, m[6])
 			b.WriteString(`</span>`)
 			template.HTMLEscape(&b, m[7])
+		} else if {
+			// If no set gender, default to Male
+			if p, ok := pokemonData[string(m[6])]; ok {
+				if p["genderDifference"] {
+					fset.Gender = "M"
+				}
+				else {
+					fset.Gender = ""
+				}
+			}
 		}
 
 		if len(m[9]) != 0 {
@@ -162,6 +181,13 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 					}
 				} else {
 					template.HTMLEscape(&b, m[1])
+				}
+			} else if m := reShiny.FindSubmatch(line); m != nil {
+				if m[0][0] == "Yes" {
+					fset.Shiny = "S"
+				}
+				else {
+					fset.Shiny = ""
 				}
 			} else {
 				template.HTMLEscape(&b, line)
