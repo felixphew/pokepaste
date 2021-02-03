@@ -91,7 +91,7 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 
 		if len(m[6]) != 0 {
 			if p, ok := pokemonData[string(m[6])]; ok {
-				if p["genderDifference"] {
+				if p["genderDifference"].(bool) {
 					fset.Gender = m[6][0]
 				}
 				else {
@@ -112,7 +112,7 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 		} else if {
 			// If no set gender, default to Male
 			if p, ok := pokemonData[string(m[6])]; ok {
-				if p["genderDifference"] {
+				if p["genderDifference"].(bool) {
 					fset.Gender = "M"
 				}
 				else {
@@ -183,7 +183,7 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 					template.HTMLEscape(&b, m[1])
 				}
 			} else if m := reShiny.FindSubmatch(line); m != nil {
-				if m[0][0] == "Yes" {
+				if m[0][0] == "Yes" && fset.Pokemon && fset.Pokemon < 10000 {
 					fset.Shiny = "S"
 				}
 				else {
