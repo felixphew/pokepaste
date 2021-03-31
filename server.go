@@ -51,6 +51,8 @@ var Handler = http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
 		author := r.Form.Get("author")
 		notes := r.Form.Get("notes")
 
+		openTeamsheet := r.Form.Get("openTeamsheet")
+
 		id, err := postPaste(&paste, &title, &author, &notes)
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
@@ -89,7 +91,7 @@ func servePaste(w http.ResponseWriter, id uint64, p string) {
 
 	switch p {
 	case "", "/":
-		renderPaste(w, paste, title, author, notes)
+		renderPaste(w, paste, title, author, notes, openTeamsheet)
 	case "/raw":
 		w.Header().Set("Access-Control-Allow-Origin", "*")
 		w.Write(paste)

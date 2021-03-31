@@ -27,12 +27,16 @@ var (
 	reHead = regexp.MustCompile(`^(?:(.* \()([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*)(\))|([A-Z][a-z0-9:']+\.?(?:[- ][A-Za-z][a-z0-9:']*\.?)*))(?:( \()([MF])(\)))?(?:( @ )([A-Z][a-z0-9:']*(?:[- ][A-Z][a-z0-9:']*)*))?( *)$`)
 	reMove = regexp.MustCompile(`^(-)( ([A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)(?: \[([A-Z][a-z]+)\])?(?: / [A-Z][a-z\']*(?:[- ][A-Za-z][a-z\']*)*)* *)$`)
 	reStat = regexp.MustCompile(`^(\d+ HP)?( / )?(\d+ Atk)?( / )?(\d+ Def)?( / )?(\d+ SpA)?( / )?(\d+ SpD)?( / )?(\d+ Spe)?( *)$`)
+	reShiny = regexp.MustCompile(`^Shiny: *(\S*) *$`)
+	reNature = regexp.MustCompile(`^.+Nature *$`)
 
 	tmpl = template.Must(template.ParseFiles(filepath.Join(dir, "paste.tmpl")))
 )
 
-func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
+func renderPaste(w http.ResponseWriter, text, title, author, notes []byte, openTeamsheet) {
 	sets := bytes.Split(text, []byte("\r\n\r\n"))
+	title = strings.ReplaceAll(title, "\n", "<br>")
+	title = strings.ReplaceAll(title, "\r", "<br>")
 	fpaste := paste{
 		Paste:  make([]set, 0, len(sets)),
 		Title:  string(title),
@@ -89,6 +93,14 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 		}
 
 		if len(m[6]) != 0 {
+			if p, ok := pokemonData[string(m[6])]; ok {
+				if p["genderDifference"].(bool) {
+					fset.Gender = m[6][0]
+				}
+				else {
+					fset.Gender = ""
+				}
+			}
 			template.HTMLEscape(&b, m[5])
 			if m[6][0] == 'M' {
 				b.WriteString(`<span class="gender-m">`)
@@ -100,6 +112,16 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 			template.HTMLEscape(&b, m[6])
 			b.WriteString(`</span>`)
 			template.HTMLEscape(&b, m[7])
+		} else if {
+			// If no set gender, default to Male
+			if p, ok := pokemonData[string(m[6])]; ok {
+				if p["genderDifference"].(bool) {
+					fset.Gender = "M"
+				}
+				else {
+					fset.Gender = ""
+				}
+			}
 		}
 
 		if len(m[9]) != 0 {
@@ -144,7 +166,7 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 				b.WriteString(`<span class="attr">`)
 				template.HTMLEscape(&b, m[0])
 				b.WriteString(`</span>`)
-				if len(m[0]) == 5 && m[0][1] == 'V' && m[0][2] == 's' {
+				if len(m[0]) == 5 && m[0][1] == 'V' && m[0][2] == 's' && !openTeamsheet {
 					attr := m[1]
 					if m := reStat.FindSubmatch(attr); m != nil {
 						for i, stat := range [...]string{"hp", "atk", "def", "spa", "spd", "spe"} {
@@ -163,6 +185,16 @@ func renderPaste(w http.ResponseWriter, text, title, author, notes []byte) {
 				} else {
 					template.HTMLEscape(&b, m[1])
 				}
+			} else if m := reShiny.FindSubmatch(line); m != nil {
+				if m[0][0] == "Yes" && fset.Pokemon && fset.Pokemon < 10000 {
+					fset.Shiny = "S"
+				}
+				else {
+					fset.Shiny = ""
+				}
+			} else if m:= reNature.FindSubmatch(line); m != nil && !openTeamsheet {
+				// we could start coloring natures if we add a map to data...
+				b.WriteString(line)
 			} else {
 				template.HTMLEscape(&b, line)
 			}
