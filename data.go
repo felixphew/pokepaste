@@ -606,6 +606,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "normal",
 	},
+	"Farfetch&#39;d": {
+		"id":   uint(83),
+		"form": uint(0),
+		"type": "normal",
+	},
 	"Farfetch'd-Galar": {
 		"id":   uint(83),
 		"form": uint(1),
@@ -617,6 +622,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"type": "fighting",
 	},
 	"Farfetch’d-Galar": {
+		"id":   uint(83),
+		"form": uint(1),
+		"type": "fighting",
+	},
+	"Farfetch&#39;d-Galar": {
 		"id":   uint(83),
 		"form": uint(1),
 		"type": "fighting",
@@ -5257,617 +5267,632 @@ var pokemonData = map[string]map[string]interface{}{
 		"type": "electric",
 	},
 	"Meltan": {
-		"id": uint(808),
+		"id":   uint(808),
 		"form": uint(0),
 		"type": "steel",
 	},
 	"Melmetal": {
-		"id": uint(809),
+		"id":   uint(809),
 		"form": uint(0),
 		"type": "steel",
 	},
 	"Melmetal-Gmax": {
-		"id": uint(809),
+		"id":   uint(809),
 		"form": uint(1),
 		"type": "steel",
 	},
 	"Grookey": {
-		"id": uint(810),
+		"id":   uint(810),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Thwackey": {
-		"id": uint(811),
+		"id":   uint(811),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Rillaboom": {
-		"id": uint(812),
+		"id":   uint(812),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Rillaboom-Gmax": {
-		"id": uint(812),
+		"id":   uint(812),
 		"form": uint(1),
 		"type": "grass",
 	},
 	"Scorbunny": {
-		"id": uint(813),
+		"id":   uint(813),
 		"form": uint(0),
 		"type": "fire",
 	},
 	"Raboot": {
-		"id": uint(814),
+		"id":   uint(814),
 		"form": uint(0),
 		"type": "fire",
 	},
 	"Cinderace": {
-		"id": uint(815),
+		"id":   uint(815),
 		"form": uint(0),
 		"type": "fire",
 	},
 	"Cinderace-Gmax": {
-		"id": uint(815),
+		"id":   uint(815),
 		"form": uint(1),
 		"type": "fire",
 	},
 	"Sobble": {
-		"id": uint(816),
+		"id":   uint(816),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Drizzile": {
-		"id": uint(817),
+		"id":   uint(817),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Inteleon": {
-		"id": uint(818),
+		"id":   uint(818),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Inteleon-Gmax": {
-		"id": uint(818),
+		"id":   uint(818),
 		"form": uint(1),
 		"type": "water",
 	},
 	"Skwovet": {
-		"id": uint(819),
+		"id":   uint(819),
 		"form": uint(0),
 		"type": "normal",
 	},
 	"Greedent": {
-		"id": uint(820),
+		"id":   uint(820),
 		"form": uint(0),
 		"type": "normal",
 	},
 	"Rookidee": {
-		"id": uint(821),
+		"id":   uint(821),
 		"form": uint(0),
 		"type": "flying",
 	},
 	"Corvisquire": {
-		"id": uint(822),
+		"id":   uint(822),
 		"form": uint(0),
 		"type": "flying",
 	},
 	"Corviknight": {
-		"id": uint(823),
+		"id":   uint(823),
 		"form": uint(0),
 		"type": "flying",
 	},
 	"Corviknight-Gmax": {
-		"id": uint(823),
+		"id":   uint(823),
 		"form": uint(1),
 		"type": "flying",
 	},
 	"Blipbug": {
-		"id": uint(824),
+		"id":   uint(824),
 		"form": uint(0),
 		"type": "bug",
 	},
 	"Dottler": {
-		"id": uint(825),
+		"id":   uint(825),
 		"form": uint(0),
 		"type": "bug",
 	},
 	"Orbeetle": {
-		"id": uint(826),
+		"id":   uint(826),
 		"form": uint(0),
 		"type": "bug",
 	},
 	"Orbeetle-Gmax": {
-		"id": uint(826),
+		"id":   uint(826),
 		"form": uint(1),
 		"type": "bug",
 	},
 	"Nickit": {
-		"id": uint(827),
+		"id":   uint(827),
 		"form": uint(0),
 		"type": "dark",
 	},
 	"Thievul": {
-		"id": uint(828),
+		"id":   uint(828),
 		"form": uint(0),
 		"type": "dark",
 	},
 	"Gossifleur": {
-		"id": uint(829),
+		"id":   uint(829),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Eldegoss": {
-		"id": uint(830),
+		"id":   uint(830),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Wooloo": {
-		"id": uint(831),
+		"id":   uint(831),
 		"form": uint(0),
 		"type": "normal",
 	},
 	"Dubwool": {
-		"id": uint(832),
+		"id":   uint(832),
 		"form": uint(0),
 		"type": "normal",
 	},
 	"Chewtle": {
-		"id": uint(833),
+		"id":   uint(833),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Drednaw": {
-		"id": uint(834),
+		"id":   uint(834),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Drednaw-Gmax": {
-		"id": uint(834),
+		"id":   uint(834),
 		"form": uint(1),
 		"type": "water",
 	},
 	"Yamper": {
-		"id": uint(835),
+		"id":   uint(835),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Boltund": {
-		"id": uint(836),
+		"id":   uint(836),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Rolycoly": {
-		"id": uint(837),
+		"id":   uint(837),
 		"form": uint(0),
 		"type": "rock",
 	},
 	"Carkol": {
-		"id": uint(838),
+		"id":   uint(838),
 		"form": uint(0),
 		"type": "rock",
 	},
 	"Coalossal": {
-		"id": uint(839),
+		"id":   uint(839),
 		"form": uint(0),
 		"type": "rock",
 	},
 	"Coalossal-Gmax": {
-		"id": uint(839),
+		"id":   uint(839),
 		"form": uint(1),
 		"type": "rock",
 	},
 	"Applin": {
-		"id": uint(840),
+		"id":   uint(840),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Flapple": {
-		"id": uint(841),
+		"id":   uint(841),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Flapple-Gmax": {
-		"id": uint(841),
+		"id":   uint(841),
 		"form": uint(1),
 		"type": "grass",
 	},
 	"Appletun": {
-		"id": uint(842),
+		"id":   uint(842),
 		"form": uint(0),
 		"type": "grass",
 	},
 	"Appletun-Gmax": {
-		"id": uint(842),
+		"id":   uint(842),
 		"form": uint(1),
 		"type": "grass",
 	},
 	"Silicobra": {
-		"id": uint(843),
+		"id":   uint(843),
 		"form": uint(0),
 		"type": "ground",
 	},
 	"Sandaconda": {
-		"id": uint(844),
+		"id":   uint(844),
 		"form": uint(0),
 		"type": "ground",
 	},
 	"Sandaconda-Gmax": {
-		"id": uint(844),
+		"id":   uint(844),
 		"form": uint(1),
 		"type": "ground",
 	},
 	"Cramorant": {
-		"id": uint(845),
+		"id":   uint(845),
 		"form": uint(0),
 		"type": "flying",
 	},
 	"Cramorant-Gulping": {
-		"id": uint(845),
+		"id":   uint(845),
 		"form": uint(1),
 		"type": "flying",
 	},
 	"Cramorant-Gorging": {
-		"id": uint(845),
+		"id":   uint(845),
 		"form": uint(2),
 		"type": "flying",
 	},
 	"Arrokuda": {
-		"id": uint(846),
+		"id":   uint(846),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Barraskewda": {
-		"id": uint(847),
+		"id":   uint(847),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Toxel": {
-		"id": uint(848),
+		"id":   uint(848),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Toxtricity": {
-		"id": uint(849),
+		"id":   uint(849),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Toxtricity-Low-Key": {
-		"id": uint(849),
+		"id":   uint(849),
 		"form": uint(1),
 		"type": "electric",
 	},
 	"Toxtricity-Gmax": {
-		"id": uint(844),
+		"id":   uint(844),
 		"form": uint(2),
 		"type": "electric",
 	},
 	"Sizzlipede": {
-		"id": uint(850),
+		"id":   uint(850),
 		"form": uint(0),
 		"type": "fire",
 	},
 	"Centiskorch": {
-		"id": uint(851),
+		"id":   uint(851),
 		"form": uint(0),
 		"type": "fire",
 	},
 	"Centiskorch-Gmax": {
-		"id": uint(851),
+		"id":   uint(851),
 		"form": uint(1),
 		"type": "fire",
 	},
 	"Clobbopus": {
-		"id": uint(852),
+		"id":   uint(852),
 		"form": uint(0),
 		"type": "fighting",
 	},
 	"Grapploct": {
-		"id": uint(853),
+		"id":   uint(853),
 		"form": uint(0),
 		"type": "fighting",
 	},
 	"Sinistea": {
-		"id": uint(854),
+		"id":   uint(854),
 		"form": uint(0),
 		"type": "ghost",
 	},
 	"Polteageist": {
-		"id": uint(855),
+		"id":   uint(855),
 		"form": uint(0),
 		"type": "ghost",
 	},
 	"Hatenna": {
-		"id": uint(856),
+		"id":   uint(856),
 		"form": uint(0),
 		"type": "psychic",
 	},
 	"Hattrem": {
-		"id": uint(857),
+		"id":   uint(857),
 		"form": uint(0),
 		"type": "psychic",
 	},
 	"Hatterene": {
-		"id": uint(858),
+		"id":   uint(858),
 		"form": uint(0),
 		"type": "psychic",
 	},
 	"Hatterene-Gmax": {
-		"id": uint(858),
+		"id":   uint(858),
 		"form": uint(1),
 		"type": "psychic",
 	},
 	"Impidimp": {
-		"id": uint(859),
+		"id":   uint(859),
 		"form": uint(0),
 		"type": "dark",
 	},
 	"Morgrem": {
-		"id": uint(860),
+		"id":   uint(860),
 		"form": uint(0),
 		"type": "dark",
 	},
 	"Grimmsnarl": {
-		"id": uint(861),
+		"id":   uint(861),
 		"form": uint(0),
 		"type": "dark",
 	},
 	"Grimmsnarl-Gmax": {
-		"id": uint(861),
+		"id":   uint(861),
 		"form": uint(1),
 		"type": "dark",
 	},
 	"Obstagoon": {
-		"id": uint(862),
+		"id":   uint(862),
 		"form": uint(0),
 		"type": "dark",
 	},
 	"Perrserker": {
-		"id": uint(863),
+		"id":   uint(863),
 		"form": uint(0),
 		"type": "steel",
 	},
 	"Cursola": {
-		"id": uint(864),
+		"id":   uint(864),
 		"form": uint(0),
 		"type": "ghost",
 	},
 	"Sirfetch'd": {
-		"id": uint(865),
+		"id":   uint(865),
+		"form": uint(0),
+		"type": "fighting",
+	},
+	"Sirfetch&#x27;d": {
+		"id":   uint(83),
+		"form": uint(0),
+		"type": "normal",
+	},
+	"Sirfetch’d": {
+		"id":   uint(83),
+		"form": uint(0),
+		"type": "normal",
+	},
+	"Sirfetch&#39;d": {
+		"id":   uint(865),
 		"form": uint(0),
 		"type": "fighting",
 	},
 	"Mr. Rime": {
-		"id": uint(866),
+		"id":   uint(866),
 		"form": uint(0),
 		"type": "ice",
 	},
 	"Runerigus": {
-		"id": uint(867),
+		"id":   uint(867),
 		"form": uint(0),
 		"type": "ground",
 	},
 	"Milcery": {
-		"id": uint(868),
+		"id":   uint(868),
 		"form": uint(0),
 		"type": "fairy",
 	},
 	"Alcremie": {
-		"id": uint(869),
+		"id":   uint(869),
 		"form": uint(0),
 		"type": "fairy",
 	},
 	"Alcremie-Gmax": {
-		"id": uint(869),
+		"id":   uint(869),
 		"form": uint(1),
 		"type": "fairy",
 	},
 	"Falinks": {
-		"id": uint(870),
+		"id":   uint(870),
 		"form": uint(0),
 		"type": "fighting",
 	},
 	"Pincurchin": {
-		"id": uint(871),
+		"id":   uint(871),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Snom": {
-		"id": uint(872),
+		"id":   uint(872),
 		"form": uint(0),
 		"type": "ice",
 	},
 	"Frosmoth": {
-		"id": uint(873),
+		"id":   uint(873),
 		"form": uint(0),
 		"type": "ice",
 	},
 	"Stonjourner": {
-		"id": uint(874),
+		"id":   uint(874),
 		"form": uint(0),
 		"type": "rock",
 	},
 	"Eiscue": {
-		"id": uint(875),
+		"id":   uint(875),
 		"form": uint(0),
 		"type": "ice",
 	},
 	"Eiscue-Noice": {
-		"id": uint(875),
+		"id":   uint(875),
 		"form": uint(1),
 		"type": "ice",
 	},
 	"Indeedee": {
-		"id": uint(876),
+		"id":   uint(876),
 		"form": uint(0),
 		"type": "psychic",
 	},
 	"Indeedee-F": {
-		"id": uint(876),
+		"id":   uint(876),
 		"form": uint(1),
 		"type": "psychic",
 	},
 	"Morpeko": {
-		"id": uint(877),
+		"id":   uint(877),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Morpeko-Hangry": {
-		"id": uint(877),
+		"id":   uint(877),
 		"form": uint(1),
 		"type": "electric",
 	},
 	"Cufant": {
-		"id": uint(878),
+		"id":   uint(878),
 		"form": uint(0),
 		"type": "steel",
 	},
 	"Copperajah": {
-		"id": uint(879),
+		"id":   uint(879),
 		"form": uint(0),
 		"type": "steel",
 	},
 	"Copperajah-Gmax": {
-		"id": uint(879),
+		"id":   uint(879),
 		"form": uint(1),
 		"type": "steel",
 	},
 	"Dracozolt": {
-		"id": uint(880),
+		"id":   uint(880),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Arctozolt": {
-		"id": uint(881),
+		"id":   uint(881),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Dracovish": {
-		"id": uint(882),
+		"id":   uint(882),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Arctovish": {
-		"id": uint(883),
+		"id":   uint(883),
 		"form": uint(0),
 		"type": "water",
 	},
 	"Duraludon": {
-		"id": uint(884),
+		"id":   uint(884),
 		"form": uint(0),
 		"type": "steel",
 	},
 	"Duraludon-Gmax": {
-		"id": uint(884),
+		"id":   uint(884),
 		"form": uint(1),
 		"type": "steel",
 	},
 	"Dreepy": {
-		"id": uint(885),
+		"id":   uint(885),
 		"form": uint(0),
 		"type": "dragon",
 	},
 	"Drakloak": {
-		"id": uint(886),
+		"id":   uint(886),
 		"form": uint(0),
 		"type": "dragon",
 	},
 	"Dragapult": {
-		"id": uint(887),
+		"id":   uint(887),
 		"form": uint(0),
 		"type": "dragon",
 	},
 	"Zacian": {
-		"id": uint(888),
+		"id":   uint(888),
 		"form": uint(0),
 		"type": "fairy",
 	},
 	"Zacian-Crowned": {
-		"id": uint(888),
+		"id":   uint(888),
 		"form": uint(1),
 		"type": "fairy",
 	},
 	"Zamazenta": {
-		"id": uint(889),
+		"id":   uint(889),
 		"form": uint(0),
 		"type": "fighting",
 	},
 	"Zamazenta-Crowned": {
-		"id": uint(889),
+		"id":   uint(889),
 		"form": uint(1),
 		"type": "fighting",
 	},
 	"Eternatus": {
-		"id": uint(890),
+		"id":   uint(890),
 		"form": uint(0),
 		"type": "poison",
 	},
 	"Eternatus-Eternamax": {
-		"id": uint(890),
+		"id":   uint(890),
 		"form": uint(1),
 		"type": "poison",
 	},
 	"Kubfu": {
-		"id": uint(891),
+		"id":   uint(891),
 		"form": uint(0),
 		"type": "fighting",
 	},
 	"Urshifu": {
-		"id": uint(892),
+		"id":   uint(892),
 		"form": uint(0),
 		"type": "fighting",
 	},
 	"Urshifu-Rapid-Strike": {
-		"id": uint(892),
+		"id":   uint(892),
 		"form": uint(1),
 		"type": "fighting",
 	},
 	"Urshifu-Gmax": {
-		"id": uint(892),
+		"id":   uint(892),
 		"form": uint(2),
 		"type": "fighting",
 	},
 	"Urshifu-Rapid-Strike-Gmax": {
-		"id": uint(892),
+		"id":   uint(892),
 		"form": uint(3),
 		"type": "fighting",
 	},
 	"Zarude": {
-		"id": uint(893),
+		"id":   uint(893),
 		"form": uint(0),
 		"type": "dark",
 	},
 	"Regieleki": {
-		"id": uint(894),
+		"id":   uint(894),
 		"form": uint(0),
 		"type": "electric",
 	},
 	"Regidrago": {
-		"id": uint(895),
+		"id":   uint(895),
 		"form": uint(0),
 		"type": "dragon",
 	},
 	"Glastrier": {
-		"id": uint(896),
+		"id":   uint(896),
 		"form": uint(0),
 		"type": "ice",
 	},
 	"Spectrier": {
-		"id": uint(897),
+		"id":   uint(897),
 		"form": uint(0),
 		"type": "ghost",
 	},
 	"Calyrex": {
-		"id": uint(898),
+		"id":   uint(898),
 		"form": uint(0),
 		"type": "psychic",
 	},
 	"Calyrex-Ice": {
-		"id": uint(898),
+		"id":   uint(898),
 		"form": uint(1),
 		"type": "psychic",
 	},
 	"Calyrex-Shadow": {
-		"id": uint(898),
+		"id":   uint(898),
 		"form": uint(2),
 		"type": "psychic",
 	},
@@ -9480,178 +9505,329 @@ var moveData = map[string]map[string]interface{}{
 		"classification": uint(0),
 	},
 	"Dynamax Cannon": {
-		"id": 0,
-		"type": "dragon",
+		"id":             0,
+		"type":           "dragon",
 		"classification": uint(2),
 	},
 	"Snipe Shot": {
-		"id": 0,
-		"type": "water",
+		"id":             0,
+		"type":           "water",
 		"classification": uint(2),
 	},
 	"Jaw Lock": {
-		"id": 0,
-		"type": "dark",
+		"id":             0,
+		"type":           "dark",
 		"classification": uint(1),
 	},
 	"Stuff Cheeks": {
-		"id": 0,
-		"type": "normal",
+		"id":             0,
+		"type":           "normal",
 		"classification": uint(0),
 	},
 	"No Retreat": {
-		"id": 0,
-		"type": "fighting",
+		"id":             0,
+		"type":           "fighting",
 		"classification": uint(0),
 	},
 	"Tar Shot": {
-		"id": 0,
-		"type": "rock",
+		"id":             0,
+		"type":           "rock",
 		"classification": uint(0),
 	},
 	"Magic Powder": {
-		"id": 0,
-		"type": "psychic",
+		"id":             0,
+		"type":           "psychic",
 		"classification": uint(0),
 	},
 	"Dragon Darts": {
-		"id": 0,
-		"type": "dragon",
+		"id":             0,
+		"type":           "dragon",
 		"classification": uint(1),
 	},
 	"Teatime": {
-		"id": 0,
-		"type": "normal",
+		"id":             0,
+		"type":           "normal",
 		"classification": uint(0),
 	},
 	"Octolock": {
-		"id": 0,
-		"type": "fighting",
+		"id":             0,
+		"type":           "fighting",
 		"classification": uint(0),
 	},
 	"Bolt Beak": {
-		"id": 0,
-		"type": "electric",
+		"id":             0,
+		"type":           "electric",
 		"classification": uint(1),
 	},
 	"Fishious Rend": {
-		"id": 0,
-		"type": "water",
+		"id":             0,
+		"type":           "water",
 		"classification": uint(1),
 	},
 	"Court Change": {
-		"id": 0,
-		"type": "normal",
+		"id":             0,
+		"type":           "normal",
 		"classification": uint(0),
 	},
 	"Clangorous Soul": {
-		"id": 0,
-		"type": "dragon",
+		"id":             0,
+		"type":           "dragon",
 		"classification": uint(0),
 	},
 	"Body Press": {
-		"id": 0,
-		"type": "fighting",
+		"id":             0,
+		"type":           "fighting",
 		"classification": uint(1),
 	},
 	"Decorate": {
-		"id": 0,
-		"type": "fairy",
+		"id":             0,
+		"type":           "fairy",
 		"classification": uint(0),
 	},
 	"Drum Beating": {
-		"id": 0,
-		"type": "grass",
+		"id":             0,
+		"type":           "grass",
 		"classification": uint(1),
 	},
 	"Snap Trap": {
-		"id": 0,
-		"type": "grass",
+		"id":             0,
+		"type":           "grass",
 		"classification": uint(1),
 	},
 	"Pyro Ball": {
-		"id": 0,
-		"type": "fire",
+		"id":             0,
+		"type":           "fire",
 		"classification": uint(1),
 	},
 	"Behemoth Blade": {
-		"id": 0,
-		"type": "steel",
+		"id":             0,
+		"type":           "steel",
 		"classification": uint(1),
 	},
 	"Behemoth Bash": {
-		"id": 0,
-		"type": "steel",
+		"id":             0,
+		"type":           "steel",
 		"classification": uint(1),
 	},
 	"Aura Wheel": {
-		"id": 0,
-		"type": "electric",
+		"id":             0,
+		"type":           "electric",
 		"classification": uint(1),
 	},
 	"Breaking Swipe": {
-		"id": 0,
-		"type": "dragon",
+		"id":             0,
+		"type":           "dragon",
 		"classification": uint(1),
 	},
 	"Branch Poke": {
-		"id": 0,
-		"type": "grass",
+		"id":             0,
+		"type":           "grass",
 		"classification": uint(1),
 	},
 	"Overdrive": {
-		"id": 0,
-		"type": "electric",
+		"id":             0,
+		"type":           "electric",
 		"classification": uint(2),
 	},
 	"Apple Acid": {
-		"id": 0,
-		"type": "grass",
+		"id":             0,
+		"type":           "grass",
 		"classification": uint(2),
 	},
 	"Grav Apple": {
-		"id": 0,
-		"type": "grass",
+		"id":             0,
+		"type":           "grass",
 		"classification": uint(1),
 	},
 	"Spirit Break": {
-		"id": 0,
-		"type": "fairy",
+		"id":             0,
+		"type":           "fairy",
 		"classification": uint(1),
 	},
 	"Strange Steam": {
-		"id": 0,
-		"type": "fairy",
+		"id":             0,
+		"type":           "fairy",
 		"classification": uint(2),
 	},
 	"Life Dew": {
-		"id": 0,
-		"type": "water",
+		"id":             0,
+		"type":           "water",
 		"classification": uint(0),
 	},
 	"Obstruct": {
-		"id": 0,
-		"type": "dark",
+		"id":             0,
+		"type":           "dark",
 		"classification": uint(0),
 	},
 	"False Surrender": {
-		"id": 0,
-		"type": "dark",
+		"id":             0,
+		"type":           "dark",
 		"classification": uint(1),
 	},
 	"Meteor Assault": {
-		"id": 0,
-		"type": "fighting",
+		"id":             0,
+		"type":           "fighting",
 		"classification": uint(1),
 	},
 	"Eternabeam": {
-		"id": 0,
-		"type": "dragon",
+		"id":             0,
+		"type":           "dragon",
 		"classification": uint(2),
 	},
 	"Steel Beam": {
-		"id": 0,
-		"type": "steel",
+		"id":             0,
+		"type":           "steel",
+		"classification": uint(2),
+	},
+
+	"Expanding Force": {
+		"id":             0,
+		"type":           "psychic",
+		"classification": uint(2),
+	},
+	"Steel Roller": {
+		"id":             0,
+		"type":           "steel",
+		"classification": uint(1),
+	},
+	"Scale Shot": {
+		"id":             0,
+		"type":           "dragon",
+		"classification": uint(1),
+	},
+	"Meteor Beam": {
+		"id":             0,
+		"type":           "rock",
+		"classification": uint(2),
+	},
+	"Shell Side Arm": {
+		"id":             0,
+		"type":           "poison",
+		"classification": uint(2),
+	},
+	"Misty Explosion": {
+		"id":             0,
+		"type":           "fairy",
+		"classification": uint(2),
+	},
+	"Grassy Glide": {
+		"id":             0,
+		"type":           "grass",
+		"classification": uint(1),
+	},
+	"Rising Voltage": {
+		"id":             0,
+		"type":           "electric",
+		"classification": uint(2),
+	},
+	"Terrain Pulse": {
+		"id":             0,
+		"type":           "normal",
+		"classification": uint(2),
+	},
+	"Skitter Smack": {
+		"id":             0,
+		"type":           "bug",
+		"classification": uint(1),
+	},
+	"Burning Jealousy": {
+		"id":             0,
+		"type":           "fire",
+		"classification": uint(2),
+	},
+	"Lash Out": {
+		"id":             0,
+		"type":           "dark",
+		"classification": uint(1),
+	},
+	"Poltergeist": {
+		"id":             0,
+		"type":           "ghost",
+		"classification": uint(1),
+	},
+	"Corrosive Gas": {
+		"id":             0,
+		"type":           "poison",
+		"classification": uint(0),
+	},
+	"Coaching": {
+		"id":             0,
+		"type":           "fighting",
+		"classification": uint(0),
+	},
+	"Flip Turn": {
+		"id":             0,
+		"type":           "water",
+		"classification": uint(1),
+	},
+	"Triple Axel": {
+		"id":             0,
+		"type":           "ice",
+		"classification": uint(1),
+	},
+	"Dual Wingbeat": {
+		"id":             0,
+		"type":           "flying",
+		"classification": uint(1),
+	},
+	"Scorching Sands": {
+		"id":             0,
+		"type":           "ground",
+		"classification": uint(2),
+	},
+	"Jungle Healing": {
+		"id":             0,
+		"type":           "grass",
+		"classification": uint(0),
+	},
+	"Wicked Blow": {
+		"id":             0,
+		"type":           "dark",
+		"classification": uint(1),
+	},
+	"Surging Strikes": {
+		"id":             0,
+		"type":           "water",
+		"classification": uint(1),
+	},
+	"Thunder Cage": {
+		"id":             0,
+		"type":           "electric",
+		"classification": uint(2),
+	},
+	"Dragon Energy": {
+		"id":             0,
+		"type":           "dragon",
+		"classification": uint(2),
+	},
+	"Freezing Glare": {
+		"id":             0,
+		"type":           "psychic",
+		"classification": uint(2),
+	},
+	"Fiery Wrath": {
+		"id":             0,
+		"type":           "dark",
+		"classification": uint(2),
+	},
+	"Thunderous Kick": {
+		"id":             0,
+		"type":           "fighting",
+		"classification": uint(1),
+	},
+	"Glacial Lance": {
+		"id":             0,
+		"type":           "ice",
+		"classification": uint(1),
+	},
+	"Astral Barrage": {
+		"id":             0,
+		"type":           "ghost",
+		"classification": uint(2),
+	},
+	"Eerie Spell": {
+		"id":             0,
+		"type":           "psychic",
 		"classification": uint(2),
 	},
 }
@@ -11123,5 +11299,608 @@ var itemData = map[string]map[string]interface{}{
 	},
 	"C Tier": {
 		"id": uint(4),
+	},
+	// adding SwSh items below sorted by id and only what's available on Showdown
+	"Leek": {
+		"id": uint(259),
+	},
+	"Rusted Sword": {
+		"id": uint(1103),
+	},
+
+	"Rusted Shield": {
+		"id": uint(1104),
+	},
+
+	"Fossilized Bird": {
+		"id": uint(1105),
+	},
+
+	"Fossilized Fish": {
+		"id": uint(1106),
+	},
+
+	"Fossilized Drake": {
+		"id": uint(1107),
+	},
+
+	"Fossilized Dino": {
+		"id": uint(1108),
+	},
+
+	"Strawberry Sweet": {
+		"id": uint(1109),
+	},
+
+	"Love Sweet": {
+		"id": uint(1110),
+	},
+
+	"Berry Sweet": {
+		"id": uint(1111),
+	},
+
+	"Clover Sweet": {
+		"id": uint(1112),
+	},
+
+	"Flower Sweet": {
+		"id": uint(1113),
+	},
+
+	"Star Sweet": {
+		"id": uint(1114),
+	},
+
+	"Ribbon Sweet": {
+		"id": uint(1115),
+	},
+
+	"Sweet Apple": {
+		"id": uint(1116),
+	},
+
+	"Tart Apple": {
+		"id": uint(1117),
+	},
+
+	"Throat Spray": {
+		"id": uint(1118),
+	},
+
+	"Eject Pack": {
+		"id": uint(1119),
+	},
+
+	"Heavy-Duty Boots": {
+		"id": uint(1120),
+	},
+
+	"Blunder Policy": {
+		"id": uint(1121),
+	},
+
+	"Room Service": {
+		"id": uint(1122),
+	},
+
+	"Utility Umbrella": {
+		"id": uint(1123),
+	},
+	//I took the liberty of making each ID correspond to the first instance of each TR's type
+	"TR00": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR01": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR02": {
+		"id":   uint(1132),
+		"type": "fire",
+	},
+
+	"TR03": {
+		"id":   uint(1133),
+		"type": "water",
+	},
+
+	"TR04": {
+		"id":   uint(1133),
+		"type": "water",
+	},
+
+	"TR05": {
+		"id":   uint(1135),
+		"type": "ice",
+	},
+
+	"TR06": {
+		"id":   uint(1135),
+		"type": "ice",
+	},
+
+	"TR07": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"TR08": {
+		"id":   uint(1138),
+		"type": "electric",
+	},
+
+	"TR09": {
+		"id":   uint(1138),
+		"type": "electric",
+	},
+
+	"TR10": {
+		"id":   uint(1140),
+		"type": "ground",
+	},
+
+	"TR11": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR12": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR13": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR14": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR15": {
+		"id":   uint(1132),
+		"type": "fire",
+	},
+
+	"TR16": {
+		"id":   uint(1133),
+		"type": "water",
+	},
+
+	"TR17": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR18": {
+		"id":   uint(1148),
+		"type": "bug",
+	},
+
+	"TR19": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR20": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR21": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"TR22": {
+		"id":   uint(1152),
+		"type": "poison",
+	},
+
+	"TR23": {
+		"id":   uint(1140),
+		"type": "ground",
+	},
+
+	"TR24": {
+		"id":   uint(1154),
+		"type": "dragon",
+	},
+
+	"TR25": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR26": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR27": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR28": {
+		"id":   uint(1148),
+		"type": "bug",
+	},
+
+	"TR29": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR30": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR31": {
+		"id":   uint(1161),
+		"type": "steel",
+	},
+
+	"TR32": {
+		"id":   uint(1162),
+		"type": "dark",
+	},
+
+	"TR33": {
+		"id":   uint(1163),
+		"type": "ghost",
+	},
+
+	"TR34": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR35": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR36": {
+		"id":   uint(1132),
+		"type": "fire",
+	},
+
+	"TR37": {
+		"id":   uint(1162),
+		"type": "dark",
+	},
+
+	"TR38": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR39": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"TR40": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR41": {
+		"id":   uint(1132),
+		"type": "fire",
+	},
+
+	"TR42": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR43": {
+		"id":   uint(1132),
+		"type": "fire",
+	},
+
+	"TR44": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR45": {
+		"id":   uint(1133),
+		"type": "water",
+	},
+
+	"TR46": {
+		"id":   uint(1161),
+		"type": "steel",
+	},
+
+	"TR47": {
+		"id":   uint(1154),
+		"type": "dragon",
+	},
+
+	"TR48": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"TR49": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR50": {
+		"id":   uint(1180),
+		"type": "grass",
+	},
+
+	"TR51": {
+		"id":   uint(1154),
+		"type": "dragon",
+	},
+
+	"TR52": {
+		"id":   uint(1161),
+		"type": "steel",
+	},
+
+	"TR53": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"TR54": {
+		"id":   uint(1152),
+		"type": "poison",
+	},
+
+	"TR55": {
+		"id":   uint(1132),
+		"type": "fire",
+	},
+
+	"TR56": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"TR57": {
+		"id":   uint(1152),
+		"type": "poison",
+	},
+
+	"TR58": {
+		"id":   uint(1162),
+		"type": "dark",
+	},
+
+	"TR59": {
+		"id":   uint(1180),
+		"type": "grass",
+	},
+
+	"TR60": {
+		"id":   uint(1148),
+		"type": "bug",
+	},
+
+	"TR61": {
+		"id":   uint(1148),
+		"type": "bug",
+	},
+
+	"TR62": {
+		"id":   uint(1154),
+		"type": "dragon",
+	},
+
+	"TR63": {
+		"id":   uint(1193),
+		"type": "rock",
+	},
+
+	"TR64": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"TR65": {
+		"id":   uint(1180),
+		"type": "grass",
+	},
+
+	"TR66": {
+		"id":   uint(1196),
+		"type": "flying",
+	},
+
+	"TR67": {
+		"id":   uint(1140),
+		"type": "ground",
+	},
+
+	"TR68": {
+		"id":   uint(1162),
+		"type": "dark",
+	},
+
+	"TR69": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR70": {
+		"id":   uint(1161),
+		"type": "steel",
+	},
+
+	"TR71": {
+		"id":   uint(1180),
+		"type": "grass",
+	},
+
+	"TR72": {
+		"id":   uint(1180),
+		"type": "grass",
+	},
+
+	"TR73": {
+		"id":   uint(1152),
+		"type": "poison",
+	},
+
+	"TR74": {
+		"id":   uint(1161),
+		"type": "steel",
+	},
+
+	"TR75": {
+		"id":   uint(1193),
+		"type": "rock",
+	},
+
+	"TR76": {
+		"id":   uint(1193),
+		"type": "rock",
+	},
+
+	"TR77": {
+		"id":   uint(1180),
+		"type": "grass",
+	},
+
+	"TR78": {
+		"id":   uint(1152),
+		"type": "poison",
+	},
+
+	"TR79": {
+		"id":   uint(1161),
+		"type": "steel",
+	},
+
+	"TR80": {
+		"id":   uint(1138),
+		"type": "electric",
+	},
+
+	"TR81": {
+		"id":   uint(1162),
+		"type": "dark",
+	},
+
+	"TR82": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR83": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR84": {
+		"id":   uint(1133),
+		"type": "water",
+	},
+
+	"TR85": {
+		"id":   uint(1130),
+		"type": "normal",
+	},
+
+	"TR86": {
+		"id":   uint(1138),
+		"type": "electric",
+	},
+
+	"TR87": {
+		"id":   uint(1140),
+		"type": "ground",
+	},
+
+	"TR88": {
+		"id":   uint(1132),
+		"type": "fire",
+	},
+
+	"TR89": {
+		"id":   uint(1196),
+		"type": "flying",
+	},
+
+	"TR90": {
+		"id":   uint(1220),
+		"type": "fairy",
+	},
+
+	"TR91": {
+		"id":   uint(1152),
+		"type": "poison",
+	},
+
+	"TR92": {
+		"id":   uint(1220),
+		"type": "fairy",
+	},
+
+	"TR93": {
+		"id":   uint(1162),
+		"type": "dark",
+	},
+
+	"TR94": {
+		"id":   uint(1140),
+		"type": "ground",
+	},
+
+	"TR95": {
+		"id":   uint(1162),
+		"type": "dark",
+	},
+
+	"TR96": {
+		"id":   uint(1148),
+		"type": "bug",
+	},
+
+	"TR97": {
+		"id":   uint(1141),
+		"type": "psychic",
+	},
+
+	"TR98": {
+		"id":   uint(1133),
+		"type": "water",
+	},
+
+	"TR99": {
+		"id":   uint(1137),
+		"type": "fighting",
+	},
+
+	"Cracked Pot": {
+		"id": uint(1253),
+	},
+
+	"Chipped Pot": {
+		"id": uint(1254),
+	},
+
+	"Galarica Cuff": {
+		"id": uint(1582),
+	},
+
+	"Galarica Wreath": {
+		"id": uint(1592),
 	},
 }
