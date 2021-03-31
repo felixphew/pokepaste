@@ -26,6 +26,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(1),
 		"type": "grass",
 	},
+	"Venusaur-Gmax": {
+		"id":   uint(3),
+		"form": uint(2),
+		"type": "grass",
+	},
 	"Charmander": {
 		"id":   uint(4),
 		"form": uint(0),
@@ -51,6 +56,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(2),
 		"type": "fire",
 	},
+	"Charizard-Gmax": {
+		"id":   uint(6),
+		"form": uint(3),
+		"type": "fire",
+	},
 	"Squirtle": {
 		"id":   uint(7),
 		"form": uint(0),
@@ -71,6 +81,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(1),
 		"type": "water",
 	},
+	"Blastoise-Gmax": {
+		"id":   uint(9),
+		"form": uint(2),
+		"type": "water",
+	},
 	"Caterpie": {
 		"id":   uint(10),
 		"form": uint(0),
@@ -84,6 +99,11 @@ var pokemonData = map[string]map[string]interface{}{
 	"Butterfree": {
 		"id":   uint(12),
 		"form": uint(0),
+		"type": "bug",
+	},
+	"Butterfree-Gmax": {
+		"id":   uint(12),
+		"form": uint(1),
 		"type": "bug",
 	},
 	"Weedle": {
@@ -174,6 +194,11 @@ var pokemonData = map[string]map[string]interface{}{
 	"Pikachu": {
 		"id":   uint(25),
 		"form": uint(0),
+		"type": "electric",
+	},
+	"Pikachu-Gmax": {
+		"id":   uint(25),
+		"form": uint(1),
 		"type": "electric",
 	},
 	"Raichu": {
@@ -351,6 +376,16 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(1),
 		"type": "dark",
 	},
+	"Meowth-Galar": {
+		"id":   uint(52),
+		"form": uint(2),
+		"type": "steel",
+	},
+	"Meowth-Gmax": {
+		"id":   uint(52),
+		"form": uint(3),
+		"type": "steel",
+	},
 	"Persian": {
 		"id":   uint(53),
 		"form": uint(0),
@@ -441,6 +476,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "fighting",
 	},
+	"Machamp-Gmax": {
+		"id":   uint(68),
+		"form": uint(1),
+		"type": "fighting",
+	},
 	"Bellsprout": {
 		"id":   uint(69),
 		"form": uint(0),
@@ -501,15 +541,30 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "fire",
 	},
+	"Ponyta-Galar": {
+		"id":   uint(77),
+		"form": uint(1),
+		"type": "psychic",
+	},
 	"Rapidash": {
 		"id":   uint(78),
 		"form": uint(0),
 		"type": "fire",
 	},
+	"Rapidash-Galar": {
+		"id":   uint(78),
+		"form": uint(1),
+		"type": "psychic",
+	},
 	"Slowpoke": {
 		"id":   uint(79),
 		"form": uint(0),
 		"type": "water",
+	},
+	"Slowpoke-Galar": {
+		"id":   uint(79),
+		"form": uint(1),
+		"type": "psychic",
 	},
 	"Slowbro": {
 		"id":   uint(80),
@@ -520,6 +575,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"id":   uint(80),
 		"form": uint(1),
 		"type": "water",
+	},
+	"Slowbro-Galar": {
+		"id":   uint(80),
+		"form": uint(2),
+		"type": "poison",
 	},
 	"Magnemite": {
 		"id":   uint(81),
@@ -540,6 +600,26 @@ var pokemonData = map[string]map[string]interface{}{
 		"id":   uint(83),
 		"form": uint(0),
 		"type": "normal",
+	},
+	"Farfetch’d": {
+		"id":   uint(83),
+		"form": uint(0),
+		"type": "normal",
+	},
+	"Farfetch'd-Galar": {
+		"id":   uint(83),
+		"form": uint(1),
+		"type": "fighting",
+	},
+	"Farfetch&#x27;d-Galar": {
+		"id":   uint(83),
+		"form": uint(1),
+		"type": "fighting",
+	},
+	"Farfetch’d-Galar": {
+		"id":   uint(83),
+		"form": uint(1),
+		"type": "fighting",
 	},
 	"Doduo": {
 		"id":   uint(84),
@@ -611,6 +691,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(1),
 		"type": "ghost",
 	},
+	"Gengar-Gmax": {
+		"id":   uint(94),
+		"form": uint(2),
+		"type": "ghost",
+	},
 	"Onix": {
 		"id":   uint(95),
 		"form": uint(0),
@@ -634,6 +719,11 @@ var pokemonData = map[string]map[string]interface{}{
 	"Kingler": {
 		"id":   uint(99),
 		"form": uint(0),
+		"type": "water",
+	},
+	"Kingler-Gmax": {
+		"id":   uint(99),
+		"form": uint(1),
 		"type": "water",
 	},
 	"Voltorb": {
@@ -706,6 +796,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "poison",
 	},
+	"Weezing-Galar": {
+		"id":   uint(110),
+		"form": uint(1),
+		"type": "poison",
+	},
 	"Rhyhorn": {
 		"id":   uint(111),
 		"form": uint(0),
@@ -771,6 +866,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "psychic",
 	},
+	"Mr. Mime-Galar": {
+		"id":   uint(122),
+		"form": uint(1),
+		"type": "ice",
+	},
 	"Scyther": {
 		"id":   uint(123),
 		"form": uint(0),
@@ -826,6 +926,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "water",
 	},
+	"Lapras-Gmax": {
+		"id":   uint(131),
+		"form": uint(1),
+		"type": "water",
+	},
 	"Ditto": {
 		"id":   uint(132),
 		"form": uint(0),
@@ -834,6 +939,11 @@ var pokemonData = map[string]map[string]interface{}{
 	"Eevee": {
 		"id":   uint(133),
 		"form": uint(0),
+		"type": "normal",
+	},
+	"Eevee-Gmax": {
+		"id":   uint(133),
+		"form": uint(1),
 		"type": "normal",
 	},
 	"Vaporeon": {
@@ -891,19 +1001,39 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "normal",
 	},
+	"Snorlax-Gmax": {
+		"id":   uint(143),
+		"form": uint(1),
+		"type": "normal",
+	},
 	"Articuno": {
 		"id":   uint(144),
 		"form": uint(0),
 		"type": "ice",
+	},
+	"Articuno-Galar": {
+		"id":   uint(144),
+		"form": uint(1),
+		"type": "psychic",
 	},
 	"Zapdos": {
 		"id":   uint(145),
 		"form": uint(0),
 		"type": "electric",
 	},
+	"Zapdos-Galar": {
+		"id":   uint(145),
+		"form": uint(1),
+		"type": "fighting",
+	},
 	"Moltres": {
 		"id":   uint(146),
 		"form": uint(0),
+		"type": "fire",
+	},
+	"Moltres-Galar": {
+		"id":   uint(146),
+		"form": uint(1),
 		"type": "fire",
 	},
 	"Dratini": {
@@ -1186,6 +1316,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "water",
 	},
+	"Slowking-Galar": {
+		"id":   uint(199),
+		"form": uint(1),
+		"type": "poison",
+	},
 	"Misdreavus": {
 		"id":   uint(200),
 		"form": uint(0),
@@ -1315,6 +1450,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"id":   uint(222),
 		"form": uint(0),
 		"type": "water",
+	},
+	"Corsola-Galar": {
+		"id":   uint(222),
+		"form": uint(1),
+		"type": "ghost",
 	},
 	"Remoraid": {
 		"id":   uint(223),
@@ -1546,10 +1686,20 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "normal",
 	},
+	"Zigzagoon-Galar": {
+		"id":   uint(263),
+		"form": uint(1),
+		"type": "dark",
+	},
 	"Linoone": {
 		"id":   uint(264),
 		"form": uint(0),
 		"type": "normal",
+	},
+	"Linoone-Galar": {
+		"id":   uint(264),
+		"form": uint(1),
+		"type": "dark",
 	},
 	"Wurmple": {
 		"id":   uint(265),
@@ -3326,6 +3476,16 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(1),
 		"type": "fire",
 	},
+	"Darmanitan-Galar": {
+		"id":   uint(555),
+		"form": uint(2),
+		"type": "ice",
+	},
+	"Darmanitan-Galar-Zen": {
+		"id":   uint(555),
+		"form": uint(3),
+		"type": "ice",
+	},
 	"Maractus": {
 		"id":   uint(556),
 		"form": uint(0),
@@ -3361,6 +3521,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "ghost",
 	},
+	"Yamask-Galar": {
+		"id":   uint(562),
+		"form": uint(1),
+		"type": "ground",
+	},
 	"Cofagrigus": {
 		"id":   uint(563),
 		"form": uint(0),
@@ -3394,6 +3559,11 @@ var pokemonData = map[string]map[string]interface{}{
 	"Garbodor": {
 		"id":   uint(569),
 		"form": uint(0),
+		"type": "poison",
+	},
+	"Garbodor-Gmax": {
+		"id":   uint(569),
+		"form": uint(1),
 		"type": "poison",
 	},
 	"Zorua": {
@@ -3669,6 +3839,11 @@ var pokemonData = map[string]map[string]interface{}{
 	"Stunfisk": {
 		"id":   uint(618),
 		"form": uint(0),
+		"type": "ground",
+	},
+	"Stunfisk-Galar": {
+		"id":   uint(618),
+		"form": uint(1),
 		"type": "ground",
 	},
 	"Mienfoo": {
@@ -5111,6 +5286,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "grass",
 	},
+	"Rillaboom-Gmax": {
+		"id": uint(812),
+		"form": uint(1),
+		"type": "grass",
+	},
 	"Scorbunny": {
 		"id": uint(813),
 		"form": uint(0),
@@ -5126,6 +5306,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "fire",
 	},
+	"Cinderace-Gmax": {
+		"id": uint(815),
+		"form": uint(1),
+		"type": "fire",
+	},
 	"Sobble": {
 		"id": uint(816),
 		"form": uint(0),
@@ -5139,6 +5324,11 @@ var pokemonData = map[string]map[string]interface{}{
 	"Inteleon": {
 		"id": uint(818),
 		"form": uint(0),
+		"type": "water",
+	},
+	"Inteleon-Gmax": {
+		"id": uint(818),
+		"form": uint(1),
 		"type": "water",
 	},
 	"Skwovet": {
@@ -5615,6 +5805,71 @@ var pokemonData = map[string]map[string]interface{}{
 		"id": uint(890),
 		"form": uint(1),
 		"type": "poison",
+	},
+	"Kubfu": {
+		"id": uint(891),
+		"form": uint(0),
+		"type": "fighting",
+	},
+	"Urshifu": {
+		"id": uint(892),
+		"form": uint(0),
+		"type": "fighting",
+	},
+	"Urshifu-Rapid-Strike": {
+		"id": uint(892),
+		"form": uint(1),
+		"type": "fighting",
+	},
+	"Urshifu-Gmax": {
+		"id": uint(892),
+		"form": uint(2),
+		"type": "fighting",
+	},
+	"Urshifu-Rapid-Strike-Gmax": {
+		"id": uint(892),
+		"form": uint(3),
+		"type": "fighting",
+	},
+	"Zarude": {
+		"id": uint(893),
+		"form": uint(0),
+		"type": "dark",
+	},
+	"Regieleki": {
+		"id": uint(894),
+		"form": uint(0),
+		"type": "electric",
+	},
+	"Regidrago": {
+		"id": uint(895),
+		"form": uint(0),
+		"type": "dragon",
+	},
+	"Glastrier": {
+		"id": uint(896),
+		"form": uint(0),
+		"type": "ice",
+	},
+	"Spectrier": {
+		"id": uint(897),
+		"form": uint(0),
+		"type": "ghost",
+	},
+	"Calyrex": {
+		"id": uint(898),
+		"form": uint(0),
+		"type": "psychic",
+	},
+	"Calyrex-Ice": {
+		"id": uint(898),
+		"form": uint(1),
+		"type": "psychic",
+	},
+	"Calyrex-Shadow": {
+		"id": uint(898),
+		"form": uint(2),
+		"type": "psychic",
 	},
 	"Syclant": {
 		"id":   uint(10001),
