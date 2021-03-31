@@ -23,9 +23,13 @@ div.img {
 	-ms-user-select: none;
 }
 
-img.img-pokemon {
+.img-pokemon {
 	width: 150px;
 	height: 150px;
+}
+
+.img-stub {
+	height: 25px;
 }
 
 img.img-item {
