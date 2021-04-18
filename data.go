@@ -1044,7 +1044,7 @@ var pokemonData = map[string]map[string]interface{}{
 	"Moltres-Galar": {
 		"id":   uint(146),
 		"form": uint(1),
-		"type": "fire",
+		"type": "dark",
 	},
 	"Dratini": {
 		"id":   uint(147),
@@ -3475,6 +3475,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"id":   uint(554),
 		"form": uint(0),
 		"type": "fire",
+	},
+	"Darumaka-Galar": {
+		"id":   uint(554),
+		"form": uint(1),
+		"type": "ice",
 	},
 	"Darmanitan": {
 		"id":   uint(555),
