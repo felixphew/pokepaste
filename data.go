@@ -5991,7 +5991,7 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "dragon",
 	},
-	"Jumabo": {
+	"Jumbao": {
 		"id":   uint(10024),
 		"form": uint(0),
 		"type": "grass",
@@ -6025,6 +6025,11 @@ var pokemonData = map[string]map[string]interface{}{
 		"id":   uint(10030),
 		"form": uint(0),
 		"type": "bug",
+	},
+	"Chromera": {
+		"id":   uint(10031),
+		"form": uint(0),
+		"type": "dark",
 	},
 }
 
