@@ -6026,6 +6026,21 @@ var pokemonData = map[string]map[string]interface{}{
 		"form": uint(0),
 		"type": "bug",
 	},
+	"Chromera": {
+		"id":   uint(10031),
+		"form": uint(0),
+		"type": "dark",
+	},
+	"Venomicon": {
+		"id":   uint(10032),
+		"form": uint(0),
+		"type": "poison",
+	},
+	"Venomicon-Epilogue": {
+		"id":   uint(10032),
+		"form": uint(1),
+		"type": "poison",
+	},
 }
 
 var moveData = map[string]map[string]interface{}{
